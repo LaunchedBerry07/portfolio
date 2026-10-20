@@ -413,11 +413,12 @@ h2 {
 
 .expertise-flourish {
   display: block;
-  width: min(100%, 210px);
-  height: 230px;
+  width: min(100%, 150px);
+  height: 310px;
   object-fit: contain;
-  object-position: left center;
-  margin: 18px auto 0;
+  object-position: center top;
+  margin: 12px 0 0 auto;
+  transform: translateX(8%);
 }
 
 .expertise-copy {
@@ -1619,6 +1620,16 @@ h2 {
 @media (max-width:760px) {
   h2 {
     font-size: clamp(38px,9vw,52px);
+  }
+}
+
+@media (max-width:760px) {
+  .expertise-flourish {
+    width: min(100%, 125px);
+    height: 230px;
+    margin: 4px auto 0;
+    transform: none;
+    object-position: center;
   }
 }
 
