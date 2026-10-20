@@ -1,22 +1,21 @@
-# Rapport de vérification
+# Rapport de vérification — itération 2
 
 ## Vérifications terminées
 
-- La page répond sur le serveur statique local en HTTP 200; `manus-routes.json` répond en 200 avec du JSON valide et une route `/` correspondant à la page source.
-- Captures pleine page Chromium : bureau 1440 × 1000 (fichier 1440 × 6856 px), tablette 768 × 1024 (768 × 9049 px) et téléphone 390 × 844 (390 × 12765 px). Les captures sont dans `screenshots/`.
-- Aux largeurs CSS 1440, 768 et 390 px, la largeur du document demeure égale à celle du viewport : aucun débordement horizontal détecté.
-- Les 11 images HTML se chargent; l’image du CTA portrait/globe se charge à chaque taille. Aucun lien d’ancre interne brisé n’a été détecté.
-- Contrôle statique `python3 tools/check_site.py` : réussi — langue `en`, un seul `h1`, six cartes de services, phrases requises, liens internes, 11 images avec attribut alt, ressources locales et manifeste.
-- Contrôle de syntaxe `node --check script.js` : réussi.
-- Clavier mobile à 390 px : la touche Tab révèle le lien « Skip to content » et son focus visible; Entrée ouvre le menu; Escape le ferme et restitue le focus au bouton; l’activation clavier de Services ferme le menu et mène à `#services`.
-- Contrastes de couleurs fonctionnelles échantillonnés : Navy/White 14,87:1; Navy/Mist 13,31:1; Blue Green/White 4,81:1; Seafoam/Navy 9,59:1. Le Dark Pink reste un accent de bordure ou un signe décoratif plutôt qu’un texte normal sur blanc.
-- Relecture comparée à la copie anglaise fournie et au texte source de la page : les formulations reprises sont conservées; le sixième service porte exactement la description validée par l’utilisatrice.
+- Les captures WebDev pleine page montrent la version actualisée aux viewports 1440 × 1000, 768 × 1024 et 390 × 844. Le contrôle visuel confirme l’annotation rose sous le titre, l’ornement fourni redimensionné entre titre et copie, les six cartes carrées avec leurs titres alignés et l’illustration 323144 dans la carte du projet personnel.
+- Dimensions des exports : bureau 1440 × 6607 px; tablette 675 × 7500 px; mobile 246 × 7500 px. Le moteur de capture réduit les pages longues à une hauteur maximale de 7500 px; les images tablette/mobile couvrent la page complète mais sont réduites par rapport à leur largeur CSS d’origine.
+- Les six illustrations de mandats sont presque carrées : 506 × 507, 504 × 507, 510 × 507, 506 × 509, 504 × 509 et 510 × 509 px. Le CSS leur donne un cadre commun 1:1; les attributs intrinsèques du HTML concordent avec les dimensions des fichiers.
+- L’ornement conserve son alpha et son ratio : source 900 × 1350 px, sortie 600 × 900 px. L’image du projet est l’asset fourni en 1100 × 1100 px, affiché sans recadrage.
+- `python3 tools/check_site.py` réussit : `lang=en`, un `h1`, six services, 36 éléments liés vérifiés, 12 images HTML et manifeste local correct.
+- `node --check script.js` et `python3 -m json.tool manus-routes.json` réussissent. La page et les deux nouveaux fichiers WebP répondent en HTTP 200 sur le serveur local.
+- La nouvelle phrase d’Expertise a été comparée à la formulation exacte demandée. La copie du projet Email-Triage n’a pas été changée.
+- Le comportement clavier du menu n’a pas été modifié dans cette itération visuelle; l’essai clavier de l’itération précédente avait passé Entrée, Escape, retour du focus et activation du lien Services. Les captures de cette itération ont été vérifiées visuellement.
 
 ## Non vérifié / en attente
 
-- Ce rapport n’est pas une certification WCAG exhaustive; les contrastes sont des vérifications ponctuelles et les contrôles clavier couvrent principalement le menu et le lien d’évitement.
-- Les permissions de publication des noms/marques de clients, témoignages et illustrations ne sont pas confirmées par les fichiers. Elles restent à valider avant toute publication publique.
-- Aucun PDF de CV approuvé n’était fourni : il n’y a donc pas de téléchargement ni de lien CV actif; l’entrée est visible mais désactivée et documentée.
-- Les pages Services, Portfolio, Technology & AI, Projects et Profile dédiées ne sont pas dans le dépôt reçu. La navigation du prototype utilise les sections locales correspondantes; leur future URL multipage reste à confirmer.
-- L’adresse de courriel et l’URL LinkedIn reprises du site actuel sont visibles, mais leur accessibilité externe et leur confirmation comme coordonnées finales ne sont pas testées ici.
-- Aucun déploiement/publication, test sur GitHub Pages réel ni contrôle juridique des marques/témoignages n’a été effectué, conformément au périmètre de prototype.
+- Ce n’est pas une certification WCAG exhaustive; les contrastes ponctuels et tests clavier complets n’ont pas été répétés lors de cette itération.
+- Le contrôle numérique de `scrollWidth` à chaque viewport n’a pas été relancé après les changements; aucun débordement n’est visible dans les captures.
+- Les permissions de publication des témoignages, affiliations, noms de clients/marques et illustrations — y compris les deux nouveaux visuels — ne sont pas établies par le prototype; elles restent à confirmer avant publication publique.
+- Aucun PDF de CV approuvé n’était fourni : l’entrée CV reste visible mais non cliquable.
+- Les destinations des futures pages Services, Portfolio, Technology & AI, Projects et Profile, et la confirmation des coordonnées publiques, restent à définir.
+- Aucun déploiement ou test sur un hébergement public n’a été effectué; le dépôt d’origine n’a pas été modifié.

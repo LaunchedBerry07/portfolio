@@ -1,13 +1,15 @@
 # Décisions de conception
 
-Le prototype conserve le langage visuel éditorial des références : titres serif, texte fonctionnel sans serif, palette officielle, surfaces claires alternées, petites annotations contrôlées et logo SN préservé. Aucun framework, service ou appel de police externe n’est requis; Georgia et les polices système assurent le repli typographique local.
+Le prototype conserve le langage éditorial déjà validé : titres serif, sans serif fonctionnelle, palette officielle, espaces généreux et logo SN dans ses proportions. Il reste un site statique sans framework, serveur applicatif, appel de police externe ou service tiers.
 
-Le hero utilise l’illustration globe-réseau en Mist et l’agrandit par rapport au texte, avec un débordement contrôlé. Sur tablette et téléphone, l’image se replace sous le texte et conserve une échelle généreuse.
+Le hero conserve le globe-réseau fourni et son échelle généreuse. L’annotation « A word rarely stands alone » a été retirée de son voisinage et placée immédiatement sous le titre de la section Expertise. Elle est rose, légèrement inclinée et utilise une pile de polices manuscrites système avec repli cursif; sa taille et sa graisse sont renforcées pour rester lisibles, sans chevaucher la copie.
 
-Dans la section Expertise, le flourish quitte le dessous du titre et occupe une colonne dédiée entre titre et copie. Sur mobile, il se place à côté du titre avant que la copie ne prenne toute la largeur. Cela enlève sa hauteur artificielle du dessous de la section sans obstruer la lecture.
+Le premier paragraphe d’Expertise suit maintenant exactement la formulation fournie : “The meaning of a text depends on the document, the audience, the task, the terminology already in use and the constraints of the medium. I look at those relationships as part of the work—not as details to address after the translation is complete.”
 
-Le ruban Audience / Context / Terminology / Purpose est conservé visuellement et sémantiquement tel qu’il est pour cette itération. Seul son retour à la ligne est autorisé sur un petit écran afin d’éviter le débordement horizontal.
+L’ancien flourish est remplacé uniquement dans cette section par le visuel de lignes colorées fourni. La source transparente de 900 × 1350 px a été redimensionnée proportionnellement en 600 × 900 px; alpha et ratio sont conservés. CSS limite sa largeur à l’espace disponible avec un maximum responsive. Aucun réemploi dans d’autres sections n’est fait dans cette itération.
 
-La composition CTA réutilise l’asset portrait/globe transparent sur Navy, sans encadrement. Un masque CSS progressif fond son bord gauche dans le fond de section; le contenu textuel reste en HTML au premier plan. Sur téléphone, l’illustration est déplacée sous la copie et demeure intégrée au fond.
+Les six illustrations de mandats sources sont presque carrées (environ 504–510 × 507–509 px). Le cadre commun est donc 1:1, et non 16:9, afin de garder leur composition entière. Le balisage utilise les dimensions natives exactes. L’espace des cartes est régulier; les métadonnées réservent deux lignes et les titres deux lignes pour aligner leur départ et le texte descriptif à chaque rangée. Le ratio carré reste le même sur mobile.
 
-La grille de services comporte six éléments; Data Annotation utilise le libellé et la description approuvés exactement. Les mandats clients et le projet Gmail sont présentés dans des sections différentes. L’illustration technique est abstraite et CSS pour ne pas suggérer une capture ou un livrable réel.
+L’illustration CSS abstraite de la carte technique a été retirée et remplacée par l’image carrée fournie `323144.webp`, présentée sans recadrage. Son texte alternatif décrit le tri illustré des courriels; le contenu du projet reste inchangé et clairement qualifié de projet personnel.
+
+Le ruban Audience / Context / Terminology / Purpose et le CTA Navy avec portrait/globe restent inchangés. L’ornement de lignes est essayé dans la seule section Expertise; son éventuelle réutilisation ailleurs sera décidée après revue.
