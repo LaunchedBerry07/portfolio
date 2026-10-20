@@ -255,7 +255,7 @@ h1 em, h2 em {
 }
 
 .button-primary {
-  color: var(--navy);
+  color: var(--white);
   background: var(--dark-pink);
 }
 
@@ -334,6 +334,7 @@ h1 em, h2 em {
 }
 
 .note-bottom {
+  color: #D14D72;
   z-index: 2;
   bottom: 8%;
   left: -3%;
