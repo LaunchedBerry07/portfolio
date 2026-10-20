@@ -411,6 +411,15 @@ h2 {
   margin-top: 8px;
 }
 
+.expertise-flourish {
+  display: block;
+  width: min(100%, 210px);
+  height: 230px;
+  object-fit: contain;
+  object-position: left center;
+  margin: 18px auto 0;
+}
+
 .expertise-copy {
   padding-top: 21px;
 }
@@ -436,8 +445,8 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: clamp(10px,4vw,57px);
-  background: var(--mist);
-  color: var(--navy);
+  background: var(--navy);
+  color: #FFFFFF;
 }
 
 .expertise-ribbon span {
@@ -446,7 +455,7 @@ h2 {
 }
 
 .expertise-ribbon i {
-  color: var(--dark-pink);
+  color: #83E0D0;
   font-style: normal;
   font-size: 16px;
 }
