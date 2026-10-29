@@ -1,3 +1,12 @@
-# Visuels à ajouter
+# Service illustrations
 
-Remplacez les fichiers SVG temporaires de même nom par votre visuel final et mettez à jour son extension dans la page HTML correspondante si nécessaire. Conservez les chemins relatifs à la racine du site pour assurer la compatibilité GitHub Pages.
+Six transparent WebP illustrations used in the homepage service cards.
+
+- `translation-localization-globe-dialogue.webp` — Translation & Localization
+- `editing-proofreading-quill-magnifier.webp` — Editing, comparative revision & proofreading
+- `mtpe-robot-linguistic-check.webp` — MTPE & linguistic QA
+- `terminology-book-quill-magnifier.webp` — Terminology & editorial control
+- `transcreation-book-butterfly.webp` — Transcreation & content adaptation
+- `data-annotation-magnifier-labels.webp` — Data annotation
+
+The source illustrations were prepared with transparent backgrounds and exported as 800 × 800 px WebP images. Homepage display size is 144 px on narrow screens and 160 px from the `sm` breakpoint. The HTML keeps the established filenames so the existing relative paths remain stable for GitHub Pages.
