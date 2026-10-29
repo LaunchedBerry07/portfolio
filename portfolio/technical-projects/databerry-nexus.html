@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DataBerry Nexus | Stéphanie Nadeau</title>
+<!-- Tailwind CSS -->
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind Config for Custom Palette & Fonts -->
+<link href="../../assets/css/utilities.css" rel="stylesheet"/><link href="../../assets/css/site.css" rel="stylesheet"/><link href="../../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/></head>
+<body class="antialiased"><span class="visually-hidden" id="top"></span><nav aria-label="Main navigation" class="site-nav"><a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../../index.html"><span aria-hidden="true" class="site-nav__mark">SN<span class="site-nav__mark-cross"></span></span><span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span></a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button"><i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span></button><div class="site-nav__links" id="primary-navigation"><a href="../../index.html">Home</a><a href="../../services/">Services</a><a href="../linguistic-case-studies/">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a aria-current="page" class="is-current" href="./">Tech &amp; AI</a><a href="../../profile/">Profile &amp; CV</a><a class="site-nav__contact" href="../../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a></div></nav>
+<!-- Navigation -->
+<!-- CASE STUDY HEADER (Navy Version) -->
+<header class="bg-navy relative pt-16 pb-20 overflow-hidden">
+<!-- Abstract compass decor in bg to add texture to the dark section -->
+<div class="absolute -right-20 -top-20 w-96 h-96 border border-seafoam opacity-10 rounded-full"></div>
+<div class="absolute -left-10 bottom-[-50px] w-64 h-64 border border-white opacity-5 rounded-full"></div>
+<div class="px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+<!-- Doodles / Background elements -->
+<div class="absolute top-0 right-10 font-hand text-3xl text-seafoam rotate-12 opacity-80 hidden md:block">
+                Information workflow
+            </div>
+<div class="mb-6 flex items-center gap-3 text-sm">
+<span class="font-bold tracking-widest text-seafoam uppercase">Technical Project</span>
+<span class="text-sky">•</span>
+<span class="font-bold tracking-widest text-mist uppercase">Case Study</span>
+</div>
+<h1 class="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-4 relative max-w-4xl">
+                DataBerry Nexus
+            </h1>
+<h2 class="text-2xl text-mist opacity-90 mb-8 max-w-3xl">
+                Gmail Workflow Automation &amp; <span class="scribble-underline">Information Management</span>
+</h2>
+<!-- Collage Tags -->
+<div class="flex flex-wrap gap-3 mt-8">
+<span class="bg-white text-navy border border-navy text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(209,77,114,1)] transform -rotate-1">Google Workspace integration</span>
+<span class="bg-white text-bluegreen border border-bluegreen text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(19,41,61,1)] transform rotate-1">Email triage</span>
+<span class="bg-mist text-darkpink border border-darkpink text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(131,224,208,1)]">Document archiving</span>
+<span class="bg-white text-sky border border-sky text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(19,41,61,1)] transform -rotate-1">Structured contact data</span>
+</div>
+</div>
+</header>
+<!-- MAIN CONTENT & SIDEBAR -->
+<section class="py-16 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-16 items-start">
+<!-- Left: Text content (Prose) -->
+<div class="lg:w-2/3">
+<!-- Section 1 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4">Project overview</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    Business correspondence often contains more than a message: it may include invoices, supporting documents, sender details and information that needs to be filed or reviewed later. When these elements remain scattered across email, folders and spreadsheets, it becomes harder to maintain a clear, traceable record of what has been processed.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12">
+                    DataBerry Nexus is an independent Google Workspace application designed to connect email categorization, document archiving and structured contact information in one workflow. Built with Google Apps Script and a browser-based interface, it brings together Gmail, Google Drive and Google Sheets while retaining human review for messages that require a decision.
+                </p>
+<!-- Section 2 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4 relative inline-block">
+                    The challenge: connecting separate steps
+                    <i class="fa-solid fa-code-branch absolute -top-4 -left-8 text-2xl text-seafoam opacity-50"></i>
+</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    Email processing is not just a matter of sorting messages. A useful workflow also needs to preserve the relationship between a conversation, its archived document and the information recorded for later retrieval. Classification rules must be adjustable, and ambiguous cases should not automatically be treated as settled decisions.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12 border-l-4 border-mist pl-4">
+                    The project explores how these steps can be connected without treating every email as identical or assuming that automated classification is always correct.
+                </p>
+<!-- Section 3 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-6">From inbox to structured records</h2>
+<p class="text-gray-700 leading-relaxed mb-6">
+                    Google Apps Script provides the application logic, while HTML, CSS and JavaScript support the web interface. Gmail is the source of correspondence; Google Drive stores generated documents in an organized folder structure; and Google Sheets holds structured records, including contact information.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-8 font-medium">The documented workflow brings together several components:</p>
+<div class="space-y-6 mb-12">
+<!-- Component 1 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-bluegreen text-sm">
+<i class="fa-solid fa-tags"></i>
+</div>
+<h3 class="font-serif text-lg font-bold text-navy mb-1">Email status labels</h3>
+<p class="text-gray-700 text-sm leading-relaxed">
+                            Gmail labels distinguish conversations awaiting processing (<span class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">Nexus/To-Process</span>) from those marked as processed (<span class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">Nexus/Processed</span>).
+                        </p>
+</div>
+<!-- Component 2 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-darkpink text-sm">
+<i class="fa-solid fa-folder-tree"></i>
+</div>
+<h3 class="font-serif text-lg font-bold text-navy mb-1">Organized document storage</h3>
+<p class="text-gray-700 text-sm leading-relaxed">
+                            A Drive folder hierarchy separates items to process from processed items, with year- and month-based organization.
+                        </p>
+</div>
+<!-- Component 3 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-sky text-sm">
+<i class="fa-regular fa-file-pdf"></i>
+</div>
+<h3 class="font-serif text-lg font-bold text-navy mb-1">PDF generation and archiving</h3>
+<p class="text-gray-700 text-sm leading-relaxed">
+                            The application has generated PDF documents from email content and archived them in Drive. Demonstrated examples include utility invoices and cloud-service billing statements.
+                        </p>
+</div>
+<!-- Component 4 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-bluegreen text-sm">
+<i class="fa-solid fa-address-book"></i>
+</div>
+<h3 class="font-serif text-lg font-bold text-navy mb-1">Contact register</h3>
+<p class="text-gray-700 text-sm leading-relaxed">
+                            A Google Sheets register stores names or organizations, email addresses and timestamps.
+                        </p>
+</div>
+<!-- Component 5 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-darkpink text-sm">
+<i class="fa-solid fa-sliders"></i>
+</div>
+<h3 class="font-serif text-lg font-bold text-navy mb-1">Rule and record management</h3>
+<p class="text-gray-700 text-sm leading-relaxed">
+                            The interface includes components for managing rules and records, as well as CSV export. The integrity and synchronization of all views still require validation.
+                        </p>
+</div>
+<!-- Component 6 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-sky text-sm">
+<i class="fa-solid fa-user-check"></i>
+</div>
+<h3 class="font-serif text-lg font-bold text-navy mb-1">Human confirmation</h3>
+<p class="text-gray-700 text-sm leading-relaxed">
+                            Email categorization and confirmation components support review of items where a person needs to verify the proposed handling.
+                        </p>
+</div>
+</div>
+<!-- Section 4 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4">Why the approach matters</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    DataBerry Nexus treats email handling as a connected information workflow rather than a collection of isolated actions. The design links classification, document creation, archiving and contact records, making the process easier to inspect and potentially easier to maintain. Human confirmation remains part of the model because message context can be ambiguous.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12">
+                    The project also brings together process analysis and implementation: identifying the information that needs to move between tools, defining a workable structure, and building an interface around those operations.
+                </p>
+<!-- Section 5 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4 relative inline-block">
+                    Scope, status and limitations
+                    <i class="fa-solid fa-circle-exclamation absolute -top-3 -left-8 text-xl text-darkpink opacity-40"></i>
+</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    DataBerry Nexus is a functional application under refinement; end-to-end validation is still pending. Email categorization, human-confirmation components, PDF generation and Drive archiving have been demonstrated, but the complete sequence has not yet been validated as a reliable end-to-end system.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    The contact register and interface components exist, but synchronization and data integrity across all views still need testing. Dashboard figures are illustrative rather than verified operational metrics. Contact-based suggestions for new rules and automated extraction of financial fields are planned directions, not established capabilities of the current implementation.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12">
+                    The project therefore demonstrates a working set of components and an evolving workflow design—not a fully validated, production-ready product. No measured processing accuracy, time savings or business outcomes are claimed.
+                </p>
+<!-- Section 6 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-6">What the project demonstrates</h2>
+<ul class="space-y-4 mb-12">
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Connecting Gmail, Google Drive and Google Sheets through Google Apps Script.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Designing a workflow that links email categorization, document archiving and structured records.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Generating PDF documents from email content and organizing them in Drive.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Building browser-based interface components for rule and record management.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Including human review where automated categorization may require confirmation.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Distinguishing demonstrated functionality from planned features and unvalidated end-to-end behavior.</span>
+</li>
+</ul>
+<!-- The Takeaway Banner -->
+<div class="bg-navy text-white p-8 organic-border shadow-handdrawn-seafoam relative mt-8">
+<!-- Annotation -->
+<div class="absolute -top-6 -right-2 font-hand text-2xl text-seafoam -rotate-6">
+                        The bottom line!
+                    </div>
+<h3 class="font-serif text-2xl font-bold mb-4 flex items-center gap-2">
+<i class="fa-solid fa-lightbulb text-darkpink"></i> The takeaway
+                    </h3>
+<p class="text-mist opacity-90 leading-relaxed text-lg">
+                        DataBerry Nexus explores how everyday email can become a more structured, reviewable information workflow by connecting classification, document archiving and contact data—while keeping the limits of automation visible.
+                    </p>
+</div>
+</div>
+<!-- Right: Sidebar / Project Details -->
+<div class="lg:w-1/3 relative lg:-mt-24 z-20">
+<div class="bg-mist p-8 organic-border-pink shadow-handdrawn sticky top-28">
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 bg-darkpink text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        FACT SHEET
+                    </div>
+<h3 class="font-serif text-2xl font-bold text-navy mb-6">Project details</h3>
+<div class="space-y-5">
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Project type</h4>
+<p class="text-sm text-navy font-medium">Independent technical project</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Role</h4>
+<p class="text-sm text-navy font-medium">Solution Architect · Developer · Implementer</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Technologies</h4>
+<p class="text-sm text-navy font-medium leading-relaxed">
+                                Google Apps Script · Gmail · Google Drive · Google Sheets · HTML · CSS · JavaScript
+                            </p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Approach</h4>
+<p class="text-sm text-navy font-medium leading-relaxed">
+                                Email categorization · Document generation and archiving · Structured contact records · Human review
+                            </p>
+</div>
+<div class="pb-1">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Status</h4>
+<p class="text-sm text-gray-600">Functional application under refinement · End-to-end validation pending</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION (CTA) -->
+<section class="bg-white py-20 px-6 lg:px-12 border-t-2 border-dashed border-seafoam relative overflow-hidden">
+<!-- Abstract decor in bg -->
+<div class="absolute -left-10 -bottom-10 w-64 h-64 border border-seafoam opacity-20 rounded-full"></div>
+<div class="absolute right-10 top-10 w-32 h-32 bg-pink-50 rounded-full opacity-50"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-navy mb-8">Ready to streamline your processes?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="organic-border-pink bg-darkpink text-white px-8 py-4 font-bold text-base hover:bg-mist hover:text-darkpink transition-colors shadow-handdrawn-pink" href="#contact">
+<i class="fa-solid fa-gears mr-2"></i> Discuss a language or workflow challenge
+                </a>
+<a class="organic-border bg-white text-navy px-8 py-4 font-bold text-base hover:bg-mist transition-colors shadow-handdrawn" href="./">
+                    Explore other technical projects <i class="fa-solid fa-arrow-right ml-2"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- FOOTER (Simplified version) -->
+<section class="bg-navy text-white py-12 px-6 lg:px-12 page-contact-callout" id="contact">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border border-mist flex items-center justify-center">
+<span class="font-serif text-sm font-bold text-mist">SN</span>
+</div>
+<span class="text-sm font-medium text-mist">Stéphanie Nadeau</span>
+</div>
+<div class="flex gap-6 text-sm text-sky">
+<a class="hover:text-seafoam transition-colors" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
+<a class="hover:text-seafoam transition-colors" href="https://linkedin.com/in/s-nadeau" target="_blank">LinkedIn</a>
+</div>
+<div class="text-xs text-gray-400">©<span class="current-year"></span>Stéphanie Nadeau.</div>
+</div>
+</section>
+<footer class="site-footer" id="site-footer"><div class="site-footer__inner"><div class="site-footer__identity"><a class="site-footer__brand" href="../../index.html">Stéphanie Nadeau</a><p>Canadian French language expertise, supported by technology.</p><a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a></div><nav aria-label="Footer navigation" class="site-footer__nav"><a href="../../index.html">Home</a><a href="../../services/">Services</a><a href="../linguistic-case-studies/">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a href="./">Tech &amp; AI</a><a href="../../profile/">Profile &amp; CV</a><a href="../../contact/">Contact</a></nav><div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></div></div><div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer><script defer="True" src="../../assets/js/site.js"></script></body>
+</html>

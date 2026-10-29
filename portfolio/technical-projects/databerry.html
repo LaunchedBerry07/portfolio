@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DataBerry | Stéphanie Nadeau</title>
+<!-- Tailwind CSS -->
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind Config for Custom Palette & Fonts -->
+<link href="../../assets/css/utilities.css" rel="stylesheet"/><link href="../../assets/css/site.css" rel="stylesheet"/><link href="../../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/></head>
+<body class="antialiased"><span class="visually-hidden" id="top"></span><nav aria-label="Main navigation" class="site-nav"><a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../../index.html"><span aria-hidden="true" class="site-nav__mark">SN<span class="site-nav__mark-cross"></span></span><span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span></a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button"><i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span></button><div class="site-nav__links" id="primary-navigation"><a href="../../index.html">Home</a><a href="../../services/">Services</a><a href="../linguistic-case-studies/">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a aria-current="page" class="is-current" href="./">Tech &amp; AI</a><a href="../../profile/">Profile &amp; CV</a><a class="site-nav__contact" href="../../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a></div></nav>
+<!-- Navigation -->
+<!-- CASE STUDY HEADER (Navy Version) -->
+<header class="bg-navy relative pt-16 pb-20 overflow-hidden">
+<!-- Abstract compass decor in bg to add texture to the dark section -->
+<div class="absolute -right-20 -top-20 w-96 h-96 border border-seafoam opacity-10 rounded-full"></div>
+<div class="absolute -left-10 bottom-[-50px] w-64 h-64 border border-white opacity-5 rounded-full"></div>
+<div class="px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+<!-- Doodles / Background elements -->
+<div class="absolute top-4 right-10 font-hand text-3xl text-seafoam rotate-12 opacity-80 hidden md:block">
+                Full-stack architecture
+            </div>
+<div class="mb-6 flex items-center gap-3 text-sm">
+<span class="font-bold tracking-widest text-seafoam uppercase">Technical Project</span>
+<span class="text-sky">•</span>
+<span class="font-bold tracking-widest text-mist uppercase">Case Study</span>
+</div>
+<h1 class="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-4 relative max-w-4xl">
+                DataBerry
+            </h1>
+<h2 class="text-2xl text-mist opacity-90 mb-6 max-w-3xl font-serif">
+                Gmail Finance Manager
+            </h2>
+<p class="text-lg text-seafoam opacity-90 mb-8 max-w-3xl border-l-2 border-seafoam pl-4">
+                A full-stack exploration of a unified workspace for financial information <span class="scribble-underline">received through email.</span>
+</p>
+<!-- Collage Tags -->
+<div class="flex flex-wrap gap-3 mt-8">
+<span class="bg-white text-navy border border-navy text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(209,77,114,1)] transform -rotate-1">Financial information management</span>
+<span class="bg-white text-bluegreen border border-bluegreen text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(19,41,61,1)] transform rotate-1">Email and document workflows</span>
+<span class="bg-mist text-darkpink border border-darkpink text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(131,224,208,1)]">Full-stack development</span>
+<span class="bg-white text-sky border border-sky text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(19,41,61,1)] transform -rotate-1">API integration</span>
+</div>
+</div>
+</header>
+<!-- MAIN CONTENT & SIDEBAR -->
+<section class="py-16 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-16 items-start">
+<!-- Left: Text content (Prose) -->
+<div class="lg:w-2/3">
+<!-- Section 1 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4">Project overview</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    Invoices, billing notices and other financial records often arrive in email threads, attachments and service-specific messages. Finding the right item later can mean switching between inbox searches, document folders and separate records. DataBerry explores how these pieces could be brought together in a single interface for searching, organizing, reviewing and exporting financial information.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12">
+                    I explored multiple implementations of the application, with the aim of connecting an interactive web interface, a server-side API and structured database storage. The project demonstrates architecture exploration and full-stack problem-solving; it is not presented as a finished, successfully deployed product.
+                </p>
+<!-- Section 2 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4 relative inline-block">
+                    The challenge: connecting scattered financial information
+                    <i class="fa-solid fa-layer-group absolute -top-4 -left-8 text-2xl text-seafoam opacity-50"></i>
+</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    Financial correspondence is not always easy to manage as a coherent record. Relevant information may be distributed across messages and documents, while users need a practical way to locate items, inspect associated records and export data for further use.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12 border-l-4 border-mist pl-4">
+                    The design challenge was to create a consistent workspace without implying that every part of the workflow could already run reliably from end to end.
+                </p>
+<!-- Section 3 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4">From interface concepts to a full-stack architecture</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    The latest reference implementation documents a React and TypeScript front end built with Vite, a Node.js and Express back end, and a PostgreSQL database accessed through Drizzle ORM. Tailwind CSS and shadcn/ui are listed among the interface technologies. Google Cloud Run was selected as the target hosting environment, with Google Cloud Build intended for the build pipeline.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12">
+                    This architecture separates the user-facing experience from server-side operations and persistent data storage. It also provides a concrete structure for exploring how search, document management, settings and export functions could work together. The project history includes approximately fifteen repositories exploring variants of the same initiative; these represent iterations, not fifteen separate projects.
+                </p>
+<!-- Section 4 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-6">Functional scope</h2>
+<p class="text-gray-700 leading-relaxed mb-8">
+                    Across the documented designs and implementations, the functional scope includes:
+                </p>
+<div class="space-y-6 mb-12">
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-bluegreen text-sm">
+<i class="fa-solid fa-magnifying-glass"></i>
+</div>
+<p class="text-gray-700 text-base leading-relaxed font-medium">
+                            Searching for and organizing financial emails.
+                        </p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-darkpink text-sm">
+<i class="fa-solid fa-file-invoice-dollar"></i>
+</div>
+<p class="text-gray-700 text-base leading-relaxed font-medium">
+                            Managing documents associated with email-based financial information.
+                        </p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-sky text-sm">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+<p class="text-gray-700 text-base leading-relaxed font-medium">
+                            Presenting dashboards and monitoring views.
+                        </p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-bluegreen text-sm">
+<i class="fa-solid fa-database"></i>
+</div>
+<p class="text-gray-700 text-base leading-relaxed font-medium">
+                            Maintaining structured records and application settings.
+                        </p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-darkpink text-sm">
+<i class="fa-solid fa-file-csv"></i>
+</div>
+<p class="text-gray-700 text-base leading-relaxed font-medium">
+                            Exporting selected data in CSV format.
+                        </p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-mist flex items-center justify-center text-sky text-sm">
+<i class="fa-brands fa-google"></i>
+</div>
+<p class="text-gray-700 text-base leading-relaxed font-medium">
+                            Exploring integrations with Gmail and other Google services.
+                        </p>
+</div>
+</div>
+<p class="text-sm text-gray-500 italic mb-12 bg-gray-50 p-4 rounded-sm border-l-2 border-gray-200">
+                    The maturity of these elements varies across versions. This list describes the documented scope of the initiative, not a claim that every feature is operational in the latest repository.
+                </p>
+<!-- Section 5 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4 relative inline-block">
+                    Implementation and deployment status
+                    <i class="fa-solid fa-server absolute -top-3 -left-8 text-xl text-darkpink opacity-40"></i>
+</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+                    The latest reference repository documents the intended full-stack architecture, but the application was not successfully deployed to Google Cloud after repeated Cloud Build failures. The cause has not been established. Screenshots and interface designs provide evidence of visual structure and navigation, but they do not establish successful end-to-end operation or verified performance.
+                </p>
+<p class="text-gray-700 leading-relaxed mb-12">
+                    For that reason, DataBerry is best described as an advanced development and architecture-exploration project. The available sources do not establish that the complete workflow is running in production, nor do they provide validated usage, accuracy, processing-volume or time-saving metrics.
+                </p>
+<!-- Section 6 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-6">What the project demonstrates</h2>
+<ul class="space-y-4 mb-12">
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Breaking a broad information-management problem into front-end, back-end and database components.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Exploring a modern web stack using React, TypeScript, Node.js, Express and PostgreSQL.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Designing around search, structured records, document handling and data export.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Iterating across implementation variants while keeping the initiative’s scope distinct from its individual repositories.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Reporting technical progress transparently, including unresolved deployment issues and features that still require validation.</span>
+</li>
+</ul>
+<!-- The Takeaway Banner -->
+<div class="bg-navy text-white p-8 organic-border shadow-handdrawn-seafoam relative mt-8">
+<!-- Annotation -->
+<div class="absolute -top-6 -right-2 font-hand text-2xl text-seafoam -rotate-6">
+                        The bottom line!
+                    </div>
+<h3 class="font-serif text-2xl font-bold mb-4 flex items-center gap-2">
+<i class="fa-solid fa-lightbulb text-darkpink"></i> The takeaway
+                    </h3>
+<p class="text-mist opacity-90 leading-relaxed text-lg">
+                        DataBerry explores how financial information scattered across email and documents could be organized through a unified, data-backed web application. Its strongest evidence is the architecture and problem-solving work—not a claim of successful deployment or fully validated functionality.
+                    </p>
+</div>
+</div>
+<!-- Right: Sidebar / Project Details -->
+<div class="lg:w-1/3 relative lg:-mt-24 z-20">
+<div class="bg-mist p-8 organic-border shadow-handdrawn sticky top-28">
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 bg-darkpink text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        FACT SHEET
+                    </div>
+<h3 class="font-serif text-2xl font-bold text-navy mb-6">Project details</h3>
+<div class="space-y-5">
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Project type</h4>
+<p class="text-sm text-navy font-medium">Independent software initiative / architecture exploration</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Role</h4>
+<p class="text-sm text-navy font-medium">Project design, architecture exploration and implementation</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Technologies</h4>
+<p class="text-sm text-navy font-medium leading-relaxed">
+                                React · TypeScript · Vite · Node.js · Express · PostgreSQL · Drizzle ORM · Tailwind CSS · shadcn/ui
+                            </p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Target deployment</h4>
+<p class="text-sm text-navy font-medium">Google Cloud Run · Google Cloud Build</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Focus</h4>
+<p class="text-sm text-navy font-medium leading-relaxed">
+                                Financial email search · Document management · Structured records · Dashboards · CSV export
+                            </p>
+</div>
+<div class="pb-1">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Documented status</h4>
+<p class="text-sm text-gray-600">Advanced development and architecture exploration; cloud deployment unsuccessful</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION (CTA) -->
+<section class="bg-white py-20 px-6 lg:px-12 border-t-2 border-dashed border-seafoam relative overflow-hidden">
+<!-- Abstract decor in bg -->
+<div class="absolute -left-10 -bottom-10 w-64 h-64 border border-seafoam opacity-20 rounded-full"></div>
+<div class="absolute right-10 top-10 w-32 h-32 bg-pink-50 rounded-full opacity-50"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-navy mb-8">Ready to streamline your processes?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="organic-border-pink bg-darkpink text-white px-8 py-4 font-bold text-base hover:bg-mist hover:text-darkpink transition-colors shadow-handdrawn-pink" href="#contact">
+<i class="fa-solid fa-code mr-2"></i> Discuss a technical or workflow challenge
+                </a>
+<a class="organic-border bg-white text-navy px-8 py-4 font-bold text-base hover:bg-mist transition-colors shadow-handdrawn" href="./">
+                    Explore other technical projects <i class="fa-solid fa-arrow-right ml-2"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- FOOTER (Simplified version) -->
+<section class="bg-navy text-white py-12 px-6 lg:px-12 page-contact-callout" id="contact">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border border-mist flex items-center justify-center">
+<span class="font-serif text-sm font-bold text-mist">SN</span>
+</div>
+<span class="text-sm font-medium text-mist">Stéphanie Nadeau</span>
+</div>
+<div class="flex gap-6 text-sm text-sky">
+<a class="hover:text-seafoam transition-colors" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
+<a class="hover:text-seafoam transition-colors" href="https://linkedin.com/in/s-nadeau" target="_blank">LinkedIn</a>
+</div>
+<div class="text-xs text-gray-400">©<span class="current-year"></span>Stéphanie Nadeau.</div>
+</div>
+</section>
+<footer class="site-footer" id="site-footer"><div class="site-footer__inner"><div class="site-footer__identity"><a class="site-footer__brand" href="../../index.html">Stéphanie Nadeau</a><p>Canadian French language expertise, supported by technology.</p><a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a></div><nav aria-label="Footer navigation" class="site-footer__nav"><a href="../../index.html">Home</a><a href="../../services/">Services</a><a href="../linguistic-case-studies/">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a href="./">Tech &amp; AI</a><a href="../../profile/">Profile &amp; CV</a><a href="../../contact/">Contact</a></nav><div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></div></div><div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer><script defer="True" src="../../assets/js/site.js"></script></body>
+</html>

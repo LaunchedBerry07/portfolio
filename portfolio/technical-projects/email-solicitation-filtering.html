@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Email Solicitation Filtering | Stéphanie Nadeau</title>
+<!-- Tailwind CSS -->
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind Config for Custom Palette & Fonts -->
+<link href="../../assets/css/utilities.css" rel="stylesheet"/><link href="../../assets/css/site.css" rel="stylesheet"/><link href="../../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/></head>
+<body class="antialiased"><span class="visually-hidden" id="top"></span><nav aria-label="Main navigation" class="site-nav"><a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../../index.html"><span aria-hidden="true" class="site-nav__mark">SN<span class="site-nav__mark-cross"></span></span><span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span></a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button"><i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span></button><div class="site-nav__links" id="primary-navigation"><a href="../../index.html">Home</a><a href="../../services/">Services</a><a href="../linguistic-case-studies/">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a aria-current="page" class="is-current" href="./">Tech &amp; AI</a><a href="../../profile/">Profile &amp; CV</a><a class="site-nav__contact" href="../../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a></div></nav>
+<!-- Navigation -->
+<!-- CASE STUDY HEADER (Navy Version) -->
+<header class="bg-navy relative pt-16 pb-20 overflow-hidden">
+<!-- Abstract compass decor in bg to add texture to the dark section -->
+<div class="absolute -right-20 -top-20 w-96 h-96 border border-seafoam opacity-10 rounded-full"></div>
+<div class="absolute -left-10 bottom-[-50px] w-64 h-64 border border-white opacity-5 rounded-full"></div>
+<div class="px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+<!-- Doodles / Background elements -->
+<div class="absolute top-0 right-10 font-hand text-3xl text-seafoam rotate-12 opacity-80 hidden md:block">
+Flagship Project!
+</div>
+<div class="mb-6 flex items-center gap-3 text-sm">
+<span class="font-bold tracking-widest text-seafoam uppercase">Technical Project</span>
+<span class="text-sky">•</span>
+<span class="font-bold tracking-widest text-mist uppercase">Flagship Case Study</span>
+</div>
+<h1 class="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-4 relative max-w-4xl">
+Turning Linguistic Clues into an <span class="scribble-underline">Email-Triage Workflow</span>
+</h1>
+<p class="text-lg text-seafoam opacity-90 mb-8 max-w-3xl border-l-2 border-seafoam pl-4">
+A personal Gmail filter combining linguistic analysis, contextual heuristics, and weighted scoring.
+</p>
+<!-- Collage Tags -->
+<div class="flex flex-wrap gap-3 mt-8">
+<span class="bg-white text-navy border border-navy text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(209,77,114,1)] transform -rotate-1">Applied linguistics</span>
+<span class="bg-white text-bluegreen border border-bluegreen text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(19,41,61,1)] transform rotate-1">Contextual analysis</span>
+<span class="bg-mist text-darkpink border border-darkpink text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(131,224,208,1)]">Heuristic detection</span>
+<span class="bg-white text-sky border border-sky text-xs font-bold px-3 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_rgba(19,41,61,1)] transform -rotate-1">Google Apps Script</span>
+</div>
+</div>
+</header>
+<!-- MAIN CONTENT & SIDEBAR -->
+<section class="py-16 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-16 items-start">
+<!-- Left: Text content (Prose) -->
+<div class="lg:w-2/3">
+<!-- Section 1 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4">Project overview</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+Unsolicited emails can demand more attention than they deserve. Invitations to interviews, book reviews, promotional services or editorial collaborations may sound plausible at first, yet turn out to be generic, poorly targeted or unlikely to lead anywhere. Repeatedly assessing them one by one became a problem of attention as much as email management.
+</p>
+<p class="text-gray-700 leading-relaxed mb-12">
+I developed a personal Gmail filter to automate part of that first-pass judgment. The script combines linguistic, contextual and sender-related clues, translating recurring observations into explicit rules and a weighted score. Its purpose is to reduce the effort spent reviewing low-credibility or low-relevance solicitations—not to determine with certainty whether a message is fraudulent or AI-generated.
+</p>
+<!-- Section 2 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4 relative inline-block">
+The challenge: more than suspicious keywords
+<i class="fa-solid fa-filter absolute -top-4 -left-8 text-2xl text-seafoam opacity-50"></i>
+</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+The clues were often relational rather than conclusive in isolation. A French message might contain a literal-sounding translation, switch unexpectedly into an English sign-off, refer to several books when the known context involved one, or include a reference that seemed unrelated or fabricated. Other messages showed inconsistencies between a sender’s display name and signature, or between the sender’s domain and links in the email.
+</p>
+<p class="text-gray-700 leading-relaxed mb-12 border-l-4 border-mist pl-4">
+These patterns were observations from a personal inbox, not a representative dataset. They helped define a practical question: how could recurring linguistic and contextual judgments be expressed as rules a script could apply consistently?
+</p>
+<!-- Section 3 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4">From observation to executable rules</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+Using JavaScript in Google Apps Script, I built a Gmail workflow that retrieves unread inbox conversations in batches, examines selected fields from the latest message, and applies a series of heuristic checks. Regular expressions identify configured language patterns; conditional logic compares selected message details, including sender information, the recipient field, signatures and domains.
+</p>
+<p class="text-gray-700 leading-relaxed mb-12">
+The rules include literal-translation patterns in French, unexpected English phrases in otherwise French messages, mismatches in references to the number of books or works, and selected identity or domain inconsistencies. Each detected pattern contributes a defined number of points. When the total reaches the configured threshold, the documented V3 script moves the conversation to Trash and records the execution.
+</p>
+<!-- Section 4 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4 relative inline-block">
+Why the approach is distinctive
+<i class="fa-solid fa-star absolute -top-3 -left-8 text-xl text-darkpink opacity-40"></i>
+</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+The project connects close linguistic reading with practical system design. Rather than relying on a single suspicious word, it formalizes several kinds of evidence—language, context and message metadata—into a decision process. The rules are visible and adjustable, so the logic can be inspected and refined as new examples or edge cases emerge.
+</p>
+<p class="text-gray-700 leading-relaxed mb-12">
+It also illustrates a broader skill: converting qualitative observations into criteria that a technical workflow can apply. Linguistic judgment informs the rules, while scripting makes those rules repeatable.
+</p>
+<!-- Section 5 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-4">Scope and limitations</h2>
+<p class="text-gray-700 leading-relaxed mb-4">
+This is a rule-based personal tool, not a trained machine-learning model, a validated phishing detector or a reliable way to attribute authorship to an AI system. Awkward phrasing, code-switching or contextual errors can occur for many reasons; they are signals to consider, not proof of origin or intent. The score represents configured rules triggered by a message, not a statistical probability of fraud or a validated measure of commercial relevance.
+</p>
+<p class="text-gray-700 leading-relaxed mb-12">
+The documented V3 implementation processes unread conversations in the inbox, skips threads containing more than two messages and analyses the latest message rather than the full thread. Reaching the threshold triggers a move to Trash without human confirmation, so a legitimate message could be affected. A separate correction for Gmail aliases is documented, but its integration into the executed version has not been confirmed. Available records do not establish a measured accuracy rate, false-positive rate, total volume processed or time saved.
+</p>
+<!-- Section 6 -->
+<h2 class="font-serif text-3xl font-bold text-navy mb-6">What the project demonstrates</h2>
+<ul class="space-y-4 mb-12">
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Identifying and categorizing linguistic and contextual anomalies in Canadian French correspondence.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Translating qualitative observations into explicit conditions, regular expressions and weighted decision rules.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Applying JavaScript and Google Apps Script to automate a recurring Gmail workflow.</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fa-solid fa-check text-bluegreen mt-1.5"></i>
+<span class="text-gray-700 leading-relaxed">Considering edge cases, false positives and the difference between a useful signal and a proven conclusion.</span>
+</li>
+</ul>
+<!-- The Takeaway Banner -->
+<div class="bg-navy text-white p-8 organic-border shadow-handdrawn-seafoam relative mt-8">
+<!-- Annotation -->
+<div class="absolute -top-6 -right-2 font-hand text-2xl text-seafoam -rotate-6">
+The bottom line!
+</div>
+<h3 class="font-serif text-2xl font-bold mb-4 flex items-center gap-2">
+<i class="fa-solid fa-lightbulb text-darkpink"></i> The takeaway
+</h3>
+<p class="text-mist opacity-90 leading-relaxed text-lg">
+This project turns linguistic and contextual observations into executable heuristics—showing how language expertise can contribute to practical automation without overstating what the system can prove.
+</p>
+</div>
+</div>
+<!-- Right: Sidebar / Project Details -->
+<div class="lg:w-1/3 relative lg:-mt-24 z-20">
+<div class="bg-mist p-8 organic-border-pink shadow-handdrawn sticky top-28">
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 bg-darkpink text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+FACT SHEET
+</div>
+<h3 class="font-serif text-2xl font-bold text-navy mb-6">Project details</h3>
+<div class="space-y-5">
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Project type</h4>
+<p class="text-sm text-navy font-medium">Independent personal automation</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Role</h4>
+<p class="text-sm text-navy font-medium">Problem analysis, heuristic design and scripting</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Technologies</h4>
+<p class="text-sm text-navy font-medium leading-relaxed">
+Google Apps Script · JavaScript · Gmail
+</p>
+</div>
+<div class="border-b border-seafoam border-opacity-50 pb-3">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Approach</h4>
+<p class="text-sm text-navy font-medium leading-relaxed">
+Linguistic and contextual heuristics · Regular expressions · Metadata checks · Weighted scoring
+</p>
+</div>
+<div class="pb-1">
+<h4 class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Documented state</h4>
+<p class="text-sm text-gray-600">V3 script available; alias correction documented separately; deployment status to confirm</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION (CTA) -->
+<section class="bg-white py-20 px-6 lg:px-12 border-t-2 border-dashed border-seafoam relative overflow-hidden">
+<!-- Abstract decor in bg -->
+<div class="absolute -left-10 -bottom-10 w-64 h-64 border border-seafoam opacity-20 rounded-full"></div>
+<div class="absolute right-10 top-10 w-32 h-32 bg-pink-50 rounded-full opacity-50"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-navy mb-8">Ready to streamline your processes?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="organic-border-pink bg-darkpink text-white px-8 py-4 font-bold text-base hover:bg-mist hover:text-darkpink transition-colors shadow-handdrawn-pink" href="#contact">
+<i class="fa-regular fa-comments mr-2"></i> Discuss a language or workflow challenge
+</a>
+<a class="organic-border bg-white text-navy px-8 py-4 font-bold text-base hover:bg-mist transition-colors shadow-handdrawn" href="./">
+Explore other technical projects <i class="fa-solid fa-arrow-right ml-2"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- FOOTER (Simplified version) -->
+<section class="bg-navy text-white py-12 px-6 lg:px-12 page-contact-callout" id="contact">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border border-mist flex items-center justify-center">
+<span class="font-serif text-sm font-bold text-mist">SN</span>
+</div>
+<span class="text-sm font-medium text-mist">Stéphanie Nadeau</span>
+</div>
+<div class="flex gap-6 text-sm text-sky">
+<a class="hover:text-seafoam transition-colors" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
+<a class="hover:text-seafoam transition-colors" href="https://linkedin.com/in/s-nadeau" target="_blank">LinkedIn</a>
+</div>
+<div class="text-xs text-gray-400">©<span class="current-year"></span>Stéphanie Nadeau.</div>
+</div>
+</section>
+<footer class="site-footer" id="site-footer"><div class="site-footer__inner"><div class="site-footer__identity"><a class="site-footer__brand" href="../../index.html">Stéphanie Nadeau</a><p>Canadian French language expertise, supported by technology.</p><a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a></div><nav aria-label="Footer navigation" class="site-footer__nav"><a href="../../index.html">Home</a><a href="../../services/">Services</a><a href="../linguistic-case-studies/">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a href="./">Tech &amp; AI</a><a href="../../profile/">Profile &amp; CV</a><a href="../../contact/">Contact</a></nav><div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></div></div><div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer><script defer="True" src="../../assets/js/site.js"></script></body>
+</html>
