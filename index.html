@@ -1,248 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Stéphanie Nadeau — Bilingual Linguist &amp; Localization Specialist</title>
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stéphanie Nadeau - Language that works in context</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config for Custom Palette & Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkpink: '#D14D72',
+                        navy: '#13293D',
+                        bluegreen: '#087E8B',
+                        turquoise: '#149E92',
+                        seafoam: '#83E0D0',
+                        mist: '#EAF4F8',
+                        sky: '#5B96BD',
+                        ultramarine: '#304FFE',
+                        white: '#FFFFFF'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        hand: ['Caveat', 'cursive'],
+                    },
+                    boxShadow: {
+                        'handdrawn': '4px 4px 0px 0px rgba(19, 41, 61, 1)',
+                        'handdrawn-pink': '4px 4px 0px 0px rgba(209, 77, 114, 1)',
+                        'handdrawn-seafoam': '4px 4px 0px 0px rgba(131, 224, 208, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAFCFD; /* Very light mist */
+            color: #13293D; /* Navy */
+            overflow-x: hidden;
+        }
+
+        /* Organic, hand-drawn looking borders */
+        .organic-border {
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            border: 2px solid #13293D;
+        }
+        
+        .organic-border-pink {
+            border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+            border: 2px solid #D14D72;
+        }
+
+        /* Floating animations for collage elements */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        
+        @keyframes float-reverse {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(15px) rotate(-3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .bubble-1 { animation: float 6s ease-in-out infinite; }
+        .bubble-2 { animation: float-reverse 7s ease-in-out infinite; }
+        .bubble-3 { animation: float 5s ease-in-out infinite; }
+        .bubble-4 { animation: float-reverse 8s ease-in-out infinite; }
+
+        /* Scribble underline effect */
+        .scribble-underline {
+            position: relative;
+            display: inline-block;
+        }
+        .scribble-underline::after {
+            content: '';
+            position: absolute;
+            width: 105%;
+            height: 12px;
+            bottom: -2px;
+            left: -2%;
+            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg"><path d="M0,5 Q20,10 40,3 T60,8 T80,2 T100,6" fill="none" stroke="%23D14D72" stroke-width="2" stroke-linecap="round"/></svg>') no-repeat;
+            background-size: 100% 100%;
+            z-index: -1;
+        }
+    </style>
 </head>
+<body class="antialiased">
 
-<body><a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#home" aria-label="Stéphanie Nadeau — Home">
-        <img src="assets/img/assets/img/assets/logo-horizontal.png" width="900" height="230" alt="Stéphanie Nadeau, Language Services">
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="services.html">Services</a>
-        <a href="#assignments">Portfolio</a>
-        <a href="#technology">Technology &amp; AI</a>
-        <a href="#technical-project">Projects</a>
-        <a href="#profile">Profile</a>
-        <span class="nav-unavailable" aria-disabled="true" title="The approved CV PDF has not been supplied">CV</span>
-        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-inner page-wrap">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> STÉPHANIE NADEAU</p>
-          <h1 id="hero-title">Language that<br>works <em>in context.</em></h1>
-          <p class="hero-role">Bilingual Linguist &amp; Localization Specialist</p>
-          <p class="hero-lede">English-to-Canadian French translation, localization, editing and linguistic quality assurance.</p>
-          <p class="hero-description">I help teams deliver content that is accurate, natural and consistent—from technical documentation and digital experiences to institutional, commercial and editorial material. My approach combines linguistic judgment, terminology control and structured quality checks, with close attention to the context in which each text will be used.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#services">Explore language services <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#assignments">View selected assignments <span aria-hidden="true">→</span></a>
-          </div>
+    <!-- Navigation -->
+    <nav class="w-full py-6 px-6 lg:px-12 flex justify-between items-center bg-white border-b border-mist sticky top-0 z-50">
+        <div class="flex items-center gap-3 cursor-pointer">
+            <!-- Simple Logo Representation -->
+            <div class="w-12 h-12 rounded-full border-2 border-navy flex items-center justify-center relative overflow-hidden bg-mist">
+                <span class="font-serif text-2xl font-bold text-navy relative z-10">SN</span>
+                <div class="absolute w-full h-[1px] bg-turquoise top-1/2"></div>
+                <div class="absolute h-full w-[1px] bg-turquoise left-1/2"></div>
+            </div>
+            <div class="hidden sm:block">
+                <h1 class="font-serif font-bold text-xl leading-tight">Stéphanie Nadeau</h1>
+                <p class="text-xs tracking-widest text-sky uppercase">Language Services</p>
+            </div>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <img src="assets/img/assets/img/assets/hero-globe-network.webp" width="1116" height="1024" alt="" fetchpriority="high">
-          <span class="hero-star" aria-hidden="true">✳</span>
+        <div class="hidden md:flex gap-8 items-center font-medium text-sm">
+            <a href="#" class="hover:text-darkpink transition-colors">Services</a>
+            <a href="#" class="hover:text-darkpink transition-colors">Portfolio</a>
+            <a href="#" class="hover:text-darkpink transition-colors">Methodology</a>
+            <a href="#" class="hover:text-darkpink transition-colors">Tech & AI</a>
         </div>
-      </div>
-    </section>
-
-    <section class="expertise page-wrap" id="profile" aria-labelledby="expertise-title">
-      <div class="expertise-grid">
-        <div class="expertise-heading">
-          <p class="eyebrow">LANGUAGE EXPERTISE</p>
-          <h2 id="expertise-title">Language expertise,<br><em>beyond the sentence</em></h2>
-          <p class="expertise-note">A word rarely stands alone</p>
-        </div>
-        <div class="flourish-slot" aria-hidden="true">
-          <img class="expertise-flourish" src="assets/img/assets/img/assets/language-expertise-lines.webp" width="600" height="900" alt="" loading="lazy" decoding="async">
-        </div>
-        <div class="expertise-copy">
-          <p>The meaning of a text depends on the document, the audience, the task, the terminology already in use and the constraints of the medium. I look at those relationships as part of the work—not as details to address after the translation is complete.</p>
-          <p>That perspective informs my work in translation and localization, comparative revision, proofreading, machine translation post-editing (MTPE), linguistic QA and terminology. Whether I am reviewing a single deliverable or a large set of related content, the aim is the same: to make the language fit its purpose and hold together as a whole.</p>
-        </div>
-      </div>
-      <div class="expertise-ribbon" aria-label="A connected view of language">
-        <span>Audience</span><i aria-hidden="true">×</i><span>Context</span><i aria-hidden="true">×</i><span>Terminology</span><i aria-hidden="true">×</i><span>Purpose</span>
-      </div>
-    </section>
-
-    <section class="services-section" id="services" aria-labelledby="services-title">
-      <div class="page-wrap">
-        <div class="section-heading services-heading">
-          <div>
-            <p class="eyebrow">LANGUAGE SERVICES</p>
-            <h2 id="services-title">From first translation<br>to final quality review</h2>
-          </div>
-          <p class="services-note">From first translation to final quality review, I support language projects that require accuracy, consistency and careful adaptation for Canadian French audiences.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card service-card-pink">
-            <div class="service-mark"><span>01</span><b aria-hidden="true">↔</b></div>
-            <h3>Translation &amp; localization</h3>
-            <p>Technical, digital, institutional, commercial and editorial content adapted to its audience and context.</p>
-            <a class="card-link" href="mailto:snadeau.tran@gmail.com?subject=Translation%20and%20localization%20inquiry" aria-label="Ask about Translation and localization">Ask about this service <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="service-card service-card-seafoam">
-            <div class="service-mark"><span>02</span><b aria-hidden="true">¶</b></div>
-            <h3>Editing, comparative revision &amp; proofreading</h3>
-            <p>A close review of meaning, language, style and consistency against the source, brief or established conventions.</p>
-            <a class="card-link" href="mailto:snadeau.tran@gmail.com?subject=Editing%20and%20revision%20inquiry" aria-label="Ask about Editing, comparative revision and proofreading">Ask about this service <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="service-card service-card-sky">
-            <div class="service-mark"><span>03</span><b aria-hidden="true">✓</b></div>
-            <h3>MTPE &amp; linguistic QA</h3>
-            <p>Post-editing and structured checks for terminology, source–target alignment, formatting and other project-specific requirements.</p>
-            <a class="card-link" href="mailto:snadeau.tran@gmail.com?subject=MTPE%20and%20linguistic%20QA%20inquiry" aria-label="Ask about MTPE and linguistic QA">Ask about this service <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="service-card service-card-mist">
-            <div class="service-mark"><span>04</span><b aria-hidden="true">≡</b></div>
-            <h3>Terminology &amp; editorial control</h3>
-            <p>Terminology resources, style guidance and repeatable checks that help keep related content consistent.</p>
-            <a class="card-link" href="mailto:snadeau.tran@gmail.com?subject=Terminology%20and%20editorial%20control%20inquiry" aria-label="Ask about Terminology and editorial control">Ask about this service <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="service-card service-card-turquoise">
-            <div class="service-mark"><span>05</span><b aria-hidden="true">✳</b></div>
-            <h3>Transcreation &amp; content adaptation</h3>
-            <p>Careful adaptation of tone, intent and reader experience across formats and markets.</p>
-            <a class="card-link" href="mailto:snadeau.tran@gmail.com?subject=Transcreation%20and%20content%20adaptation%20inquiry" aria-label="Ask about Transcreation and content adaptation">Ask about this service <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="service-card service-card-navy">
-            <div class="service-mark"><span>06</span><b aria-hidden="true">⌗</b></div>
-            <h3>Data Annotation</h3>
-            <p>Entry-level text and data labelling, guided by explicit instructions.</p>
-            <a class="card-link" href="mailto:snadeau.tran@gmail.com?subject=Data%20Annotation%20inquiry" aria-label="Ask about Data Annotation">Ask about this service <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-        <a class="section-link" href="#services">Explore all language services <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="assignments page-wrap" id="assignments" aria-labelledby="assignments-title">
-      <div class="section-heading assignments-heading">
         <div>
-          <p class="eyebrow">SELECTED LINGUISTIC ASSIGNMENTS</p>
-          <h2 id="assignments-title">Different contexts.<br><em>One careful practice.</em></h2>
+            <a href="#contact" class="bg-darkpink text-white px-5 py-2.5 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-md flex items-center gap-2">
+                <i class="fa-regular fa-envelope"></i> Get in touch
+            </a>
         </div>
-          <p class="assignments-note">My language work spans automotive, industrial, institutional, media, medical technology, financial, web and editorial contexts. The examples below illustrate different aspects of that practice.</p>
+    </nav>
+
+    <!-- HERO SECTION (Collage Style) -->
+    <section class="relative pt-16 pb-24 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-8 overflow-hidden">
+        
+        <!-- Left: Text content -->
+        <div class="lg:w-1/2 relative z-10">
+            <!-- Hand-drawn annotation -->
+            <div class="absolute -top-10 -left-6 transform -rotate-12 text-darkpink font-hand text-2xl hidden md:block">
+                Beyond the sentence... <i class="fa-solid fa-arrow-turn-down ml-1"></i>
+            </div>
+
+            <h2 class="font-serif text-5xl lg:text-7xl font-bold text-navy leading-tight mb-6 relative">
+                Language that <br>
+                works in <span class="scribble-underline">context.</span>
+            </h2>
+            
+            <h3 class="text-xl font-semibold text-bluegreen mb-4">Bilingual Linguist & Localization Specialist</h3>
+            <p class="text-lg text-gray-700 mb-6 border-l-4 border-mist pl-4">
+                English-to-Canadian French translation, localization, editing and linguistic quality assurance.
+            </p>
+            <p class="text-base text-gray-600 mb-8 leading-relaxed max-w-lg">
+                I help teams deliver content that is accurate, natural and consistent—from technical documentation and digital experiences to institutional, commercial and editorial material. My approach combines linguistic judgment, terminology control and structured quality checks, with close attention to the context in which each text will be used.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="#services" class="organic-border bg-navy text-white px-6 py-3 font-medium hover:bg-bluegreen transition-all shadow-handdrawn">
+                    Explore language services <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#portfolio" class="organic-border-pink bg-white text-darkpink px-6 py-3 font-medium hover:bg-mist transition-all shadow-handdrawn-pink">
+                    View selected assignments
+                </a>
+            </div>
         </div>
-        <div class="assignment-grid">
-          <article class="assignment-card">
-            <img src="assets/img/assets/img/assets/ford-build-and-price.webp" width="506" height="507" alt="Illustration of a vehicle configuration experience" loading="lazy">
-            <div class="assignment-copy"><p class="assignment-type">Automotive localization <span>·</span> 50,284 words</p><h3>Ford — Build &amp; Price</h3><p>Localized an interactive vehicle-configuration experience into Canadian French, maintaining consistency across filters, specifications, pricing and legal disclosures.</p></div>
-        </article>
-        <article class="assignment-card">
-          <img src="assets/img/assets/img/assets/public-works-gsc.webp" width="504" height="507" alt="Illustration of public buildings and civic services" loading="lazy">
-          <div class="assignment-copy"><p class="assignment-type">Institutional translation <span>·</span> 14 mandates / 101,450 words</p><h3>Public Works / GSC</h3><p>Applied official terminology and consulted TERMIUM Plus to support consistency across related deliveries.</p></div>
-        </article>
-        <article class="assignment-card">
-          <img src="assets/img/assets/img/assets/rem-international-mechanics.webp" width="510" height="507" alt="Illustration of industrial mechanics and transport" loading="lazy">
-          <div class="assignment-copy"><p class="assignment-type">Industrial translation &amp; comparative editing <span>·</span> 51,187 words</p><h3>R.E.M. International Mechanics</h3><p>Maintained terminology and nomenclature across related industrial product families.</p></div>
-        </article>
-        <article class="assignment-card">
-          <img src="assets/img/assets/img/assets/bell-media.webp" width="506" height="509" alt="Illustration of audiovisual and media production" loading="lazy">
-          <div class="assignment-copy"><p class="assignment-type">MTPE &amp; linguistic QA <span>·</span> 16,293 words</p><h3>Bell Media</h3><p>Post-edited operational call-centre workflows with glossary, character-limit and source–target checks.</p></div>
-        </article>
-        <article class="assignment-card">
-          <img src="assets/img/assets/img/assets/federation-adventiste-du-quebec.webp" width="504" height="509" alt="Illustration of books and a literary editorial project" loading="lazy">
-          <div class="assignment-copy"><p class="assignment-type">Editorial translation <span>·</span> 62,196 words</p><h3>Fédération Adventiste du Québec</h3><p>Translated a book into Canadian French while maintaining narrative voice, tone and terminological consistency.</p></div>
-        </article>
-        <article class="assignment-card">
-          <img src="assets/img/assets/img/assets/nakanishi.webp" width="510" height="509" alt="Illustration of dental and oral surgery instruments" loading="lazy">
-          <div class="assignment-copy"><p class="assignment-type">Medical technology <span>·</span> 14,699 words</p><h3>Nakanishi</h3><p>Translated dental and oral surgery instrument documentation, maintaining consistency across components, safety warnings and user instructions.</p></div>
-        </article>
-      </div>
-      <div class="assignment-links">
-        <a class="text-link" href="#assignments">View the linguistic portfolio <span aria-hidden="true">↗</span></a>
-        <p>Automotive <span>·</span> Industrial <span>·</span> Institutional <span>·</span> Media <span>·</span> Medical technology <span>·</span> Financial <span>·</span> Web <span>·</span> Editorial</p>
-      </div>
+
+        <!-- Right: Collage / Visuals -->
+        <div class="lg:w-1/2 relative h-[400px] sm:h-[500px] w-full flex justify-center items-center">
+            <!-- Abstract background shape representing the world/compass -->
+            <div class="absolute w-80 h-80 rounded-full bg-mist opacity-50 border border-seafoam border-dashed animate-[spin_60s_linear_infinite]"></div>
+            <div class="absolute w-64 h-64 rounded-full bg-seafoam opacity-20"></div>
+
+            <!-- Portrait Placeholder (Replace with actual photo of Stephanie) -->
+            <div class="relative z-10 w-64 h-80 bg-white organic-border shadow-handdrawn overflow-hidden p-2">
+                <img src="https://placehold.co/400x500/13293D/EAF4F8?text=St%C3%A9phanie\nPortrait" alt="Stéphanie Nadeau" class="w-full h-full object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-500">
+            </div>
+
+            <!-- Floating Collage Elements -->
+            <div class="bubble-1 absolute top-10 left-10 lg:left-0 bg-bluegreen text-white text-sm font-medium py-1 px-3 rounded-t-xl rounded-br-xl shadow-md">Hello</div>
+            <div class="bubble-2 absolute top-24 right-12 lg:right-4 bg-darkpink text-white text-sm font-medium py-1 px-3 rounded-t-xl rounded-bl-xl shadow-md">Bonjour</div>
+            <div class="bubble-3 absolute bottom-24 left-16 lg:left-8 bg-turquoise text-white text-sm font-medium py-1 px-3 rounded-b-xl rounded-tr-xl shadow-md">Allô</div>
+            <div class="bubble-4 absolute bottom-12 right-20 lg:right-12 bg-sky text-white text-sm font-medium py-1 px-3 rounded-b-xl rounded-tl-xl shadow-md">Hi</div>
+
+            <!-- Hand-drawn words -->
+            <div class="absolute top-0 right-0 font-hand text-2xl text-navy rotate-6 text-right leading-tight hidden sm:block">
+                <span class="text-sky">Languages</span><br>
+                <span class="text-bluegreen">Cultures</span><br>
+                <span class="text-darkpink">Ideas</span><br>
+                Solutions
+            </div>
+        </div>
     </section>
 
-    <section class="approach-section" id="approach" aria-labelledby="approach-title">
-      <div class="approach-inner page-wrap">
-        <div class="approach-heading">
-          <p class="eyebrow">METHOD &amp; QUALITY</p>
-          <h2 id="approach-title">A structured approach<br><em>to quality</em></h2>
-            <p class="approach-note">Good linguistic work depends on more than a final spell-check</p>
+    <!-- EXPERTISE SECTION -->
+    <section class="bg-mist py-16 px-6 lg:px-12 border-y-2 border-dashed border-seafoam relative">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-serif text-3xl font-bold text-navy mb-4 relative inline-block">
+                Language expertise, beyond the sentence
+                <i class="fa-solid fa-quote-left absolute -top-4 -left-6 text-3xl text-seafoam opacity-50"></i>
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                A word rarely stands alone. Its meaning depends on the document, the audience, the task, the terminology already in use and the constraints of the medium. I look at those relationships as part of the work—not as details to address after the translation is complete.
+            </p>
+            <p class="text-gray-600">
+                That perspective informs my work in translation and localization, comparative revision, proofreading, machine translation post-editing (MTPE), linguistic QA and terminology. Whether I am reviewing a single deliverable or a large set of related content, the aim is the same: to make the language fit its purpose and hold together as a whole.
+            </p>
         </div>
-        <div class="approach-copy">
-          <p>Depending on the assignment, I clarify the intended use and constraints, establish or verify terminology, review the content in its document or interface context, and carry out quality checks suited to the brief. The process is adapted to the work rather than imposed as a one-size-fits-all formula.</p>
-          <p>I work with computer-assisted translation tools, translation memories, terminology resources and quality-control features, while keeping human linguistic judgment central to decisions that require context.</p>
-        </div>
-      </div>
     </section>
 
-    <section class="technology-section" id="technology" aria-labelledby="technology-title">
-      <div class="technology-inner page-wrap">
-        <div class="technology-heading">
-          <p class="eyebrow">COMPLEMENTARY EXPERTISE</p>
-          <h2 id="technology-title">Language expertise,<br><em>supported by technology</em></h2>
+    <!-- SERVICES CARDS SECTION -->
+    <section id="services" class="py-20 px-6 lg:px-12 max-w-7xl mx-auto relative">
+        <!-- Decoration -->
+        <div class="absolute top-10 right-10 text-darkpink font-hand text-3xl rotate-[-10deg] hidden md:block">
+            Tailored solutions! <i class="fa-solid fa-heart text-sm"></i>
         </div>
-        <div class="technology-copy">
-          <p>My complementary work in document processing, workflow automation, Web technologies and AI-assisted instruction design gives me a practical view of how content moves through tools and systems. Independent projects explore ways to structure instructions, organize information and make recurring workflows more traceable.</p>
-          <p>This technical work strengthens my understanding of language systems; it remains a complementary area alongside my established language-services practice. My AI-oriented projects are independent and internal projects, not commercial AI-evaluation assignments.</p>
+
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-4xl font-bold text-navy mb-4">Language services</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">From first translation to final quality review, I support language projects that require accuracy, consistency and careful adaptation for Canadian French audiences.</p>
         </div>
-        <article class="featured-project" id="technical-project" aria-labelledby="project-title">
-          <div class="project-copy">
-            <p class="eyebrow">PERSONAL PROJECT <span>·</span> APPLIED LINGUISTICS · WORKFLOW AUTOMATION</p>
-            <h3 id="project-title">Turning Linguistic Clues into an Email-Triage Workflow</h3>
-            <p>A personal Gmail automation that translates recurring linguistic, contextual and sender-related clues into explicit rules and a weighted score.</p>
-            <p>Built with Google Apps Script and JavaScript, the workflow applies configurable checks to help flag low-credibility or low-relevance solicitations for automated handling.</p>
-            <a class="text-link" href="#technical-project">Explore the project <span aria-hidden="true">→</span></a>
-          </div>
-          <figure class="project-art"><img src="assets/img/assets/img/assets/email-triage-workflow.webp" width="1100" height="1100" alt="Illustrated email triage sends messages through a filter into folders for alerts, people, calendars, labels and deletion." loading="lazy" decoding="async"></figure>
-        </article>
-        <div class="technology-links"><a class="text-link" href="#technology">Explore technologies <span aria-hidden="true">↗</span></a><a class="text-link" href="#technical-project">View technical and AI projects <span aria-hidden="true">↗</span></a></div>
-      </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            
+            <!-- Service 1 -->
+            <div class="bg-white p-6 organic-border shadow-handdrawn hover:-translate-y-1 transition-transform relative group">
+                <div class="w-12 h-12 bg-mist rounded-full flex items-center justify-center text-bluegreen text-xl mb-4 group-hover:bg-bluegreen group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-navy mb-2">Translation & localization</h3>
+                <p class="text-sm text-gray-600">Technical, digital, institutional, commercial and editorial content adapted to its audience and context.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-6 organic-border-pink shadow-handdrawn-pink hover:-translate-y-1 transition-transform relative group lg:-mt-4">
+                <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-darkpink text-xl mb-4 group-hover:bg-darkpink group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-navy mb-2">Editing, comparative revision & proofreading</h3>
+                <p class="text-sm text-gray-600">A close review of meaning, language, style and consistency against the source, brief or established conventions.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-6 organic-border shadow-handdrawn hover:-translate-y-1 transition-transform relative group">
+                <div class="w-12 h-12 bg-mist rounded-full flex items-center justify-center text-bluegreen text-xl mb-4 group-hover:bg-bluegreen group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-navy mb-2">MTPE & linguistic QA</h3>
+                <p class="text-sm text-gray-600">Post-editing and structured checks for terminology, source–target alignment, formatting and other project-specific requirements.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white p-6 organic-border shadow-handdrawn hover:-translate-y-1 transition-transform relative group">
+                <div class="w-12 h-12 bg-mist rounded-full flex items-center justify-center text-bluegreen text-xl mb-4 group-hover:bg-bluegreen group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-navy mb-2">Terminology & editorial control</h3>
+                <p class="text-sm text-gray-600">Terminology resources, style guidance and repeatable checks that help keep related content consistent.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-white p-6 organic-border-pink shadow-handdrawn-pink hover:-translate-y-1 transition-transform relative group lg:-mt-4">
+                <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center text-darkpink text-xl mb-4 group-hover:bg-darkpink group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-masks-theater"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-navy mb-2">Transcreation & content adaptation</h3>
+                <p class="text-sm text-gray-600">Careful adaptation of tone, intent and reader experience across formats and markets.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-white p-6 organic-border shadow-handdrawn hover:-translate-y-1 transition-transform relative group">
+                <div class="w-12 h-12 bg-mist rounded-full flex items-center justify-center text-bluegreen text-xl mb-4 group-hover:bg-bluegreen group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-navy mb-2">Consulting & strategy</h3>
+                <p class="text-sm text-gray-600">Strategic guidance on multilingual content creation, workflow optimization, and Canadian market readiness.</p>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#" class="text-navy font-semibold underline decoration-2 decoration-seafoam hover:text-bluegreen transition-colors">
+                Explore all language services <i class="fa-solid fa-arrow-right-long ml-1"></i>
+            </a>
+        </div>
     </section>
 
-    <section class="testimonials page-wrap" id="testimonials" aria-labelledby="testimonials-title">
-      <div class="section-heading testimonials-heading">
-        <div><p class="eyebrow">TESTIMONIALS</p><h2 id="testimonials-title">What collaborators say</h2></div>
-      </div>
-      <div class="testimonial-grid">
-        <figure class="testimonial-card"><span class="quote-mark" aria-hidden="true">“</span><blockquote>“She has a genuine gift for writing, capturing the essence of a text while respecting its core message. She consistently meets editorial requirements, and production schedules and deadlines hold no secrets for her.”</blockquote><figcaption>Caroline Bergeron <span>Publisher, Éditions de Mortagne</span></figcaption></figure>
-        <figure class="testimonial-card"><span class="quote-mark" aria-hidden="true">“</span><blockquote>“She is officially recognized as one of our most trusted proofreaders. We rely on her to screen and evaluate the final work of other French Canadian linguists for our team.”</blockquote><figcaption>Maga Zavarse <span>Communications Associate, MotaWord</span></figcaption></figure>
-        <figure class="testimonial-card"><span class="quote-mark" aria-hidden="true">“</span><blockquote>“Her professionalism, precise choice of words, and perfect understanding of our expectations make her a true specialist. I recommend her without hesitation.”</blockquote><figcaption>Jay Chevery <span>TV Host &amp; Public Figure</span></figcaption></figure>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="contact-inner page-wrap">
-        <div class="contact-copy">
-          <p class="eyebrow"><span class="location-dot" aria-hidden="true"></span> MONTRÉAL, QUÉBEC, CANADA</p>
-          <h2 id="contact-title">Let’s talk about<br><em>your project.</em></h2>
-          <p>Looking for Canadian French language support? Share a little about your content, audience, format, approximate volume and timeline. I can help identify the type of linguistic service and level of review that best fit the assignment.</p>
-          <div class="contact-actions"><a class="button button-light" href="mailto:snadeau.tran@gmail.com">Get in touch <span aria-hidden="true">↗</span></a><a class="contact-secondary" href="mailto:snadeau.tran@gmail.com">Email Stéphanie</a></div>
-          <div class="contact-details"><a href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a><span>Montréal, Québec, Canada</span><a href="https://www.linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer">LinkedIn: linkedin.com/in/s-nadeau <span aria-hidden="true">↗</span></a></div>
+    <!-- SELECTED ASSIGNMENTS (Carnet de projets) -->
+    <section id="portfolio" class="bg-navy py-20 px-6 lg:px-12 relative text-white">
+        <!-- Doodles in background -->
+        <div class="absolute top-10 left-10 font-hand text-seafoam text-3xl opacity-50 rotate-12">
+            Concrete impact.
         </div>
-        <div class="contact-art"><img src="assets/img/assets/img/assets/cta-portrait-globe.webp" width="1536" height="1024" alt="Illustration of Stéphanie Nadeau alongside a globe and language motifs" loading="eager" fetchpriority="high"></div>
-      </div>
-    </section>
-  </main>
+        <div class="absolute bottom-10 right-10 font-hand text-darkpink text-3xl opacity-50 -rotate-12">
+            Diverse sectors.
+        </div>
 
-  <footer class="site-footer">
-    <div class="footer-main page-wrap">
-      <a class="footer-mark" href="#home" aria-label="Back to top"><img src="assets/img/assets/img/assets/logo-emblem-light.png" width="512" height="512" alt=""></a>
-      <div class="footer-name"><strong>Stéphanie Nadeau</strong><span>Bilingual Linguist &amp; Localization Specialist</span></div>
-      <p class="footer-signoff">Language that works<br><em>in context.</em></p>
-      <nav class="footer-nav" aria-label="Footer navigation"><a href="#home">Home</a><a href="services.html">Services</a><a href="#assignments">Portfolio</a><a href="#technology">Technology &amp; AI</a><a href="#technical-project">Projects</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav>
-    </div>
-    <div class="footer-bottom page-wrap"><span>Stéphanie Nadeau · Montréal, Québec, Canada</span><a href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a><a href="https://www.linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span class="cv-note">CV PDF not supplied; no download link is shown.</span></div>
-  </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="md:w-2/3">
+                    <h2 class="font-serif text-4xl font-bold text-white mb-4">Selected assignments</h2>
+                    <p class="text-mist opacity-90 max-w-xl">My language work spans automotive, industrial, institutional, media, medical technology, financial, web and editorial contexts. The examples below illustrate different aspects of that practice.</p>
+                </div>
+                <div class="mt-6 md:mt-0 flex gap-4">
+                    <a href="#" class="text-seafoam font-semibold hover:text-white transition-colors text-sm">
+                        View linguistic portfolio <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Assignments Grid (Restricted to first 4 as requested) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-white text-navy p-2 organic-border shadow-[4px_4px_0px_0px_#83E0D0] flex flex-col sm:flex-row gap-4 hover:scale-[1.01] transition-transform">
+                    <div class="w-full sm:w-1/3 h-40 sm:h-auto bg-mist rounded-sm overflow-hidden">
+                         <img src="https://placehold.co/300x400/EAF4F8/087E8B?text=Ford\nInteractive" alt="Ford Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-full sm:w-2/3 p-4 flex flex-col justify-center">
+                        <div class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Automotive localization</div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Ford — Build & Price</h3>
+                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">Localized an interactive vehicle-configuration experience into Canadian French, maintaining consistency across filters, specifications, pricing and legal disclosures.</p>
+                        <div class="text-xs font-hand text-darkpink font-bold bg-pink-50 inline-block px-2 py-1 rounded-sm w-max transform rotate-1 border border-darkpink">
+                            50,284 words
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white text-navy p-2 organic-border shadow-[4px_4px_0px_0px_#83E0D0] flex flex-col sm:flex-row gap-4 hover:scale-[1.01] transition-transform">
+                    <div class="w-full sm:w-1/3 h-40 sm:h-auto bg-mist rounded-sm overflow-hidden">
+                         <img src="https://placehold.co/300x400/EAF4F8/087E8B?text=Institutional\nGov" alt="Public Works Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-full sm:w-2/3 p-4 flex flex-col justify-center">
+                        <div class="text-xs font-bold text-sky uppercase tracking-wider mb-1">Institutional translation</div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Public Works / GSC</h3>
+                        <p class="text-sm text-gray-600 mb-3 leading-relaxed">Applied official terminology and consulted TERMIUM Plus to support consistency across related deliveries.</p>
+                        <div class="text-xs font-hand text-darkpink font-bold bg-pink-50 inline-block px-2 py-1 rounded-sm w-max transform -rotate-1 border border-darkpink">
+                            14 mandates / 101,450 words
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- METHODOLOGY & TECHNOLOGY (Collage Layout) -->
+    <section class="py-20 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-16 items-start">
+            
+            <!-- Left: Methodology -->
+            <div class="lg:w-1/2 relative">
+                <h2 class="font-serif text-3xl font-bold text-navy mb-6">A structured approach to quality</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Good linguistic work depends on more than a final spell-check. Depending on the assignment, I clarify the intended use and constraints, establish or verify terminology, review the content in its document or interface context, and carry out quality checks suited to the brief. The process is adapted to the work rather than imposed as a one-size-fits-all formula.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-8">
+                    I work with computer-assisted translation tools, translation memories, terminology resources and quality-control features, while keeping human linguistic judgment central to decisions that require context.
+                </p>
+                
+                <!-- Drawn Path Concept -->
+                <div class="relative pl-8 border-l-2 border-dashed border-sky space-y-6">
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-white border-2 border-sky w-5 h-5 rounded-full"></div>
+                        <h4 class="font-bold text-navy">Clarify</h4>
+                        <p class="text-sm text-gray-500">Context, use & constraints</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-white border-2 border-turquoise w-5 h-5 rounded-full"></div>
+                        <h4 class="font-bold text-navy">Verify</h4>
+                        <p class="text-sm text-gray-500">Terminology & resources</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] bg-darkpink w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]"><i class="fa-solid fa-check"></i></div>
+                        <h4 class="font-bold text-navy">Review</h4>
+                        <p class="text-sm text-gray-500">Document/interface context</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Tech & AI Project Card -->
+            <div class="lg:w-1/2 relative">
+                <div class="absolute -top-6 -right-4 font-hand text-darkpink text-2xl rotate-12 z-10">
+                    <i class="fa-solid fa-bolt text-yellow-500 mr-1"></i> Automation!
+                </div>
+                
+                <h2 class="font-serif text-3xl font-bold text-navy mb-6">Language expertise, supported by technology</h2>
+                <p class="text-gray-700 mb-8 leading-relaxed">
+                    My complementary work in document processing, workflow automation, Web technologies and AI-assisted instruction design gives me a practical view of how content moves through tools and systems.
+                </p>
+
+                <!-- Technical Project Card Block -->
+                <div class="bg-mist p-8 organic-border shadow-handdrawn-seafoam relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-seafoam text-navy text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        FEATURED TECHNICAL PROJECT
+                    </div>
+                    
+                    <h3 class="font-serif text-2xl font-bold text-navy mt-4 mb-3">Turning Linguistic Clues into an Email-Triage Workflow</h3>
+                    <p class="text-sm text-gray-700 mb-6 border-l-2 border-bluegreen pl-3">
+                        A personal Gmail automation that translates recurring linguistic, contextual and sender-related clues into explicit rules and a weighted score.
+                    </p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        Built with Google Apps Script and JavaScript, the workflow applies configurable checks to help flag low-credibility or low-relevance solicitations for automated handling.
+                    </p>
+                    
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-white text-bluegreen border border-bluegreen text-xs font-bold px-2 py-1 rounded-sm transform -rotate-1">Applied linguistics</span>
+                        <span class="bg-white text-darkpink border border-darkpink text-xs font-bold px-2 py-1 rounded-sm transform rotate-1">Heuristic detection</span>
+                        <span class="bg-white text-sky border border-sky text-xs font-bold px-2 py-1 rounded-sm">Workflow automation</span>
+                    </div>
+                    
+                    <a href="#" class="inline-flex items-center text-navy font-bold hover:text-darkpink transition-colors">
+                        Explore the project <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+                
+                <div class="mt-6 flex justify-end gap-4 text-sm">
+                    <a href="#" class="text-bluegreen font-semibold hover:underline">Explore technologies</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="#" class="text-bluegreen font-semibold hover:underline">View technical and AI projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="bg-white py-20 px-6 lg:px-12 border-t border-mist">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-serif text-3xl font-bold text-center text-navy mb-16">What collaborators say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Quote 1 -->
+                <div class="relative bg-mist p-8 organic-border">
+                    <i class="fa-solid fa-quote-left absolute -top-4 -left-2 text-4xl text-darkpink opacity-50"></i>
+                    <p class="text-sm text-gray-700 italic mb-6 leading-relaxed">
+                        “She has a genuine gift for writing, capturing the essence of a text while respecting its core message. She consistently meets editorial requirements, and production schedules and deadlines hold no secrets for her.”
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-navy text-sm">Caroline Bergeron</h4>
+                        <p class="text-xs text-sky uppercase">Publisher, Éditions de Mortagne</p>
+                    </div>
+                </div>
+
+                <!-- Quote 2 -->
+                <div class="relative bg-mist p-8 organic-border-pink md:mt-8">
+                    <i class="fa-solid fa-quote-left absolute -top-4 -left-2 text-4xl text-bluegreen opacity-50"></i>
+                    <p class="text-sm text-gray-700 italic mb-6 leading-relaxed">
+                        “She is officially recognized as one of our most trusted proofreaders. We rely on her to screen and evaluate the final work of other French Canadian linguists for our team.”
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-navy text-sm">Maga Zavarse</h4>
+                        <p class="text-xs text-sky uppercase">Communications Associate, MotaWord</p>
+                    </div>
+                </div>
+
+                <!-- Quote 3 -->
+                <div class="relative bg-mist p-8 organic-border">
+                    <i class="fa-solid fa-quote-left absolute -top-4 -left-2 text-4xl text-darkpink opacity-50"></i>
+                    <p class="text-sm text-gray-700 italic mb-6 leading-relaxed">
+                        “Her professionalism, precise choice of words, and perfect understanding of our expectations make her a true specialist. I recommend her without hesitation.”
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-navy text-sm">Jay Chevery</h4>
+                        <p class="text-xs text-sky uppercase">TV Host & Public Figure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION / FOOTER -->
+    <footer id="contact" class="bg-navy text-white py-20 px-6 lg:px-12 relative overflow-hidden">
+        <!-- Abstract compass decor in bg -->
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 border border-white opacity-10 rounded-full"></div>
+        <div class="absolute -right-10 -bottom-10 w-96 h-96 border border-seafoam opacity-20 rounded-full"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="font-hand text-darkpink text-3xl mb-4 transform -rotate-3">Ready to start?</div>
+            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Let’s talk about your project</h2>
+            <p class="text-mist opacity-90 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Looking for Canadian French language support? Share a little about your content, audience, format, approximate volume and timeline. I can help identify the type of linguistic service and level of review that best fit the assignment.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+                <a href="mailto:snadeau.tran@gmail.com" class="organic-border-pink bg-darkpink text-white px-8 py-4 font-bold text-lg hover:bg-white hover:text-darkpink transition-colors shadow-[4px_4px_0px_0px_#FFFFFF]">
+                    <i class="fa-solid fa-envelope mr-2"></i> Email Stéphanie
+                </a>
+                <a href="https://linkedin.com/in/s-nadeau" target="_blank" class="organic-border bg-white text-navy px-8 py-4 font-bold text-lg hover:bg-mist transition-colors flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-linkedin text-bluegreen text-xl"></i> LinkedIn Profile
+                </a>
+            </div>
+
+            <div class="border-t border-sky opacity-30 w-1/2 mx-auto mb-8"></div>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-sky">
+                <span>snadeau.tran@gmail.com</span>
+                <span class="hidden md:inline">•</span>
+                <span>Montréal, Québec, Canada</span>
+            </div>
+            
+            <div class="mt-8 text-xs text-gray-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Stéphanie Nadeau. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
 </body>
-
 </html>
