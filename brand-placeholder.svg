@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">SN — logo placeholder</title>
+  <desc id="desc">Temporary Stéphanie Nadeau monogram using the site palette. Replace with the approved logo.</desc>
+  <rect x="5" y="5" width="118" height="118" rx="34" fill="#13293D"/>
+  <path d="M25 36c8-12 25-16 39-10 8 4 13 11 13 19 0 10-8 15-21 20l-10 4c-13 5-20 10-20 21 0 12 11 20 26 20 12 0 23-5 30-14" fill="none" stroke="#83E0D0" stroke-width="5" stroke-linecap="round"/>
+  <text x="64" y="78" text-anchor="middle" fill="#FAFCFD" font-family="Georgia,serif" font-size="34" font-weight="700" letter-spacing="-3">SN</text>
+  <circle cx="101" cy="28" r="7" fill="#D14D72"/>
+  <path d="M99 104h15" stroke="#149E92" stroke-width="4" stroke-linecap="round"/>
+</svg>
