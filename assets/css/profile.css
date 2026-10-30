@@ -55,9 +55,9 @@
 .profile-dot--sky { background:var(--sky); }
 .profile-dot--pink { background:var(--turquoise); }
 .profile-path { position:relative; overflow:hidden; padding:clamp(4rem,7vw,6rem) 0; border-top:1px dashed var(--seafoam); border-bottom:1px dashed var(--seafoam); background:var(--mist); }
-.profile-path::before { position:absolute; top:.4rem; right:0; color:#fff; content:"CONNECTIONS"; font-family:"Playfair Display",Georgia,serif; font-size:clamp(3rem,7vw,5.3rem); font-weight:700; letter-spacing:.06em; opacity:.62; pointer-events:none; }
-.profile-path__heading { position:relative; align-items:flex-end; margin-bottom:1.15rem; }
-.profile-path__intro { max-width:24rem; margin:0; color:var(--profile-muted); font-size:.82rem; line-height:1.75; }
+.profile-path::before { position:absolute; z-index:0; top:1rem; right:clamp(1rem,4vw,3rem); color:var(--darkpink); content:"Connections"; font-family:"Caveat",cursive; font-size:clamp(1.8rem,3vw,2.5rem); font-weight:700; letter-spacing:0; line-height:1; transform:rotate(-6deg); opacity:1; pointer-events:none; }
+.profile-path__heading { position:relative; align-items:flex-start; margin-bottom:1.15rem; }
+.profile-path__intro { max-width:24rem; margin:0; padding-top:1.55rem; color:var(--profile-muted); font-size:.82rem; line-height:1.75; }
 .profile-path__supporting { max-width:55rem; margin:0 0 1.8rem; color:var(--profile-muted); font-size:.87rem; line-height:1.8; }
 .profile-path__grid { position:relative; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.2rem; }
 .profile-path-card { position:relative; min-height:13rem; padding:1.65rem 1.75rem; background:#fff; transition:transform .2s ease; }
@@ -87,7 +87,7 @@
   .profile-section__heading,.profile-path__heading { display:block; }
   .profile-section__note { margin-top:1rem; }
   .profile-story-grid { gap:2.3rem; }
-  .profile-path__intro { max-width:38rem; margin-top:1.1rem; }
+  .profile-path__intro { max-width:38rem; margin-top:1.1rem; padding-top:0; }
   .profile-path__supporting { margin-top:1rem; }
   .profile-path__grid { grid-template-columns:1fr; }
   .profile-path-card { min-height:0; }
