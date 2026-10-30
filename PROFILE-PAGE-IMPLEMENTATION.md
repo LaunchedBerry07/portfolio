@@ -53,3 +53,10 @@ Aucune définition de ces classes communes n'a été modifiée. Les nouvelles r�
 - Empreintes SHA-256 de la page d'accueil et des feuilles de style communes comparées : identiques.
 
 Une vérification visuelle réelle dans un navigateur, notamment aux largeurs desktop, tablette et mobile, reste à effectuer dans l'environnement de développement avant publication. Aucun déploiement n'a été effectué.
+
+## Ajustements validés après retour visuel — 2026-10-30
+
+- Le portrait du Hero de Profile & CV utilise désormais l'image fournie et approuvée par Stéphanie (`assets/images/portrait/profile-hero-portrait.webp`). L'image précédente `home-hero-portrait.webp` demeure inchangée et n'est pas remplacée dans les ressources communes.
+- Le cercle décoratif vide de la carte « A thoughtful approach » est remplacé par une icône cerveau Font Awesome (`fa-brain`), dans une pastille Mist avec contour Seafoam et icône Blue Green.
+- La structure, les textes et les autres éléments approuvés des trois premières sections sont conservés.
+- Les changements demeurent limités à `profile/index.html`, `assets/css/profile.css`, à l'ajout du nouveau portrait et à cette documentation. Aucun fichier de la page d'accueil ni aucune feuille de style commune n'a été modifié.
