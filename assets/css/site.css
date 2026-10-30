@@ -220,3 +220,9 @@ img { max-width:100%; }
 /* Homepage service illustrations — larger while preserving their proportions. */
 .service-card__icon { width:9rem; height:9rem; flex:0 0 auto; }
 @media (min-width:640px) { .service-card__icon { width:10rem; height:10rem; } }
+
+/* Homepage selected assignments — give the editorial artwork more room. */
+@media (min-width:640px) {
+  .assignment-card__image { width:40%; flex:0 0 40%; }
+  .assignment-card__content { width:60%; flex:1 1 60%; min-width:0; }
+}
