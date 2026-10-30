@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-
-<!DOCTYPE html>
-
-<!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -18,113 +12,162 @@
 <!-- FontAwesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <!-- Tailwind Config for Custom Palette & Fonts -->
-<link href="../assets/css/utilities.css" rel="stylesheet"/><link href="../assets/css/site.css" rel="stylesheet"/><link href="../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/></head>
-<body class="antialiased"><span class="visually-hidden" id="top"></span><nav aria-label="Main navigation" class="site-nav"><a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../index.html"><span aria-hidden="true" class="site-nav__mark">SN<span class="site-nav__mark-cross"></span></span><span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span></a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button"><i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span></button><div class="site-nav__links" id="primary-navigation"><a href="../index.html">Home</a><a href="../services/">Services</a><a href="../portfolio/linguistic-case-studies/">Portfolio</a><a href="../index.html#methodology">Methodology</a><a href="../portfolio/technical-projects/">Tech &amp; AI</a><a aria-current="page" class="is-current" href="./">Profile &amp; CV</a><a class="site-nav__contact" href="../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a></div></nav>
+<link href="../assets/css/utilities.css" rel="stylesheet"/><link href="../assets/css/site.css" rel="stylesheet"/><link href="../assets/css/profile.css" rel="stylesheet"/><link href="../assets/images/favicon.webp" rel="icon" type="image/webp"/></head>
+<body class="antialiased profile-page"><span class="visually-hidden" id="top"></span><nav aria-label="Main navigation" class="site-nav"><a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../index.html"><span aria-hidden="true" class="site-nav__mark">SN<span class="site-nav__mark-cross"></span></span><span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span></a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button"><i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span></button><div class="site-nav__links" id="primary-navigation"><a href="../index.html">Home</a><a href="../services/">Services</a><a href="../portfolio/linguistic-case-studies/">Portfolio</a><a href="../index.html#methodology">Methodology</a><a href="../portfolio/technical-projects/">Tech &amp; AI</a><a aria-current="page" class="is-current" href="./">Profile &amp; CV</a><a class="site-nav__contact" href="../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a></div></nav>
 <!-- Navigation -->
-<!-- HERO SECTION -->
-<section class="relative pt-16 pb-16 px-6 lg:px-12 max-w-7xl mx-auto text-center">
-<div class="absolute top-10 right-1/4 transform rotate-12 text-bluegreen font-hand text-2xl hidden md:block">
-            Nice to meet you! <i class="fa-solid fa-face-smile-wink ml-1"></i>
-</div>
-<div class="inline-block bg-mist text-bluegreen border border-sky/30 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
-            Profile &amp; CV
+<!-- PROFILE PAGE INTRODUCTION -->
+<header class="profile-hero" aria-labelledby="profile-hero-title">
+  <div class="profile-wrap profile-hero__grid">
+    <div class="profile-hero__copy">
+      <p class="profile-eyebrow">Profile &amp; CV <span>·</span> A little about me</p>
+      <h1 id="profile-hero-title">A language professional with an <em>analytical mind</em> and a creative edge.</h1>
+      <p class="profile-hero__subline">Language. Context. Technology.</p>
+      <p class="profile-hero__intro">I'm Stéphanie Nadeau, a bilingual linguist specializing in Canadian French, translation, localization and linguistic quality. Since 2013, I've worked across a wide range of industries and content types, combining linguistic precision with a strong interest in context, information structure and technology.</p>
+      <ul class="profile-hero__tags" aria-label="Areas of professional focus">
+        <li>Translation</li>
+        <li>Localization</li>
+        <li>Linguistic Quality</li>
+        <li>AI Language Evaluation</li>
+        <li>Automation</li>
+      </ul>
+      <div class="profile-hero__actions">
+        <a class="profile-button" href="#profile">Discover my approach <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="profile-button profile-button--outline" href="#path">Explore my background <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="profile-hero__foot"><strong>Since 2013</strong><span aria-hidden="true"></span><p>Language work shaped by context, information structure and technology.</p></div>
+    </div>
+    <div class="profile-hero__visual">
+      <span class="profile-handnote profile-handnote--top" aria-hidden="true">Words matter.<br>Context matters more.</span>
+      <span class="profile-hero__orbit" aria-hidden="true"></span>
+      <div class="profile-hero__image-frame organic-border shadow-handdrawn-seafoam">
+        <img src="../assets/images/portrait/home-hero-portrait.webp" alt="Portrait of Stéphanie with a globe and multilingual communication motifs" width="896" height="1280" fetchpriority="high">
+      </div>
+      <span class="profile-handnote profile-handnote--bottom" aria-hidden="true">A curious mind<br>at work ✳</span>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <!-- THE PROFILE -->
+  <section class="profile-section" id="profile" aria-labelledby="profile-title">
+    <div class="profile-wrap">
+      <div class="profile-section__heading">
+        <div>
+          <p class="profile-kicker">01 / The person behind the practice</p>
+          <h2 id="profile-title">The Profile</h2>
         </div>
-<h1 class="font-serif text-4xl sm:text-6xl font-bold text-navy mb-6 leading-tight max-w-4xl mx-auto">
-            A language professional with an analytical mind and a <span class="scribble-underline">creative edge.</span>
-</h1>
-<p class="text-xl font-medium text-darkpink mb-8">Language. Context. Technology.</p>
-<div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
-<span class="bg-white border border-gray-200 text-gray-700 text-sm px-4 py-1.5 rounded-full">Translation</span>
-<span class="bg-white border border-gray-200 text-gray-700 text-sm px-4 py-1.5 rounded-full">Localization</span>
-<span class="bg-white border border-gray-200 text-gray-700 text-sm px-4 py-1.5 rounded-full">Linguistic Quality</span>
-<span class="bg-white border border-gray-200 text-gray-700 text-sm px-4 py-1.5 rounded-full">AI Language Evaluation</span>
-<span class="bg-white border border-gray-200 text-gray-700 text-sm px-4 py-1.5 rounded-full">Automation</span>
-</div>
-</section>
-<!-- EDITORIAL PROFILE STORY -->
-<section class="py-12 px-6 lg:px-12 max-w-7xl mx-auto relative">
-<div class="flex flex-col lg:flex-row gap-16">
-<!-- Left Column: The Narrative -->
-<div class="lg:w-7/12 space-y-12">
-<!-- Section 1 -->
-<div>
-<h2 class="font-serif text-3xl font-bold text-navy mb-4">The Profile</h2>
-<p class="text-gray-700 leading-relaxed mb-4">
-                        I'm Stéphanie Nadeau, a bilingual linguist specializing in Canadian French, translation, localization and linguistic quality. Since 2013, I've worked across a wide range of industries and content types, combining linguistic precision with a strong interest in context, information structure and technology.
-                    </p>
-<p class="text-gray-700 leading-relaxed mb-4">
-                        My work goes beyond words in isolation. I look at how language conveys meaning, how context shapes interpretation and how inconsistencies can reveal deeper problems in a text, a workflow or a digital system.
-                    </p>
-<div class="bg-mist p-5 organic-border-mist text-gray-700 leading-relaxed">
-<p class="mb-4">
-                            Alongside my language-services practice, I explore the practical applications of linguistic analysis, AI language evaluation and workflow automation. These interests build on the same habits that guide my editorial work: close observation, explicit criteria, pattern recognition and careful attention to context.
-                        </p>
-<p class="font-medium text-navy">
-                            Across translation, revision, content evaluation and technical problem-solving, my goal is to make information more accurate, coherent and fit for its intended purpose.
-                        </p>
-</div>
-</div>
-<!-- Section 2 -->
-<div>
-<h2 class="font-serif text-3xl font-bold text-navy mb-4">A multidisciplinary path</h2>
-<p class="text-gray-700 leading-relaxed mb-4">
-                        My professional path spans language services, writing, document production, administration and applied technology. Rather than treating these fields as separate tracks, I draw on the connections between them: understanding a brief, organizing complex information, identifying inconsistencies and producing a result that works for its audience and context.
-                    </p>
-<p class="text-gray-700 leading-relaxed">
-                        My language work has developed alongside an interest in the systems that support it—from terminology resources and computer-assisted translation tools to document processing, scripting and workflow automation. This combination helps me approach language projects with both editorial judgment and a practical understanding of the tools and processes around them.
-                    </p>
-</div>
-<!-- Section 3 -->
-<div>
-<div class="flex items-center gap-3 mb-4">
-<h2 class="font-serif text-3xl font-bold text-navy">Writing and editorial practice</h2>
-<i class="fa-solid fa-book-open text-darkpink text-xl"></i>
-</div>
-<p class="text-gray-700 leading-relaxed mb-4">
-                        Writing is an important part of how I understand language. As a published author, I've worked with voice, tone, pacing and narrative structure—choices that shape not only what a text says, but how readers experience it.
-                    </p>
-<p class="text-gray-700 leading-relaxed mb-4">
-                        That editorial sensitivity informs my language work. Whether I'm revising a sentence, adapting content for a new audience or checking consistency across a large body of material, I consider register, intent, readability and the integrity of the original message.
-                    </p>
-<p class="text-sm font-medium italic text-bluegreen">
-                        My author work has its own creative identity, but it shares a foundation with my professional practice: attention to language, audience and meaning.
-                    </p>
-</div>
-</div>
-<!-- Right Column: Visual & "How I Work" -->
-<div class="lg:w-5/12">
-<!-- Decorative Image Placeholder / Visual element -->
-<div class="bg-mist p-2 organic-border shadow-handdrawn mb-12 relative overflow-hidden h-64 flex items-center justify-center">
-<img alt="Workspace" class="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" src="../assets/images/general/workspace.svg"/>
-<div class="absolute top-4 left-4 font-hand text-darkpink text-2xl -rotate-6">Since 2013!</div>
-</div>
-<!-- How I Work grid -->
-<h2 class="font-serif text-2xl font-bold text-navy mb-6">How I work</h2>
-<div class="space-y-4">
-<div class="bg-white p-5 organic-border shadow-[2px_2px_0px_0px_#13293D] relative group">
-<div class="absolute -left-3 top-5 w-6 h-6 bg-darkpink text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-magnifying-glass"></i></div>
-<h3 class="font-bold text-navy mb-1 pl-2">Context before wording</h3>
-<p class="text-xs text-gray-600 pl-2 leading-relaxed">I consider the purpose, audience, subject matter and delivery environment—not just the source text in isolation.</p>
-</div>
-<div class="bg-white p-5 organic-border-pink shadow-[2px_2px_0px_0px_#D14D72] relative group">
-<div class="absolute -left-3 top-5 w-6 h-6 bg-bluegreen text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-scale-balanced"></i></div>
-<h3 class="font-bold text-navy mb-1 pl-2">Consistency with judgment</h3>
-<p class="text-xs text-gray-600 pl-2 leading-relaxed">Terminology, style guides and documented criteria support consistency, while human review helps account for nuance and context.</p>
-</div>
-<div class="bg-white p-5 organic-border shadow-[2px_2px_0px_0px_#13293D] relative group">
-<div class="absolute -left-3 top-5 w-6 h-6 bg-sky text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-check-double"></i></div>
-<h3 class="font-bold text-navy mb-1 pl-2">Quality that can be explained</h3>
-<p class="text-xs text-gray-600 pl-2 leading-relaxed">I aim to identify issues clearly, apply appropriate criteria and make editorial decisions that can be understood and reproduced.</p>
-</div>
-<div class="bg-white p-5 organic-border-pink shadow-[2px_2px_0px_0px_#D14D72] relative group">
-<div class="absolute -left-3 top-5 w-6 h-6 bg-turquoise text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-lightbulb"></i></div>
-<h3 class="font-bold text-navy mb-1 pl-2">Curiosity with practical outcomes</h3>
-<p class="text-xs text-gray-600 pl-2 leading-relaxed">I explore tools and workflows when they can solve a real problem, reduce repetitive work or make information easier to manage.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <p class="profile-handnote profile-section__note" aria-hidden="true">Beyond the words...</p>
+      </div>
+      <div class="profile-story-grid">
+        <div class="profile-story-copy">
+          <p class="profile-lead">My work goes beyond words in isolation. I look at how language conveys meaning, how context shapes interpretation and how inconsistencies can reveal deeper problems in a text, a workflow or a digital system.</p>
+          <div class="profile-pullquote">
+            <p>Across translation, revision, content evaluation and technical problem-solving, my goal is to make information more accurate, coherent and fit for its intended purpose.</p>
+          </div>
+        </div>
+        <aside class="profile-approach-card organic-border shadow-handdrawn-seafoam" aria-label="A thoughtful approach">
+          <span class="profile-approach-card__mini">A thoughtful approach</span>
+          <span class="profile-approach-card__decor" aria-hidden="true"></span>
+          <h3>Context shapes interpretation.</h3>
+          <p>Alongside my language-services practice, I explore the practical applications of linguistic analysis, AI language evaluation and workflow automation.</p>
+          <div class="profile-approach-card__list">
+            <div><span class="profile-dot"></span>Close observation</div>
+            <div><span class="profile-dot profile-dot--teal"></span>Explicit criteria</div>
+            <div><span class="profile-dot profile-dot--sky"></span>Pattern recognition</div>
+            <div><span class="profile-dot profile-dot--pink"></span>Careful attention to context</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- A MULTIDISCIPLINARY PATH -->
+  <section class="profile-path" id="path" aria-labelledby="path-title">
+    <div class="profile-wrap">
+      <div class="profile-path__heading">
+        <div>
+          <p class="profile-kicker">02 / A connected perspective</p>
+          <h2 id="path-title">A multidisciplinary path</h2>
+        </div>
+        <p class="profile-path__intro">My professional path spans language services, writing, document production, administration and applied technology. Rather than treating these fields as separate tracks, I draw on the connections between them: understanding a brief, organizing complex information, identifying inconsistencies and producing a result that works for its audience and context.</p>
+      </div>
+      <p class="profile-path__supporting">My language work has developed alongside an interest in the systems that support it—from terminology resources and computer-assisted translation tools to document processing, scripting and workflow automation. This combination helps me approach language projects with both editorial judgment and a practical understanding of the tools and processes around them.</p>
+      <div class="profile-path__grid">
+        <article class="profile-path-card organic-border shadow-handdrawn">
+          <span class="profile-path-card__number">01</span>
+          <span class="profile-path-card__icon"><i class="fa-solid fa-language" aria-hidden="true"></i></span>
+          <h3>Language &amp; localization</h3>
+          <p>Translation, localization and linguistic quality, grounded in Canadian French and attention to context.</p>
+        </article>
+        <article class="profile-path-card organic-border-pink shadow-handdrawn-pink">
+          <span class="profile-path-card__number">02</span>
+          <span class="profile-path-card__icon"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></span>
+          <h3>Writing &amp; editorial practice</h3>
+          <p>Voice, tone, pacing and narrative structure shape how readers experience a text.</p>
+        </article>
+        <article class="profile-path-card organic-border-pink shadow-handdrawn-pink">
+          <span class="profile-path-card__number">03</span>
+          <span class="profile-path-card__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+          <h3>Technology &amp; systems</h3>
+          <p>Terminology resources, computer-assisted translation tools, document processing, scripting and workflow automation.</p>
+        </article>
+        <article class="profile-path-card organic-border shadow-handdrawn">
+          <span class="profile-path-card__number">04</span>
+          <span class="profile-path-card__icon"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></span>
+          <h3>Analysis &amp; problem-solving</h3>
+          <p>Understanding a brief, organizing complex information, identifying inconsistencies and producing work for its audience and context.</p>
+        </article>
+      </div>
+      <p class="profile-path__closing"><span aria-hidden="true"></span>One perspective, many connections<span aria-hidden="true"></span></p>
+    </div>
+  </section>
+
+  <!-- EXISTING WRITING AND METHODOLOGY CONTENT — RETAINED FOR THE NEXT DESIGN PASS -->
+  <section class="py-12 px-6 lg:px-12 max-w-7xl mx-auto relative">
+    <div class="flex flex-col lg:flex-row gap-16">
+      <div class="lg:w-7/12 space-y-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class="font-serif text-3xl font-bold text-navy">Writing and editorial practice</h2>
+            <i class="fa-solid fa-book-open text-darkpink text-xl" aria-hidden="true"></i>
+          </div>
+          <p class="text-gray-700 leading-relaxed mb-4">Writing is an important part of how I understand language. As a published author, I've worked with voice, tone, pacing and narrative structure—choices that shape not only what a text says, but how readers experience it.</p>
+          <p class="text-gray-700 leading-relaxed mb-4">That editorial sensitivity informs my language work. Whether I'm revising a sentence, adapting content for a new audience or checking consistency across a large body of material, I consider register, intent, readability and the integrity of the original message.</p>
+          <p class="text-sm font-medium italic text-bluegreen">My author work has its own creative identity, but it shares a foundation with my professional practice: attention to language, audience and meaning.</p>
+        </div>
+      </div>
+      <div class="lg:w-5/12">
+        <div class="bg-mist p-2 organic-border shadow-handdrawn mb-12 relative overflow-hidden h-64 flex items-center justify-center">
+          <img alt="Workspace" class="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" src="../assets/images/general/workspace.svg"/>
+          <div class="absolute top-4 left-4 font-hand text-darkpink text-2xl -rotate-6">Since 2013!</div>
+        </div>
+        <h2 class="font-serif text-2xl font-bold text-navy mb-6">How I work</h2>
+        <div class="space-y-4">
+          <div class="bg-white p-5 organic-border shadow-[2px_2px_0px_0px_#13293D] relative group">
+            <div class="absolute -left-3 top-5 w-6 h-6 bg-darkpink text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-navy mb-1 pl-2">Context before wording</h3>
+            <p class="text-xs text-gray-600 pl-2 leading-relaxed">I consider the purpose, audience, subject matter and delivery environment—not just the source text in isolation.</p>
+          </div>
+          <div class="bg-white p-5 organic-border-pink shadow-[2px_2px_0px_0px_#D14D72] relative group">
+            <div class="absolute -left-3 top-5 w-6 h-6 bg-bluegreen text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-navy mb-1 pl-2">Consistency with judgment</h3>
+            <p class="text-xs text-gray-600 pl-2 leading-relaxed">Terminology, style guides and documented criteria support consistency, while human review helps account for nuance and context.</p>
+          </div>
+          <div class="bg-white p-5 organic-border shadow-[2px_2px_0px_0px_#13293D] relative group">
+            <div class="absolute -left-3 top-5 w-6 h-6 bg-sky text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-check-double" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-navy mb-1 pl-2">Quality that can be explained</h3>
+            <p class="text-xs text-gray-600 pl-2 leading-relaxed">I aim to identify issues clearly, apply appropriate criteria and make editorial decisions that can be understood and reproduced.</p>
+          </div>
+          <div class="bg-white p-5 organic-border-pink shadow-[2px_2px_0px_0px_#D14D72] relative group">
+            <div class="absolute -left-3 top-5 w-6 h-6 bg-turquoise text-white rounded-full flex items-center justify-center text-[10px]"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-navy mb-1 pl-2">Curiosity with practical outcomes</h3>
+            <p class="text-xs text-gray-600 pl-2 leading-relaxed">I explore tools and workflows when they can solve a real problem, reduce repetitive work or make information easier to manage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <!-- AREAS OF EXPERTISE -->
 <section class="bg-mist py-20 px-6 lg:px-12 border-y-2 border-dashed border-seafoam mt-12">
 <div class="max-w-7xl mx-auto">
@@ -366,5 +409,6 @@
 </section>
 <!-- CALL TO ACTION / FOOTER -->
 
+</main>
 <footer class="site-footer" id="site-footer"><div class="site-footer__inner"><div class="site-footer__identity"><a class="site-footer__brand" href="../index.html">Stéphanie Nadeau</a><p>Canadian French language expertise, supported by technology.</p><a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a></div><nav aria-label="Footer navigation" class="site-footer__nav"><a href="../index.html">Home</a><a href="../services/">Services</a><a href="../portfolio/linguistic-case-studies/">Portfolio</a><a href="../index.html#methodology">Methodology</a><a href="../portfolio/technical-projects/">Tech &amp; AI</a><a href="./">Profile &amp; CV</a><a href="../contact/">Contact</a></nav><div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></div></div><div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer><script defer="True" src="../assets/js/site.js"></script></body>
 </html>
