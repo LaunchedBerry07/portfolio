@@ -27,3 +27,8 @@ Les liens des composants de navigation et de pied de page utilisent des chemins 
 - Replaced the world-map hero image with an original watercolor illustration focused on language and communication: paper airplane, English/French speech bubbles, documents and flowing connection lines.
 - The hero visual uses a taller desktop display to avoid a shallow banner effect; on mobile it returns to a responsive 4:3 crop.
 - The separate TransPerfect illustration and the three-colour sector-card sequence remain unchanged.
+
+
+## Contact page — video hero
+
+The Contact page uses a decorative, silent, portrait-oriented MP4 in the same organic editorial frame treatment as the Profile hero portrait. The source video is normalized to its displayed orientation and encoded without audio at `assets/video/contact-geometric-loop.mp4`. Its WebP poster is stored at `assets/images/contact/contact-video-poster.webp`. Playback is started only when the visitor has not enabled `prefers-reduced-motion`; otherwise the poster remains visible. The page-specific styles are in `assets/css/contact.css`.
