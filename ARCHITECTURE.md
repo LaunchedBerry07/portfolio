@@ -6,6 +6,7 @@
 | Services | `services/index.html` |
 | Études de cas linguistiques | `portfolio/linguistic-case-studies/index.html` et les 12 fichiers de détail voisins |
 | Projets techniques | `portfolio/technical-projects/index.html` et les 8 fichiers de détail voisins |
+| Clients et secteurs | `clients-sectors/index.html` |
 | Profil et CV | `profile/index.html` |
 | Contact | `contact/index.html` |
 | CSS de présentation et composants | `assets/css/site.css` |

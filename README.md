@@ -8,7 +8,7 @@ Site statique issu des 26 pages de l’archive d’origine. Les pages, les feuil
 - `services/` : services linguistiques
 - `portfolio/linguistic-case-studies/` : index et 12 études de cas
 - `portfolio/technical-projects/` : index et 8 projets techniques
-- `profile/` et `contact/` : profil/CV et contact
+- `clients-sectors/` : expérience sectorielle et organisations associées aux mandats linguistiques\n- `profile/` et `contact/` : profil/CV et contact
 - `assets/css/` : CSS compilé et styles communs
 - `assets/js/site.js` : navigation mobile, année et filtres du portfolio
 - `assets/images/` : visuels temporaires locaux et emplacements des futurs médias
