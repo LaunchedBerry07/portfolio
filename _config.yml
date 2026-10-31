@@ -1,0 +1,12 @@
+# GitHub Pages / Jekyll configuration
+#
+# User Site (username.github.io) or custom domain at the domain root:
+baseurl: ""
+#
+# Project Site:
+# Set baseurl to the repository path, including the leading slash:
+# baseurl: "/repository-name"
+#
+# The custom 404 page uses Jekyll's relative_url filter so its assets and
+# navigation links resolve correctly even when the browser remains on a
+# nonexistent URL.
