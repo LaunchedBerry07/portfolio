@@ -1,7 +1,7 @@
 # GitHub Pages / Jekyll configuration
 #
 # User Site (username.github.io) or custom domain at the domain root:
-baseurl: ""
+baseurl: "/portfolio/"
 #
 # Project Site:
 # Set baseurl to the repository path, including the leading slash:
