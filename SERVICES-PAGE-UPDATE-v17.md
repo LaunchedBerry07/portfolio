@@ -40,3 +40,7 @@ The three supplied illustrations were exported to WebP and resized/cropped for t
 - Rates and commercial terms.
 - Other portfolio pages, including Clients & Sectors.
 - Site dependencies and JavaScript.
+
+
+## v21 — Organic border consistency
+Applied the same asymmetric organic border geometry used on the Profile and Contact pages to the four primary service cards. Preserved the existing service-card layout and palette: blue-green/seafoam for Translation & Localization, pink for Editing and MTPE/LQA, and navy for Terminology Management. Replaced the regular rounded-corner outline and soft shadow with the established hand-drawn offset border/shadow treatment. No copy or other page was changed.

@@ -178,3 +178,26 @@
  .svc-rate-table th,.svc-rate-table td { font-size:.68rem; padding:.62rem .55rem; }
 }
 @media(prefers-reduced-motion:reduce) { .svc-button { transition:none; } }
+
+
+/* Primary service cards use the shared organic border language from Profile and Contact. */
+.svc-card.organic-border {
+  border:2px solid #13293D;
+  border-radius:255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+.svc-card.organic-border-pink {
+  border:2px solid #D14D72;
+  border-radius:15px 225px 15px 255px / 255px 15px 225px 15px;
+}
+.svc-card.svc-card--translation.organic-border {
+  border-color:var(--svc-bluegreen);
+}
+.svc-card.shadow-handdrawn {
+  box-shadow:4px 4px 0 #13293D;
+}
+.svc-card.shadow-handdrawn-pink {
+  box-shadow:4px 4px 0 #D14D72;
+}
+.svc-card.shadow-handdrawn-seafoam {
+  box-shadow:4px 4px 0 #83E0D0;
+}
