@@ -3,14 +3,14 @@
 .clients-page { --cs-navy:#13293D; --cs-pink:#D14D72; --cs-bluegreen:#087E8B; --cs-turquoise:#149E92; --cs-seafoam:#83E0D0; --cs-mist:#EAF4F8; --cs-sky:#5B96BD; --cs-ink:#263C4D; color:var(--cs-ink); }
 .cs-wrap { width:min(100% - 3rem,78rem); margin-inline:auto; }
 .cs-hero { overflow:hidden; padding:clamp(3.2rem,6vw,5.4rem) 0 clamp(3rem,5vw,4.5rem); background:linear-gradient(110deg,#fff 0%,#fff 56%,#F2FAFB 100%); }
-.cs-hero__grid { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(18rem,.95fr); align-items:center; gap:clamp(2rem,4vw,4rem); }
+.cs-hero__grid { display:grid; grid-template-columns:minmax(0,.92fr) minmax(24rem,1.08fr); align-items:center; gap:clamp(1.5rem,3vw,3rem); }
 .cs-eyebrow { display:flex; align-items:center; gap:.65rem; margin:0 0 .9rem; color:var(--cs-bluegreen); font-size:.68rem; font-weight:800; letter-spacing:.18em; text-transform:uppercase; }
 .cs-eyebrow::before { content:""; width:1.6rem; height:2px; background:var(--cs-pink); }
 .cs-hero h1 { margin:0 0 .8rem; color:var(--cs-navy); font-family:"Playfair Display",Georgia,serif; font-size:clamp(2.8rem,5vw,4.6rem); font-weight:700; letter-spacing:-.045em; line-height:1.05; }
 .cs-hero__subhead { max-width:42rem; margin:0 0 1.2rem; color:var(--cs-navy); font-family:"Playfair Display",Georgia,serif; font-size:clamp(1.35rem,2.2vw,1.9rem); line-height:1.28; }
 .cs-hero__copy > p:not(.cs-eyebrow):not(.cs-hero__subhead) { max-width:43rem; margin:0 0 .8rem; color:#435663; font-size:.91rem; line-height:1.8; }
 .cs-hero__visual { position:relative; min-width:0; }
-.cs-hero__visual img { display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover; object-position:58% center; mix-blend-mode:multiply; }
+.cs-hero__visual img { display:block; width:100%; height:clamp(25rem,38vw,34rem); object-fit:cover; object-position:68% center; mix-blend-mode:multiply; }
 .cs-hero__note { position:absolute; right:.1rem; bottom:.2rem; max-width:10rem; color:var(--cs-bluegreen); font-family:"Caveat",cursive; font-size:1.65rem; font-weight:700; line-height:1.05; transform:rotate(-7deg); }
 .cs-industries { padding:clamp(3.5rem,6vw,5rem) 0; background:#fff; }
 .cs-section-heading { margin-bottom:2rem; }
@@ -18,11 +18,15 @@
 .cs-section-heading h2 span { display:inline-block; width:3.2rem; height:2px; margin:0 0 .55rem .6rem; background:var(--cs-bluegreen); transform:rotate(-4deg); }
 .cs-sector-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
 .cs-sector { position:relative; display:grid; grid-template-columns:3.2rem 4.5rem minmax(0,1fr); align-items:start; gap:1rem; min-height:9.3rem; padding:1.35rem 1.25rem; background:#fff; border:1.5px solid var(--cs-bluegreen); border-radius:1.15rem .45rem 1rem .5rem; box-shadow:3px 3px 0 rgba(19,41,61,.12); }
-.cs-sector:nth-child(even) { border-color:#E7A0B2; }
+.cs-sector:nth-child(3n + 1) { border-color:var(--cs-bluegreen); }
+.cs-sector:nth-child(3n + 2) { border-color:#E7A0B2; }
+.cs-sector:nth-child(3n) { border-color:var(--cs-sky); }
 .cs-sector__number { padding-top:.1rem; color:var(--cs-bluegreen); font-family:"Playfair Display",Georgia,serif; font-size:1.7rem; line-height:1; }
-.cs-sector:nth-child(even) .cs-sector__number { color:var(--cs-pink); }
+.cs-sector:nth-child(3n + 2) .cs-sector__number { color:var(--cs-pink); }
+.cs-sector:nth-child(3n) .cs-sector__number { color:var(--cs-sky); }
 .cs-sector__icon { display:grid; width:4.3rem; aspect-ratio:1; place-items:center; border-radius:50%; background:var(--cs-mist); color:var(--cs-bluegreen); font-size:1.45rem; }
-.cs-sector:nth-child(even) .cs-sector__icon { background:#FFF0F4; color:var(--cs-pink); }
+.cs-sector:nth-child(3n + 2) .cs-sector__icon { background:#FFF0F4; color:var(--cs-pink); }
+.cs-sector:nth-child(3n) .cs-sector__icon { background:#EEF5FA; color:var(--cs-sky); }
 .cs-sector h3 { margin:0 0 .65rem; color:var(--cs-navy); font-family:"Playfair Display",Georgia,serif; font-size:1.24rem; line-height:1.2; }
 .cs-sector p { margin:0; color:#354B59; font-size:.78rem; line-height:1.65; }
 .cs-sector--last { grid-column:1; }
@@ -51,7 +55,7 @@
  .cs-hero { padding:3rem 0 3.3rem; }
  .cs-hero__grid { grid-template-columns:1fr; gap:1.4rem; }
  .cs-hero__visual { width:min(100%,34rem); justify-self:center; }
- .cs-hero__visual img { aspect-ratio:16 / 9; object-position:58% center; }
+ .cs-hero__visual img { height:auto; aspect-ratio:4 / 3; object-fit:cover; object-position:68% center; }
  .cs-hero__note { right:.5rem; bottom:.1rem; }
  .cs-sector-grid { grid-template-columns:1fr; }
  .cs-sector { min-height:0; grid-template-columns:2.7rem 3.8rem minmax(0,1fr); padding:1.15rem; }

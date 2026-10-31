@@ -31,3 +31,6 @@ La navigation partagée comprend aussi un lien `Methodology` qui pointe vers la 
 Les visuels SVG temporaires sont rangés par rôle sous `assets/images/`. Remplacez-les par vos fichiers définitifs et mettez à jour le chemin et l’extension du `src` correspondant si le format change. Un lien « Download my CV » sans fichier fourni dans l’archive a été changé en demande par courriel; ajoutez le PDF dans `assets/documents/` puis liez-le si vous souhaitez offrir un téléchargement direct.
 
 Les polices Google Fonts et Font Awesome restent chargées depuis leurs CDN publics; elles ne sont pas nécessaires à l’hébergement, mais leur chargement requiert une connexion réseau.
+
+
+La page `clients-sectors/` utilise une illustration WebP dédiée au hero (`assets/images/clients-sectors/hero-language-connections.webp`). Le visuel de la section TransPerfect demeure distinct.

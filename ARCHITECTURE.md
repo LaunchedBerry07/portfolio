@@ -16,3 +16,14 @@
 | Documents futurs | `assets/documents/` |
 
 Les liens des composants de navigation et de pied de page utilisent des chemins relatifs calculés selon la profondeur de chaque page afin de fonctionner sur les GitHub Pages de type « project site ».
+
+
+### Clients & Sectors — visual refinements (v10)
+- The hero map asset is cropped to remove unused whitespace and give the illustration more visual presence in the right-hand column.
+- The nine industry cards use a repeating three-colour sequence: Blue Green (`#087E8B`), Dark Pink (`#D14D72`) and Sky (`#5B96BD`). The sequence is evenly distributed across the nine sectors.
+
+
+### Clients & Sectors — final hero artwork (v11)
+- Replaced the world-map hero image with an original watercolor illustration focused on language and communication: paper airplane, English/French speech bubbles, documents and flowing connection lines.
+- The hero visual uses a taller desktop display to avoid a shallow banner effect; on mobile it returns to a responsive 4:3 crop.
+- The separate TransPerfect illustration and the three-colour sector-card sequence remain unchanged.
