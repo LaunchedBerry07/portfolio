@@ -9,7 +9,7 @@
 | Clients et secteurs | `clients-sectors/index.html` |
 | Profil et CV | `profile/index.html` |
 | Contact | `contact/index.html` |
-| CSS de présentation et composants | `assets/css/site.css` |
+| CSS partagé et styles propres aux pages | `assets/css/site.css`, `assets/css/clients-sectors.css`, `assets/css/profile.css`, `assets/css/services.css` |
 | Utilitaires CSS compilés | `assets/css/utilities.css` |
 | Interactions globales | `assets/js/site.js` |
 | Images et futurs médias | `assets/images/` |
