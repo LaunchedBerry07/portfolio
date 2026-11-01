@@ -40,3 +40,8 @@ Les polices Google Fonts et Font Awesome restent chargées depuis leurs CDN publ
 
 
 La page `clients-sectors/` utilise une illustration WebP dédiée au hero (`assets/images/clients-sectors/hero-language-connections.webp`). Le visuel de la section TransPerfect demeure distinct.
+
+
+## Configuration actuelle de GitHub Pages
+
+Cette version utilise `baseurl: "/portfolio"`, car le site est publié à `https://launchedberry07.github.io/portfolio/`. Il s'agit d'un Project Site au sens de GitHub Pages.

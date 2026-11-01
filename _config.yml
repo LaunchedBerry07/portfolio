@@ -1,11 +1,11 @@
 # GitHub Pages / Jekyll configuration
 #
-# User Site (username.github.io) or custom domain at the domain root:
-baseurl: "/portfolio/"
+# This repository is published at:
+# https://launchedberry07.github.io/portfolio/
 #
-# Project Site:
-# Set baseurl to the repository path, including the leading slash:
-# baseurl: "/repository-name"
+# Although the hostname is a GitHub User Site hostname, the /portfolio
+# repository path makes this deployment a GitHub Project Site.
+baseurl: "/portfolio"
 #
 # The custom 404 page uses Jekyll's relative_url filter so its assets and
 # navigation links resolve correctly even when the browser remains on a

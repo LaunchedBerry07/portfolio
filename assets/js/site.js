@@ -23,21 +23,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
-  const filterButtons = document.querySelectorAll('[data-project-filter]');
-  const cards = document.querySelectorAll('.case-card');
-  const applyFilter = (category) => {
+  const filterButtons = [...document.querySelectorAll('[data-project-filter]')];
+  const clearFiltersButton = document.querySelector('[data-project-filter-clear]');
+  const cards = [...document.querySelectorAll('.case-card')];
+  const status = document.getElementById('portfolio-filter-status');
+  const selectedServices = new Set();
+
+  const renderFilters = () => {
     filterButtons.forEach((button) => {
-      const active = button.dataset.projectFilter === category;
-      button.classList.toggle('bg-navy', active);
-      button.classList.toggle('text-white', active);
-      button.classList.toggle('bg-white', !active);
-      button.classList.toggle('text-navy', !active);
+      const active = button.dataset.projectFilter === 'all' ? selectedServices.size === 0 : selectedServices.has(button.dataset.projectFilter);
+      button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     });
+    let visibleCount = 0;
     cards.forEach((card) => {
-      const visible = category === 'all' || card.dataset.category === category;
+      const services = (card.dataset.service || '').split(/\s+/).filter(Boolean);
+      const visible = selectedServices.size === 0 || services.some((service) => selectedServices.has(service));
       card.hidden = !visible;
+      if (visible) visibleCount += 1;
     });
+    if (status) status.textContent = `Showing ${visibleCount} of ${cards.length} case studies`;
   };
-  filterButtons.forEach((button) => button.addEventListener('click', () => applyFilter(button.dataset.projectFilter)));
+
+  filterButtons.forEach((button) => button.addEventListener('click', () => {
+    const service = button.dataset.projectFilter;
+    if (service === 'all') { selectedServices.clear(); renderFilters(); return; }
+    if (selectedServices.has(service)) selectedServices.delete(service);
+    else selectedServices.add(service);
+    renderFilters();
+  }));
+  if (clearFiltersButton) clearFiltersButton.addEventListener('click', () => {
+    selectedServices.clear();
+    renderFilters();
+  });
+  if (filterButtons.length) renderFilters();
 });

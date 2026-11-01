@@ -43,3 +43,14 @@ La valeur `baseurl` est définie dans `_config.yml` :
 - `"/nom-du-depot"` pour un Project Site.
 
 Le nom du dépôt n’étant pas connu au moment de la livraison, la configuration contient une valeur vide par défaut et documente explicitement le réglage requis pour un Project Site. Aucun autre fichier de page n’est modifié.
+
+
+## Configuration GitHub Pages — adresse de publication
+
+Le portfolio est publié à `https://launchedberry07.github.io/portfolio/`.
+Même si le nom d'hôte est celui d'un compte GitHub, le chemin `/portfolio/`
+correspond à un **Project Site**. Le fichier `_config.yml` doit donc contenir
+`baseurl: "/portfolio"`. La page `404.html` utilise le filtre Jekyll
+`relative_url` pour construire les chemins des ressources et des destinations
+internes. Si le dépôt ou le chemin de publication change, `baseurl` doit être
+mis à jour en conséquence.
