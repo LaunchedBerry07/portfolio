@@ -63,3 +63,22 @@
 .tech-tools,
 .tech-tools p { color: #13293D; }
 .tech-tools h2 { color: #13293D; }
+
+
+/* Tools & technologies: full-bleed Mist Blue band, with a centred content column. */
+.tech-tools {
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:0;
+  background:#EAF4F8;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  color:#13293D;
+}
+.tech-tools__inner {
+  width:100%;
+  box-sizing:border-box;
+}
+.tech-tools p { color:#304657; }
