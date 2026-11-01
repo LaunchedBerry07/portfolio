@@ -45,7 +45,7 @@
 @media(max-width:767px){.tech-method-grid{grid-template-columns:minmax(0,1fr)}.tech-method{padding-left:1rem;padding-right:1rem}}
 
 
-/* Final visual refinements — organic method cards and sky-blue tools panel */
+/* Organic borders for the four methodology cards. */
 .tech-method-grid article.organic-border,
 .tech-method-grid article.organic-border-pink {
   border-width: 2px;
@@ -54,31 +54,92 @@
 .tech-method-grid article.organic-border-pink {
   border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
 }
-.tech-tools {
-  background: #5B96BD;
-  border-radius: 1.25rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-.tech-tools,
-.tech-tools p { color: #13293D; }
-.tech-tools h2 { color: #13293D; }
 
-
-/* Tools & technologies: full-bleed Mist Blue band, with a centred content column. */
+/* Tools & technologies: full-bleed Mist Blue band, never a rounded card. */
 .tech-tools {
-  width:100%;
-  max-width:none;
-  margin:0;
-  padding:0;
-  background:#EAF4F8;
-  border:0;
-  border-radius:0;
-  box-shadow:none;
-  color:#13293D;
+  display: block;
+  position: relative;
+  width: 100vw !important;
+  max-width: none !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 !important;
+  background: #EAF4F8 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #13293D;
 }
 .tech-tools__inner {
-  width:100%;
-  box-sizing:border-box;
+  width: 100%;
+  max-width: 64rem;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tech-tools p { color:#304657; }
+
+
+/* Five complementary domains — horizontal editorial card row. */
+.tech-areas__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, .8fr);
+  align-items: end;
+  column-gap: 3rem;
+}
+.tech-areas__heading h2 { margin: 0; }
+.tech-areas__lead {
+  max-width: 34rem;
+  justify-self: end;
+  margin: 0 0 .25rem;
+  color: #526575;
+  font-size: .9rem;
+  line-height: 1.7;
+}
+.tech-areas__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+.tech-areas__grid .tech-area-card {
+  height: 100%;
+  padding: 1.1rem;
+}
+.tech-areas__grid .tech-area-card h3 {
+  font-size: .95rem;
+  line-height: 1.3;
+}
+.tech-areas__grid .tech-area-card p {
+  font-size: .76rem;
+  line-height: 1.55;
+}
+/* Keep all five complementary domains in one row on desktop-sized viewports. */
+@media (min-width: 1024px) {
+  section.tech-areas .tech-areas__grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: .85rem;
+    align-items: stretch;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  section.tech-areas .tech-areas__grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 767px) {
+  .tech-areas__header { grid-template-columns: minmax(0, 1fr); row-gap: .75rem; }
+  .tech-areas__lead { justify-self: start; }
+  section.tech-areas .tech-areas__grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: .85rem;
+  }
+}
+@media (max-width: 520px) {
+  section.tech-areas .tech-areas__grid { grid-template-columns: minmax(0, 1fr) !important; }
+}
