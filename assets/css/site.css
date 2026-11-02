@@ -147,7 +147,7 @@ img { max-width:100%; }
 
 .site-footer__social a { display:inline-flex; gap:.55rem; align-items:center; }
 
-.site-footer__bottom { max-width:80rem; margin:2.5rem auto 0; padding-top:1rem; border-top:1px solid rgba(234,244,248,.22); display:flex; justify-content:space-between; gap:1rem; color:#D9E8EE; font-size:.82rem; }
+.site-footer__bottom { max-width:80rem; margin:2.5rem auto 0; padding-top:1rem; border-top:2px dashed #83E0D0; display:flex; justify-content:space-between; gap:1rem; color:#D9E8EE; font-size:.82rem; }
 
 .site-footer__bottom a { color:#fff; text-decoration:none; white-space:nowrap; }
 
@@ -403,4 +403,16 @@ img { max-width:100%; }
     .ford-connected-copy > p {
         font-size: 0.64rem;
     }
+}
+
+
+/* Ford final polish: top-align overview copy and strengthen separators. */
+.ford-connected-panel {
+    align-items: start;
+}
+.ford-connected-copy {
+    align-self: start;
+}
+.site-footer__bottom {
+    border-top: 2px dashed #83E0D0;
 }
