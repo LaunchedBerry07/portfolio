@@ -42,7 +42,7 @@ La valeur `baseurl` est définie dans `_config.yml` :
 - `""` pour un User Site ou un domaine personnalisé publié à la racine ;
 - `"/nom-du-depot"` pour un Project Site.
 
-Le nom du dépôt n’étant pas connu au moment de la livraison, la configuration contient une valeur vide par défaut et documente explicitement le réglage requis pour un Project Site. Aucun autre fichier de page n’est modifié.
+La configuration actuelle est `baseurl: "/portfolio"`; si le dépôt ou le chemin de publication change, mettre cette valeur à jour. Aucun autre fichier de page n’est modifié par ce réglage.
 
 
 ## Configuration GitHub Pages — adresse de publication

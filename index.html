@@ -9,12 +9,32 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <!-- FontAwesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <!-- Tailwind Config for Custom Palette & Fonts -->
-<link href="assets/css/utilities.css" rel="stylesheet"/><link href="assets/css/site.css" rel="stylesheet"/><link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"/></head>
-<body class="antialiased"><span class="visually-hidden" id="top"></span><nav aria-label="Main navigation" class="site-nav"><a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="index.html"><span aria-hidden="true" class="site-nav__mark">SN<span class="site-nav__mark-cross"></span></span><span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span></a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button"><i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span></button><div class="site-nav__links" id="primary-navigation"><a aria-current="page" class="is-current" href="index.html">Home</a><a href="services/">Services</a><a href="portfolio/linguistic-case-studies/">Portfolio</a><a href="index.html#methodology">Methodology</a><a href="portfolio/technical-projects/">Tech &amp; AI</a><a href="clients-sectors/">Clients &amp; Sectors</a><a href="clients-sectors/">Clients &amp; Sectors</a><a href="profile/">Profile &amp; CV</a><a class="site-nav__contact" href="contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a></div></nav>
+<link href="assets/css/utilities.css" rel="stylesheet"/><link href="assets/css/site.css" rel="stylesheet"/><link href="assets/images/favicon.webp" rel="icon" type="image/webp"/></head>
+<body class="antialiased"><span class="visually-hidden" id="top"></span><a class="skip-link" href="#main-content">Skip to main content</a>
+<nav aria-label="Main navigation" class="site-nav">
+  <a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="index.html">
+    <img class="site-nav__logo" src="assets/images/brand/stephanie-nadeau-logo-horizontal.png" width="936" height="445" alt="" decoding="async">
+  </a>
+  <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button">
+    <i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span>
+  </button>
+  <div class="site-nav__links" id="primary-navigation">
+    <a class="is-current" aria-current="page" href="index.html">Home</a>
+    <a href="services/">Services</a>
+    <a href="portfolio/linguistic-case-studies/">Portfolio</a>
+    <a href="index.html#methodology">Methodology</a>
+    <a href="portfolio/technical-projects/">Tech &amp; AI</a>
+    <a href="clients-sectors/">Clients &amp; Sectors</a>
+    <a href="profile/">Profile &amp; CV</a>
+    <a class="cta cta--primary site-nav__contact" href="contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a>
+  </div>
+</nav>
+
+<main id="main-content">
 <!-- Navigation -->
 <!-- HERO SECTION -->
 <section class="home-hero relative px-6 lg:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-8 overflow-hidden" aria-labelledby="home-hero-title">
@@ -28,8 +48,8 @@
     <p class="text-lg text-gray-700 mb-6 border-l-4 border-mist pl-4">English-to-Canadian French translation, localization, editing and linguistic quality assurance.</p>
     <p class="text-base text-gray-600 mb-8 leading-relaxed max-w-lg">I help teams deliver content that is accurate, natural and consistent—from technical documentation and digital experiences to institutional, commercial and editorial material. My approach combines linguistic judgment, terminology control and structured quality checks, with close attention to the context in which each text will be used.</p>
     <div class="flex flex-wrap gap-4 home-hero__actions">
-      <a class="organic-border bg-navy text-white px-6 py-3 font-medium hover:bg-bluegreen transition-all shadow-handdrawn" href="#services">Explore language services <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i></a>
-      <a class="organic-border-pink bg-white text-darkpink px-6 py-3 font-medium hover:bg-mist transition-all shadow-handdrawn-pink" href="#portfolio">View selected assignments</a>
+      <a class="cta cta--primary" href="#services">Explore language services <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i></a>
+      <a class="cta cta--secondary" href="#portfolio">View selected assignments</a>
     </div>
   </div>
   <div class="home-hero__visual lg:w-1/2 relative z-0" aria-label="Language and communication illustration">
@@ -41,7 +61,7 @@
 <div class="max-w-4xl mx-auto text-center">
 <h2 class="font-serif text-4xl font-bold text-navy mb-4 relative inline-block">
                 Language expertise, <span class="text-darkpink italic">beyond the sentence</span>
-                <i class="fa-solid fa-quote-left absolute -top-4 -left-6 text-3xl text-seafoam opacity-50"></i>
+                <i class="fa-solid fa-quote-left absolute -top-4 -left-2 text-3xl text-seafoam opacity-50"></i>
 </h2>
 <p class="text-lg text-gray-700 leading-relaxed mb-4">
                 A word rarely stands alone. Its meaning depends on the document, the audience, the task, the terminology already in use and the constraints of the medium. I look at those relationships as part of the work—not as details to address after the translation is complete.
@@ -112,7 +132,7 @@
 </div>
 </div>
 <div class="text-center mt-12">
-<a class="text-navy font-semibold underline decoration-2 decoration-seafoam hover:text-bluegreen transition-colors" href="services/">
+<a class="transition-colors content-link" href="services/">
                 Explore all language services <i class="fa-solid fa-arrow-right-long ml-1"></i>
 </a>
 </div>
@@ -131,7 +151,7 @@
 <p class="text-mist opacity-90 max-w-xl">My language work spans automotive, industrial, institutional, media, medical technology, financial, web and editorial contexts. The examples below illustrate different aspects of that practice.</p>
 </div>
 <div class="mt-6 md:mt-0 flex gap-4">
-<a class="text-seafoam font-semibold hover:text-white transition-colors text-sm" href="portfolio/linguistic-case-studies/">
+<a class="transition-colors text-sm content-link content-link--light" href="portfolio/linguistic-case-studies/">
                         View linguistic portfolio <i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
@@ -147,7 +167,7 @@
 <div class="text-sm font-bold text-sky uppercase tracking-wider mb-1">Automotive localization</div>
 <h3 class="font-serif text-2xl font-bold mb-2">Ford — Build &amp; Price</h3>
 <p class="text-base text-gray-600 mb-3 leading-relaxed">Localized an interactive vehicle-configuration experience into Canadian French, maintaining consistency across filters, specifications, pricing and legal disclosures.</p>
-<div class="text-base font-hand text-darkpink font-bold bg-pink-50 inline-block px-2 py-1 rounded-sm w-max transform rotate-1 border border-darkpink">
+<div class="text-base font-hand text-darkpink font-bold bg-pink-50 inline-block px-2 py-1 rounded-sm w-max transform rotate-1 border border-darkpink organic-frame--small">
                             50,284 words
                         </div>
 </div>
@@ -161,7 +181,7 @@
 <div class="text-sm font-bold text-sky uppercase tracking-wider mb-1">Institutional translation</div>
 <h3 class="font-serif text-2xl font-bold mb-2">Public Works / GSC</h3>
 <p class="text-base text-gray-600 mb-3 leading-relaxed">Applied official terminology and consulted TERMIUM Plus to support consistency across related deliveries.</p>
-<div class="text-base font-hand text-darkpink font-bold bg-pink-50 inline-block px-2 py-1 rounded-sm w-max transform -rotate-1 border border-darkpink">
+<div class="text-base font-hand text-darkpink font-bold bg-pink-50 inline-block px-2 py-1 rounded-sm w-max transform -rotate-1 border border-darkpink organic-frame--small">
                             14 mandates / 101,450 words
                         </div>
 </div>
@@ -185,17 +205,17 @@
 <div class="relative pl-8 border-l-2 border-dashed border-sky space-y-6">
 <div class="relative">
 <div class="absolute -left-[41px] bg-white border-2 border-sky w-5 h-5 rounded-full"></div>
-<h4 class="font-bold text-navy">Clarify</h4>
+<h3 class="font-bold text-navy">Clarify</h3>
 <p class="text-sm text-gray-500">Context, use &amp; constraints</p>
 </div>
 <div class="relative">
 <div class="absolute -left-[41px] bg-white border-2 border-turquoise w-5 h-5 rounded-full"></div>
-<h4 class="font-bold text-navy">Verify</h4>
+<h3 class="font-bold text-navy">Verify</h3>
 <p class="text-sm text-gray-500">Terminology &amp; resources</p>
 </div>
 <div class="relative">
 <div class="absolute -left-[41px] bg-darkpink w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]"><i class="fa-solid fa-check"></i></div>
-<h4 class="font-bold text-navy">Review</h4>
+<h3 class="font-bold text-navy">Review</h3>
 <p class="text-sm text-gray-500">Document/interface context</p>
 </div>
 </div>
@@ -223,18 +243,18 @@
                     </p>
 <!-- Tags -->
 <div class="flex flex-wrap gap-2 mb-6">
-<span class="bg-white text-bluegreen border border-bluegreen text-xs font-bold px-2 py-1 rounded-sm transform -rotate-1">Applied linguistics</span>
-<span class="bg-white text-darkpink border border-darkpink text-xs font-bold px-2 py-1 rounded-sm transform rotate-1">Heuristic detection</span>
-<span class="bg-white text-sky border border-sky text-xs font-bold px-2 py-1 rounded-sm">Workflow automation</span>
+<span class="bg-white text-bluegreen border border-bluegreen text-xs font-bold px-2 py-1 rounded-sm transform -rotate-1 organic-frame--small">Applied linguistics</span>
+<span class="bg-white text-darkpink border border-darkpink text-xs font-bold px-2 py-1 rounded-sm transform rotate-1 organic-frame--small">Heuristic detection</span>
+<span class="bg-white text-sky border border-sky text-xs font-bold px-2 py-1 rounded-sm organic-frame--small">Workflow automation</span>
 </div>
-<a class="inline-flex items-center text-navy font-bold hover:text-darkpink transition-colors" href="portfolio/technical-projects/email-solicitation-filtering.html">
+<a class="inline-flex items-center transition-colors content-link" href="portfolio/technical-projects/email-solicitation-filtering.html">
                         Explore the project <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
 </a>
 </div>
 <div class="mt-6 flex justify-end gap-4 text-sm">
-<a class="text-bluegreen font-semibold hover:underline" href="portfolio/technical-projects/">Explore technologies</a>
+<a class="content-link" href="portfolio/technical-projects/">Explore technologies</a>
 <span class="text-gray-300">|</span>
-<a class="text-bluegreen font-semibold hover:underline" href="portfolio/technical-projects/">View technical and AI projects</a>
+<a class="content-link" href="portfolio/technical-projects/">View technical and AI projects</a>
 </div>
 </div>
 </div>
@@ -251,7 +271,7 @@
                         “She has a genuine gift for writing, capturing the essence of a text while respecting its core message. She consistently meets editorial requirements, and production schedules and deadlines hold no secrets for her.”
                     </p>
 <div>
-<h4 class="font-bold text-navy text-base">Caroline Bergeron</h4>
+<h3 class="font-bold text-navy text-base">Caroline Bergeron</h3>
 <p class="text-sm text-sky uppercase">Publisher, Éditions de Mortagne</p>
 </div>
 </div>
@@ -262,7 +282,7 @@
                         “She is officially recognized as one of our most trusted proofreaders. We rely on her to screen and evaluate the final work of other French Canadian linguists for our team.”
                     </p>
 <div>
-<h4 class="font-bold text-navy text-base">Maga Zavarse</h4>
+<h3 class="font-bold text-navy text-base">Maga Zavarse</h3>
 <p class="text-sm text-sky uppercase">Communications Associate, MotaWord</p>
 </div>
 </div>
@@ -273,7 +293,7 @@
                         “Her professionalism, precise choice of words, and perfect understanding of our expectations make her a true specialist. I recommend her without hesitation.”
                     </p>
 <div>
-<h4 class="font-bold text-navy text-base">Jay Chevery</h4>
+<h3 class="font-bold text-navy text-base">Jay Chevery</h3>
 <p class="text-sm text-sky uppercase">TV Host &amp; Public Figure</p>
 </div>
 </div>
@@ -288,10 +308,31 @@
     <p class="home-cta__eyebrow">LET’S WORK TOGETHER</p>
     <h2 id="home-cta-title">Let’s talk about<br/><span>your project.</span></h2>
     <p>Looking for reliable language expertise tailored to your audience, your content and your goals? Let’s discuss what you need.</p>
-    <a class="home-cta__button" href="contact/">Get in touch <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i></a>
+    <a class="cta cta--primary" href="contact/">Get in touch <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i></a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="site-footer" id="site-footer"><div class="site-footer__inner"><div class="site-footer__identity"><a class="site-footer__brand" href="index.html">Stéphanie Nadeau</a><p>Canadian French language expertise, supported by technology.</p><a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a></div><nav aria-label="Footer navigation" class="site-footer__nav"><a href="index.html">Home</a><a href="services/">Services</a><a href="portfolio/linguistic-case-studies/">Portfolio</a><a href="index.html#methodology">Methodology</a><a href="portfolio/technical-projects/">Tech &amp; AI</a><a href="profile/">Profile &amp; CV</a><a href="contact/">Contact</a></nav><div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></div></div><div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div></footer><script defer="True" src="assets/js/site.js"></script></body>
+</main>
+<footer class="site-footer" id="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__identity">
+      <a class="site-footer__brand" href="index.html">Stéphanie Nadeau</a>
+      <p>Language expertise, supported by technology.</p>
+      <a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
+    </div>
+    <nav class="site-footer__nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="services/">Services</a>
+      <a href="portfolio/linguistic-case-studies/">Portfolio</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="portfolio/technical-projects/">Tech &amp; AI</a>
+      <a href="clients-sectors/">Clients &amp; Sectors</a>
+      <a href="profile/">Profile &amp; CV</a>
+      <a href="contact/">Contact</a>
+    </nav>
+    <div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a></div>
+  </div>
+  <div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+</footer><script defer="True" src="assets/js/site.js"></script></body>
 </html>

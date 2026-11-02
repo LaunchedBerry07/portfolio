@@ -8,7 +8,7 @@
   <title>Language Services &amp; Rates | Stéphanie Nadeau</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/utilities.css">
   <link rel="stylesheet" href="../assets/css/site.css">
@@ -16,28 +16,27 @@
   <link rel="icon" href="../assets/images/favicon.webp" type="image/webp">
 </head>
 <body class="antialiased services-page">
-  <a class="visually-hidden" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <span class="visually-hidden" id="top"></span>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <a class="site-nav__brand" href="../index.html" aria-label="Stéphanie Nadeau — home">
-      <span class="site-nav__mark" aria-hidden="true">SN<span class="site-nav__mark-cross"></span></span>
-      <span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span>
-    </a>
-    <button class="site-nav__toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
-      <i class="fa-solid fa-bars" aria-hidden="true"></i><span>Menu</span>
-    </button>
-    <div class="site-nav__links" id="primary-navigation">
-      <a href="../index.html">Home</a>
-      <a href="./" class="is-current" aria-current="page">Services</a>
-      <a href="../portfolio/linguistic-case-studies/">Portfolio</a>
-      <a href="../index.html#methodology">Methodology</a>
-      <a href="../portfolio/technical-projects/">Tech &amp; AI</a>
-      <a href="../clients-sectors/">Clients &amp; Sectors</a>
-      <a href="../profile/">Profile &amp; CV</a>
-      <a class="site-nav__contact" href="../contact/"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>Get in touch</span></a>
-    </div>
-  </nav>
+  <nav aria-label="Main navigation" class="site-nav">
+  <a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../index.html">
+    <img class="site-nav__logo" src="../assets/images/brand/stephanie-nadeau-logo-horizontal.png" width="936" height="445" alt="" decoding="async">
+  </a>
+  <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button">
+    <i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span>
+  </button>
+  <div class="site-nav__links" id="primary-navigation">
+    <a href="../index.html">Home</a>
+    <a class="is-current" aria-current="page" href="../services/">Services</a>
+    <a href="../portfolio/linguistic-case-studies/">Portfolio</a>
+    <a href="../index.html#methodology">Methodology</a>
+    <a href="../portfolio/technical-projects/">Tech &amp; AI</a>
+    <a href="../clients-sectors/">Clients &amp; Sectors</a>
+    <a href="../profile/">Profile &amp; CV</a>
+    <a class="cta cta--primary site-nav__contact" href="../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a>
+  </div>
+</nav>
 
   <main id="main-content">
     <header class="svc-hero">
@@ -49,8 +48,8 @@
           <p class="svc-hero__lead">I translate English-language content into French, with a specialization in Canadian French and experience across Quebec French, European French and International French.</p>
           <p class="svc-hero__body">From specialized technical documentation to digital experiences, institutional material and editorial projects, I bring together linguistic precision, contextual understanding and a structured approach to quality. Each assignment is shaped by its terminology, intended audience and practical use.</p>
           <div class="svc-hero__actions">
-            <a class="svc-button svc-button--primary" href="#core-services">Explore language services <span aria-hidden="true">→</span></a>
-            <a class="svc-button svc-button--outline" href="../contact/">Discuss your project <span aria-hidden="true">↗</span></a>
+            <a class="cta cta--primary" href="#core-services">Explore language services <span aria-hidden="true">→</span></a>
+            <a class="cta cta--secondary" href="../contact/">Discuss your project <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="svc-hero__visual">
@@ -192,14 +191,14 @@
           <article><span class="svc-tech__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span><h3>Technical Implementation</h3><p>HTML, CSS, JavaScript and Python.</p></article>
         </div>
         <p class="svc-tech__note">Technology is a supporting capability, not a replacement for linguistic expertise.</p>
-        <a class="svc-text-link svc-text-link--light" href="../portfolio/technical-projects/">Explore technical projects <span aria-hidden="true">↗</span></a>
+        <a class="svc-text-link content-link content-link--light" href="../portfolio/technical-projects/">Explore technical projects <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
     <section class="svc-experience" id="experience" aria-labelledby="experience-title"><span class="visually-hidden" id="sectors"></span>
       <div class="svc-wrap svc-experience__inner">
         <div><p class="svc-eyebrow">Context matters</p><h2 id="experience-title">Experience across industries and content environments.</h2></div>
-        <div><p>From technical documentation and digital products to institutional, financial, medical and editorial content, each assignment calls for an understanding of its subject matter, terminology and audience.</p><a class="svc-text-link" href="../clients-sectors/">Explore Clients &amp; Sectors <span aria-hidden="true">→</span></a></div>
+        <div><p>From technical documentation and digital products to institutional, financial, medical and editorial content, each assignment calls for an understanding of its subject matter, terminology and audience.</p><a class="svc-text-link content-link" href="../clients-sectors/">Explore Clients &amp; Sectors <span aria-hidden="true">→</span></a></div>
       </div>
     </section>
 
@@ -240,18 +239,31 @@
     </section>
 
     <section class="svc-final-cta" aria-labelledby="final-cta-title">
-      <div class="svc-wrap svc-final-cta__inner"><div><p class="svc-eyebrow">Have a project in mind?</p><h2 id="final-cta-title">Let's find the right words <em>for your project.</em></h2><p>Tell me what you are working on, who it is for and what you need to achieve.</p><a class="svc-button svc-button--pink" href="../contact/">Discuss your project <span aria-hidden="true">↗</span></a></div><img src="../assets/images/portrait/cta-paper-plane-globe.webp" width="1200" height="853" loading="lazy" alt="Illustration of a paper plane flying toward a large globe connected by flowing lines"></div>
+      <div class="svc-wrap svc-final-cta__inner"><div><p class="svc-eyebrow">Have a project in mind?</p><h2 id="final-cta-title">Let's find the right words <em>for your project.</em></h2><p>Tell me what you are working on, who it is for and what you need to achieve.</p><a class="cta cta--primary" href="../contact/">Discuss your project <span aria-hidden="true">↗</span></a></div><img src="../assets/images/portrait/cta-paper-plane-globe.webp" width="1200" height="853" loading="lazy" alt="Illustration of a paper plane flying toward a large globe connected by flowing lines"></div>
     </section>
   </main>
 
   <footer class="site-footer" id="site-footer">
-    <div class="site-footer__inner">
-      <div class="site-footer__identity"><a class="site-footer__brand" href="../index.html">Stéphanie Nadeau</a><p>Language expertise, supported by technology.</p><a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a></div>
-      <nav class="site-footer__nav" aria-label="Footer navigation"><a href="../index.html">Home</a><a href="./">Services</a><a href="../portfolio/linguistic-case-studies/">Portfolio</a><a href="../index.html#methodology">Methodology</a><a href="../portfolio/technical-projects/">Tech &amp; AI</a><a href="../clients-sectors/">Clients &amp; Sectors</a><a href="../profile/">Profile &amp; CV</a><a href="../contact/">Contact</a></nav>
-      <div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a></div>
+  <div class="site-footer__inner">
+    <div class="site-footer__identity">
+      <a class="site-footer__brand" href="../index.html">Stéphanie Nadeau</a>
+      <p>Language expertise, supported by technology.</p>
+      <a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
     </div>
-    <div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
-  </footer>
+    <nav class="site-footer__nav" aria-label="Footer navigation">
+      <a href="../index.html">Home</a>
+      <a href="../services/">Services</a>
+      <a href="../portfolio/linguistic-case-studies/">Portfolio</a>
+      <a href="../index.html#methodology">Methodology</a>
+      <a href="../portfolio/technical-projects/">Tech &amp; AI</a>
+      <a href="../clients-sectors/">Clients &amp; Sectors</a>
+      <a href="../profile/">Profile &amp; CV</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+    <div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a></div>
+  </div>
+  <div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+</footer>
   <script defer src="../assets/js/site.js"></script>
 </body>
 </html>
