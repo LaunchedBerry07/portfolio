@@ -332,3 +332,75 @@ img { max-width:100%; }
         padding: 1.35rem;
     }
 }
+
+
+/* Ford connected journey — keep the illustration to the left at every viewport. */
+.ford-connected-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+    grid-template-areas: "visual copy";
+    align-items: center;
+    gap: 2rem;
+}
+.ford-connected-visual {
+    grid-area: visual;
+    min-width: 0;
+}
+.ford-connected-copy {
+    grid-area: copy;
+    min-width: 0;
+}
+.ford-connected-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 540px;
+    object-fit: contain;
+    border: 2px solid #13293D;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    box-shadow: 5px 5px 0 rgba(131, 224, 208, 0.78);
+}
+@media (max-width: 767px) {
+    .ford-connected-panel {
+        grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+        gap: 0.75rem;
+        padding: 0.8rem;
+    }
+    .ford-connected-copy h2 {
+        font-size: clamp(1.15rem, 5vw, 1.45rem);
+        line-height: 1.15;
+        margin-bottom: 0.65rem;
+    }
+    .ford-connected-copy > p {
+        font-size: 0.68rem;
+        line-height: 1.45;
+        margin-bottom: 0.55rem;
+    }
+    .ford-connected-copy .prose {
+        font-size: 0.7rem;
+        line-height: 1.45;
+    }
+    .ford-connected-copy .prose p {
+        margin-bottom: 0.65rem;
+    }
+    .ford-connected-visual {
+        align-self: center;
+        padding: 0;
+    }
+    .ford-connected-visual img {
+        max-height: none;
+        border-radius: 90px 12px 85px 12px / 12px 85px 12px 90px;
+        box-shadow: 3px 3px 0 rgba(131, 224, 208, 0.78);
+    }
+}
+@media (max-width: 360px) {
+    .ford-connected-panel {
+        grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+        gap: 0.6rem;
+        padding: 0.65rem;
+    }
+    .ford-connected-copy .prose,
+    .ford-connected-copy > p {
+        font-size: 0.64rem;
+    }
+}
