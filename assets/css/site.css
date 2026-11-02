@@ -446,3 +446,41 @@ img { max-width:100%; }
 @media (max-width: 767px) {
     .beholder-review-card { padding: 1.4rem; }
 }
+
+
+/* Beholder — organic screenshot frames and subtle Blue Green colour treatment.
+   The tint uses a colour blend to preserve the luminance and legibility of UI text. */
+.beholder-screenshot-frame {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    background: #FFFFFF;
+}
+.beholder-screenshot-frame--pink {
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+}
+.beholder-screenshot-frame > img {
+    display: block;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    filter: saturate(.88) contrast(1.035);
+}
+.beholder-screenshot-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    background: rgba(8, 126, 139, .20);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+.beholder-screenshot-badge {
+    z-index: 2;
+}
