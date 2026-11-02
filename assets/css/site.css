@@ -521,3 +521,35 @@ img { max-width:100%; }
         max-height: none;
     }
 }
+
+
+/* Bell Media case study — preserve the full 3:4 conceptual illustration. */
+.case-study-visual .case-study-illustration-frame {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    isolation: isolate;
+    box-sizing: border-box;
+    border: 2px solid #13293D;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    box-shadow: 5px 5px 0 rgba(131, 224, 208, 0.78);
+    background: #EAF4F8;
+}
+.case-study-visual .case-study-illustration-frame > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+@media (max-width: 767px) {
+    .case-study-visual .case-study-illustration-frame {
+        border-radius: 90px 12px 85px 12px / 12px 85px 12px 90px;
+        box-shadow: 3px 3px 0 rgba(131, 224, 208, 0.78);
+    }
+}
