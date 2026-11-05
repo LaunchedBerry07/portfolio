@@ -9,7 +9,7 @@
 | Clients et secteurs | `clients-sectors/index.html` |
 | Profil et CV | `profile/index.html` |
 | Contact | `contact/index.html` |
-| CSS partagé et styles propres aux pages | `assets/css/site.css`, `assets/css/clients-sectors.css`, `assets/css/profile.css`, `assets/css/services.css`, `assets/css/404.css` |
+| CSS partagé et styles propres aux pages | `assets/css/site.css`, `assets/css/clients-sectors.css`, `assets/css/profile.css`, `assets/css/services.css`, `assets/css/404.css`, `assets/css/polaris-industries.css`, `assets/css/r-e-m.css` |
 | Utilitaires CSS compilés | `assets/css/utilities.css` |
 | Interactions globales | `assets/js/site.js` |\n| Configuration GitHub Pages / Jekyll | `_config.yml` |\n| Page d’erreur personnalisée | `404.html` (avec front matter Jekyll et chemins `relative_url`) |
 | Images et futurs médias | `assets/images/` |

@@ -14,21 +14,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <link href="../../assets/css/utilities.css" rel="stylesheet"/>
 <link href="../../assets/css/site.css" rel="stylesheet"/>
+<link href="../../assets/css/r-e-m.css" rel="stylesheet"/>
 <link href="../../assets/images/favicon.webp" rel="icon" type="image/webp"/>
-<style>
-/* R.E.M. case-study layout refinements */
-.organic-border-pale {
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border: 2px solid #EAF4F8;
-}
-.rem-product-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
-.rem-workflow-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
-.rem-comparative-total { border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; }
-@media (min-width: 900px) {
-  .rem-product-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  .rem-workflow-grid { grid-template-columns: minmax(0, 1fr) minmax(320px, .9fr); }
-}
-</style>
 </head>
 <body class="antialiased">
 <span class="visually-hidden" id="top"></span>
@@ -161,9 +148,9 @@
 <div class="bg-white p-7 md:p-9 organic-border shadow-handdrawn">
 <h3 class="font-serif text-2xl font-bold text-navy mb-2">Technical translation breakdown</h3><p class="text-sm text-gray-600 mb-6">All source words translated and billed</p>
 <div class="space-y-5">
-<div><div class="flex justify-between gap-4 text-sm mb-2"><span class="font-semibold text-navy">New words</span><strong class="text-navy tabular-nums">1,900</strong></div><div class="h-3 rounded-full bg-mist overflow-hidden"><div class="h-full rounded-full bg-darkpink" style="width:7.395%"></div></div></div>
-<div><div class="flex justify-between gap-4 text-sm mb-2"><span class="font-semibold text-navy">Internal repetitions</span><strong class="text-navy tabular-nums">19,793</strong></div><div class="h-3 rounded-full bg-mist overflow-hidden"><div class="h-full rounded-full bg-bluegreen" style="width:77.02%"></div></div></div>
-<div><div class="flex justify-between gap-4 text-sm mb-2"><span class="font-semibold text-navy">Internal 100% matches</span><strong class="text-navy tabular-nums">4,000</strong></div><div class="h-3 rounded-full bg-mist overflow-hidden"><div class="h-full rounded-full bg-sky" style="width:15.585%"></div></div></div>
+<div><div class="flex justify-between gap-4 text-sm mb-2"><span class="font-semibold text-navy">New words</span><strong class="text-navy tabular-nums">1,900</strong></div><div class="h-3 rounded-full bg-mist overflow-hidden"><div class="h-full rounded-full bg-darkpink rem-breakdown__fill--darkpink"></div></div></div>
+<div><div class="flex justify-between gap-4 text-sm mb-2"><span class="font-semibold text-navy">Internal repetitions</span><strong class="text-navy tabular-nums">19,793</strong></div><div class="h-3 rounded-full bg-mist overflow-hidden"><div class="h-full rounded-full bg-bluegreen rem-breakdown__fill--bluegreen"></div></div></div>
+<div><div class="flex justify-between gap-4 text-sm mb-2"><span class="font-semibold text-navy">Internal 100% matches</span><strong class="text-navy tabular-nums">4,000</strong></div><div class="h-3 rounded-full bg-mist overflow-hidden"><div class="h-full rounded-full bg-sky rem-breakdown__fill--sky"></div></div></div>
 </div>
 <div class="mt-7 pt-5 border-t border-dashed border-seafoam flex items-end justify-between gap-4"><span class="text-sm font-bold text-sky uppercase tracking-wider">Total translated</span><strong class="font-serif text-3xl text-darkpink tabular-nums">25,693</strong></div>
 </div>
