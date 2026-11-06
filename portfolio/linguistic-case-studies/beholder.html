@@ -9,7 +9,7 @@
 <meta content="A video game localization case study: English-to-French full-game localization and in-game review for Beholder, including narrative, interface text and player-facing content." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <link href="../../assets/css/utilities.css" rel="stylesheet"/>
 <link href="../../assets/css/site.css" rel="stylesheet"/>
@@ -17,19 +17,30 @@
 </head>
 <body class="antialiased">
 <span class="visually-hidden" id="top"></span>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <nav aria-label="Main navigation" class="site-nav">
-<a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../../index.html">
-<span aria-hidden="true" class="site-nav__mark">SN<span class="site-nav__mark-cross"></span></span>
-<span class="site-nav__brand-copy"><span class="site-nav__name">Stéphanie Nadeau</span><span class="site-nav__tagline">Language Services</span></span>
-</a>
-<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button"><i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span></button>
-<div class="site-nav__links" id="primary-navigation">
-<a href="../../index.html">Home</a><a href="../../services/">Services</a><a aria-current="page" class="is-current" href="./">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a href="../technical-projects/">Tech &amp; AI</a><a href="../../clients-sectors/">Clients &amp; Sectors</a><a href="../../profile/">Profile &amp; CV</a><a class="site-nav__contact" href="../../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a>
-</div>
+  <a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../../index.html">
+    <img class="site-nav__logo" src="../../assets/images/brand/stephanie-nadeau-logo-horizontal.png" width="936" height="445" alt="" decoding="async">
+  </a>
+  <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button">
+    <i aria-hidden="true" class="fa-solid fa-bars"></i><span>Menu</span>
+  </button>
+  <div class="site-nav__links" id="primary-navigation">
+    <a href="../../index.html">Home</a>
+    <a href="../../services/">Services</a>
+    <a class="is-current" aria-current="location" href="../../portfolio/linguistic-case-studies/">Portfolio</a>
+    
+    <a href="../../portfolio/technical-projects/">Tech &amp; AI</a>
+    <a href="../../clients-sectors/">Clients &amp; Sectors</a>
+    <a href="../../profile/">Profile &amp; CV</a>
+    <a class="cta cta--primary site-nav__contact" href="../../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a>
+  </div>
 </nav>
+
+<main id="main-content">
 <!-- CASE STUDY HERO -->
 <section class="relative pt-16 pb-12 px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden">
-<a class="inline-flex items-center text-sm font-semibold text-bluegreen hover:text-darkpink transition-colors mb-8" href="./"><i class="fa-solid fa-arrow-left mr-2"></i> Back to Portfolio</a>
+<a class="inline-flex items-center text-sm transition-colors mb-8 content-link" href="./"><i class="fa-solid fa-arrow-left mr-2"></i> Back to Portfolio</a>
 <div class="flex flex-col lg:flex-row gap-12 items-start">
 <div class="lg:w-3/5 relative z-10">
 <div class="absolute -top-8 -left-6 transform -rotate-12 text-darkpink font-hand text-2xl hidden md:block">In-context review <i class="fa-solid fa-magnifying-glass ml-1 text-sm"></i></div>
@@ -39,10 +50,10 @@
         Full-game localization from English into French, followed by in-game review and playtesting to assess dialogue, interface text and player-facing content in context.
       </p>
 <div class="flex flex-wrap gap-3 mb-8">
-<span class="bg-mist text-bluegreen border border-bluegreen text-xs font-bold px-3 py-1.5 rounded-sm transform -rotate-1 shadow-sm">Video game localization</span>
-<span class="bg-white text-darkpink border border-darkpink text-xs font-bold px-3 py-1.5 rounded-sm transform rotate-1 shadow-sm">English → French</span>
-<span class="bg-mist text-sky border border-sky text-xs font-bold px-3 py-1.5 rounded-sm shadow-sm">In-game review</span>
-<span class="bg-white text-navy border border-navy text-xs font-bold px-3 py-1.5 rounded-sm transform -rotate-1 shadow-sm">Playtesting</span>
+<span class="bg-mist text-bluegreen border border-bluegreen text-xs font-bold px-3 py-1.5 rounded-sm transform -rotate-1 shadow-sm organic-frame--small">Video game localization</span>
+<span class="bg-white text-darkpink border border-darkpink text-xs font-bold px-3 py-1.5 rounded-sm transform rotate-1 shadow-sm organic-frame--small">English → French</span>
+<span class="bg-mist text-sky border border-sky text-xs font-bold px-3 py-1.5 rounded-sm shadow-sm organic-frame--small">In-game review</span>
+<span class="bg-white text-navy border border-navy text-xs font-bold px-3 py-1.5 rounded-sm transform -rotate-1 shadow-sm organic-frame--small">Playtesting</span>
 </div>
 </div>
 <div class="lg:w-2/5 w-full relative">
@@ -194,13 +205,27 @@
 </div>
 </section>
 <!-- CTA / FOOTER -->
+</main>
 <footer class="site-footer" id="site-footer">
-<div class="site-footer__inner">
-<div class="site-footer__identity"><a class="site-footer__brand" href="../../index.html">Stéphanie Nadeau</a><p>Canadian French language expertise, supported by technology.</p><a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a></div>
-<nav aria-label="Footer navigation" class="site-footer__nav"><a href="../../index.html">Home</a><a href="../../services/">Services</a><a href="./">Portfolio</a><a href="../../index.html#methodology">Methodology</a><a href="../technical-projects/">Tech &amp; AI</a><a href="../../profile/">Profile &amp; CV</a><a href="../../contact/">Contact</a></nav>
-<div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></div>
-</div>
-<div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+  <div class="site-footer__inner">
+    <div class="site-footer__identity">
+      <a class="site-footer__brand" href="../../index.html">Stéphanie Nadeau</a>
+      <p>Language expertise, supported by technology.</p>
+      <a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
+    </div>
+    <nav class="site-footer__nav" aria-label="Footer navigation">
+      <a href="../../index.html">Home</a>
+      <a href="../../services/">Services</a>
+      <a href="../../portfolio/linguistic-case-studies/">Portfolio</a>
+      
+      <a href="../../portfolio/technical-projects/">Tech &amp; AI</a>
+      <a href="../../clients-sectors/">Clients &amp; Sectors</a>
+      <a href="../../profile/">Profile &amp; CV</a>
+      <a href="../../contact/">Contact</a>
+    </nav>
+    <div class="site-footer__social"><a href="https://linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a></div>
+  </div>
+  <div class="site-footer__bottom"><span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
 </footer>
 <script defer="" src="../../assets/js/site.js"></script>
 </body>
