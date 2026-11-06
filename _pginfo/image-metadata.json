@@ -1,315 +1,276 @@
 {
   "version": 1,
   "assets": {
-    "image-mw4x7dgl-tjxbu666rwb": {
-      "id": "image-mw4x7dgl-tjxbu666rwb",
-      "source": "project:assets/images/services/data-annotation-magnifier-labels.webp",
+    "image-mw54uzeu-34v4meb6ppv": {
+      "id": "image-mw54uzeu-34v4meb6ppv",
+      "source": "project:assets/images/clients-sectors/hero-language-connections.webp",
       "remembered": {},
       "suggestions": {},
-      "revision": "sha256:3ddd8cc5251abb03913c56018aa01db6560ca8e4b293912f64cc96599787e08a",
+      "revision": "sha256:cd0a70b471e669dd78a35254e86fdb70a2ed864e6b83a6531a4c4e678943069f",
       "available": true
     },
-    "image-mw4xsqwx-fdik0122x4s": {
-      "id": "image-mw4xsqwx-fdik0122x4s",
-      "source": "project:assets/images/general/hero-language-illustration-transparent.webp",
+    "image-mw564n0w-amri82velar": {
+      "id": "image-mw564n0w-amri82velar",
+      "source": "project:assets/images/services/translation-localization-globe-dialogue.webp",
       "remembered": {},
       "suggestions": {},
-      "revision": "sha256:fa3decf40a09e11cef8f0193f2820c972c09d22af34068d516d783833f413243",
-      "available": false
+      "revision": "sha256:cc9359c1c619a25f5db25e103dee9c35ff388e6033688f0b98a4eb488f42d10e",
+      "available": true
     },
-    "image-mw4y4ot1-tv48a462fzf": {
-      "id": "image-mw4y4ot1-tv48a462fzf",
-      "source": "project:1e1173ed-1904-484e-b8ad-faf29f49630d-copied-media~2.jpg.png",
-      "remembered": {},
-      "suggestions": {},
-      "revision": "sha256:53af0a941a826eebaaf0d73b9cbae3b84f748aef3c87f5d77174ce92c0a4fbe3",
-      "available": false
-    },
-    "image-mw4y598c-jlaeb8l8f6": {
-      "id": "image-mw4y598c-jlaeb8l8f6",
-      "source": "project:1e598760-05e1-4283-b70a-efb1a9449135-copied-media~2.jpg.png",
-      "remembered": {},
-      "suggestions": {},
-      "revision": "sha256:faeb6895379e329c4ff14d1d54c08c9280cabe82bed89f36f368ff07f49198e7",
-      "available": false
-    },
-    "image-mw4y5jnn-wz84m715ntp": {
-      "id": "image-mw4y5jnn-wz84m715ntp",
-      "source": "project:4e666d8f-5ef1-49ad-a9d8-0c5fc07799e3-copied-media~2.jpg.png",
+    "image-mw56c395-zldse7rhya": {
+      "id": "image-mw56c395-zldse7rhya",
+      "source": "project:clients-sectors/assets/images/services/translation-localization-globe-dialogue.webp",
       "remembered": {},
       "suggestions": {},
       "revision": null,
       "available": false
     },
-    "image-mw4y9pd5-4c10rd7kc9r": {
-      "id": "image-mw4y9pd5-4c10rd7kc9r",
-      "source": "project:715c4b71-6a2b-41ab-a02c-457a3a08d3b0-copied-media~2.jpg.png",
+    "image-mw56wcwl-uvtoo5xc8y": {
+      "id": "image-mw56wcwl-uvtoo5xc8y",
+      "source": "project:assets/images/clients-sectors/sector-icon-automotive.png",
       "remembered": {},
       "suggestions": {},
-      "revision": "sha256:3138129b24168f59fcab4a3119b1f891d6f7210bbf02e7b573f65c8817125291",
+      "revision": "sha256:75ee93e08facfe2aa32eb2211df2373226e64e1aaec4f1f987b526341dbd755c",
       "available": true
     },
-    "image-mw4ya3c6-cgrvhwik909": {
-      "id": "image-mw4ya3c6-cgrvhwik909",
-      "source": "project:da2d9dab-2e9b-477c-9100-30a5cc8e3c45-copied-media~2.jpg.png",
+    "image-mw572aju-7mpign4l90r": {
+      "id": "image-mw572aju-7mpign4l90r",
+      "source": "url:https://pinegrow.com/placeholders/img18.jpg",
       "remembered": {},
       "suggestions": {},
-      "revision": null,
-      "available": false
-    },
-    "image-mw4yaijn-64jssqg34u": {
-      "id": "image-mw4yaijn-64jssqg34u",
-      "source": "project:file_00000000b2c081f58ac4cbb469bf5f7e.png",
-      "remembered": {},
-      "suggestions": {},
-      "revision": "sha256:c42b5a8784c9df97f2c3c2e53ac35236eafd41a46de6a0487fce0764144a071c",
+      "revision": "sha256:a74961f261f34e9691906408ff1c10334eb226765926e790791e04eb572d3748",
       "available": true
     },
-    "image-mw4ybfs8-hh5h786oslr": {
-      "id": "image-mw4ybfs8-hh5h786oslr",
-      "source": "project:file_00000000d6ec822fa7210d5e751d473b.png",
+    "image-mw574lod-g1ob41k0y9g": {
+      "id": "image-mw574lod-g1ob41k0y9g",
+      "source": "url:https://pinegrow.com/placeholders/img13.jpg",
       "remembered": {},
       "suggestions": {},
-      "revision": "sha256:4e2d898d04253de894177f4e69c250bd2f084d12b58bc7d39e53851a9ef3fe44",
+      "revision": "sha256:936c39b17c74ee0861cc6cd93828277b3bcc639f3c8a4f2fa9f02a29fe81301b",
       "available": true
     },
-    "image-mw4ybpkk-sg45njcla5c": {
-      "id": "image-mw4ybpkk-sg45njcla5c",
-      "source": "project:file_00000000d71881f593cb54a9977980aa.png",
+    "image-mw574vlp-jw157wd5oo": {
+      "id": "image-mw574vlp-jw157wd5oo",
+      "source": "project:assets/images/clients-sectors/sector-icon-finance.png",
       "remembered": {},
       "suggestions": {},
-      "revision": "sha256:455247a6c1c0c91574596c3ec4699c15815aefd7216001560d8e9e7588cc8c3e",
+      "revision": "sha256:855da7507cb2f69951c76a9cc78abd621eb6c543ddb4b27cf7782cdb5d828dbd",
       "available": true
     },
-    "image-mw4ycix4-ra45bm2u9c9": {
-      "id": "image-mw4ycix4-ra45bm2u9c9",
-      "source": "project:file_000000002434822fa0e3413194d30401.png",
+    "image-mw5758wz-8lzrxuh3rxm": {
+      "id": "image-mw5758wz-8lzrxuh3rxm",
+      "source": "url:https://pinegrow.com/placeholders/img15.jpg",
       "remembered": {},
       "suggestions": {},
-      "revision": null,
-      "available": false
-    },
-    "image-mw4ydi2l-da7tea1witr": {
-      "id": "image-mw4ydi2l-da7tea1witr",
-      "source": "project:hero-language-illustration-transparent(1).webp",
-      "remembered": {},
-      "suggestions": {},
-      "revision": "sha256:fa3decf40a09e11cef8f0193f2820c972c09d22af34068d516d783833f413243",
+      "revision": "sha256:c67d2fee57e25e40d5b71fe94e798897e57c54d0645f23df6253a4f86d842f17",
       "available": true
     },
-    "image-mw4yds4m-2orzj6xdktd": {
-      "id": "image-mw4yds4m-2orzj6xdktd",
-      "source": "project:hero-language-illustration-transparent.webp",
+    "image-mw575f0f-rdtardf4ls": {
+      "id": "image-mw575f0f-rdtardf4ls",
+      "source": "project:assets/images/clients-sectors/sector-icon-technology.png",
       "remembered": {},
       "suggestions": {},
-      "revision": "sha256:4d1d90c7e0a610a6e97942c70f2bf210b8f6aca31898514445ed153b77b84a11",
+      "revision": "sha256:097b90aa275c3f74a99db6c9120b65d170b3e982ecc95a6767eb551787133d89",
       "available": true
     },
-    "image-mw4ygkaj-83tuhwrdojy": {
-      "id": "image-mw4ygkaj-83tuhwrdojy",
-      "source": "project:assets/images/general/hero-language-illustration-transparent.png",
+    "image-mw575rrh-nr2t61n053l": {
+      "id": "image-mw575rrh-nr2t61n053l",
+      "source": "project:assets/images/clients-sectors/sector-icon-government.png",
       "remembered": {},
       "suggestions": {},
-      "revision": "sha256:31dde4a8aaaaf8a81e23e46197b734e96581d551ded4a21c5a52711949ce0568",
-      "available": false
-    },
-    "image-mw4yidob-tomf2khulqf": {
-      "id": "image-mw4yidob-tomf2khulqf",
-      "source": "project:assets/images/home/hero-globe-bridge-illustration.png",
-      "remembered": {},
-      "suggestions": {},
-      "revision": "sha256:3138129b24168f59fcab4a3119b1f891d6f7210bbf02e7b573f65c8817125291",
+      "revision": "sha256:24cf91540068021e52fcb201a321e142ec4d445cea10701d876b70c15d683a66",
       "available": true
     },
-    "image-mw4yiplq-jfdqkn0fjq": {
-      "id": "image-mw4yiplq-jfdqkn0fjq",
-      "source": "project:assets/images/home/file_00000000b2c081f58ac4cbb469bf5f7e.png",
+    "image-mw5765zp-nq4z31glkir": {
+      "id": "image-mw5765zp-nq4z31glkir",
+      "source": "project:assets/images/clients-sectors/sector-icon-professional-services.png",
       "remembered": {},
       "suggestions": {},
-      "revision": null,
-      "available": false
-    },
-    "image-mw4yjhlq-tkxy3zpz6bj": {
-      "id": "image-mw4yjhlq-tkxy3zpz6bj",
-      "source": "project:assets/images/home/file_00000000d6ec822fa7210d5e751d473b.png",
-      "remembered": {},
-      "suggestions": {},
-      "available": false
-    },
-    "image-mw4yjpx7-3mlo208kuop": {
-      "id": "image-mw4yjpx7-3mlo208kuop",
-      "source": "project:assets/images/home/hero-language-illustration-transparent.webp",
-      "remembered": {},
-      "suggestions": {},
-      "available": false,
-      "revision": null
-    },
-    "image-mw51dumk-1ahqx2bdcc3": {
-      "id": "image-mw51dumk-1ahqx2bdcc3",
-      "source": "project:assets/images/profile/profile-hero-portrait.webp",
-      "remembered": {},
-      "suggestions": {},
-      "revision": "sha256:0a278a1ba9afdcc53de1eee033b7b586564789c594eafdc204bfb0b602e20344",
+      "revision": "sha256:a41b4845a1b463bf28468f9bc2b153b108f65724bff6cb8c4b503a6b8b26751f",
       "available": true
     },
-    "image-mw51ud73-drxkf8ewr8": {
-      "id": "image-mw51ud73-drxkf8ewr8",
-      "source": "url:file:///H:/Goopie/Development/Pinegrow%20Projects/assets/images/portrait/profile-hero-portrait.webp",
+    "image-mw576f8f-cbaok1ccslq": {
+      "id": "image-mw576f8f-cbaok1ccslq",
+      "source": "url:https://pinegrow.com/placeholders/img20.jpg",
       "remembered": {},
       "suggestions": {},
-      "revision": null,
-      "available": false
-    },
-    "image-mw51w9pi-1pwotcrja3p": {
-      "id": "image-mw51w9pi-1pwotcrja3p",
-      "source": "project:assets/images/error/hero-error-illustration.png",
-      "remembered": {},
-      "suggestions": {},
-      "revision": "sha256:fceb59f3cd6c67b64460c6cc805f10d808b4a9d16acd3e82730ef91c5535f23e",
+      "revision": "sha256:455826be60439b8ea8a0b0ea6fd48e8b992bdaf5de908a6fc289a01151bf041b",
       "available": true
     },
-    "image-mw51xofz-9k8ffj50ll": {
-      "id": "image-mw51xofz-9k8ffj50ll",
-      "source": "project:file_000000005130822fb89149b2683d8650.png",
+    "image-mw576rpb-o3u6yovowg": {
+      "id": "image-mw576rpb-o3u6yovowg",
+      "source": "project:assets/images/clients-sectors/sector-icon-manufacturing.png",
       "remembered": {},
       "suggestions": {},
-      "revision": null,
-      "available": false
+      "revision": "sha256:09cc372c4dc21d89a76d271b0e21a8842b70b03b38487819825e0c185ab60c2f",
+      "available": true
+    },
+    "image-mw5770oc-fkjz6fpreza": {
+      "id": "image-mw5770oc-fkjz6fpreza",
+      "source": "url:https://pinegrow.com/placeholders/img12.jpg",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:574bf03fc8e3637f9915d2fa5e6d4d0ed1af7d065bb10be9e83009a9dc6b28b1",
+      "available": true
+    },
+    "image-mw577b3w-ghylzarmate": {
+      "id": "image-mw577b3w-ghylzarmate",
+      "source": "url:https://pinegrow.com/placeholders/img14.jpg",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:d28cc4aa87e1abdcd850bf7c6fb3f7324a306f4ab6094271b78cfbbf8f2e0c73",
+      "available": true
+    },
+    "image-mw577hlc-1i97iy515z5": {
+      "id": "image-mw577hlc-1i97iy515z5",
+      "source": "project:assets/images/clients-sectors/sector-icon-retail.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:44056c1a5c56bd539da5f0fe42cc69cfd875ff429778fbd6935e61b926c04074",
+      "available": true
+    },
+    "image-mw577r6t-hgmvgl25m0f": {
+      "id": "image-mw577r6t-hgmvgl25m0f",
+      "source": "url:https://pinegrow.com/placeholders/img19.jpg",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:8184c22f73f73478f0d24e53b774a44e323605d9f58ef2976f692bfbe6b672ec",
+      "available": true
+    },
+    "image-mw577yfe-721cbeuj13g": {
+      "id": "image-mw577yfe-721cbeuj13g",
+      "source": "project:assets/images/clients-sectors/sector-icon-hospitality.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:30f595515d06a4d6500b87246c5502346267b54a54245027d0c5a6f37c3a74e2",
+      "available": true
+    },
+    "image-mw578fwt-k13psb66vrf": {
+      "id": "image-mw578fwt-k13psb66vrf",
+      "source": "project:assets/images/clients-sectors/sector-icon-healthcare.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:18ce92d258a6739cdec74c20f770e67110e3c0c4f1fea2b1080a2e23e4e50601",
+      "available": true
+    },
+    "image-mw5ckgrp-f9msq0q76g9": {
+      "id": "image-mw5ckgrp-f9msq0q76g9",
+      "source": "url:https://pinegrow.com/placeholders/img11.jpg",
+      "remembered": {},
+      "suggestions": {}
+    },
+    "image-mw5czuiv-ggpvis5t51m": {
+      "id": "image-mw5czuiv-ggpvis5t51m",
+      "source": "project:assets/images/clients-sectors/transperfect-global-connections.webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:391dd979912d2047e0f58e53bc500c52092ac8eb784ec3debcf7904a43a515a1",
+      "available": true
     }
   },
   "sources": {
-    "project:assets/images/services/data-annotation-magnifier-labels.webp": {
-      "asset": "image-mw4x7dgl-tjxbu666rwb",
+    "project:assets/images/clients-sectors/hero-language-connections.webp": {
+      "asset": "image-mw54uzeu-34v4meb6ppv",
       "kind": "original",
       "cropToken": null
     },
-    "project:assets/images/general/hero-language-illustration-transparent.webp": {
-      "asset": "image-mw4xsqwx-fdik0122x4s",
+    "project:assets/images/services/translation-localization-globe-dialogue.webp": {
+      "asset": "image-mw564n0w-amri82velar",
       "kind": "original",
       "cropToken": null
     },
-    "project:1e1173ed-1904-484e-b8ad-faf29f49630d-copied-media~2.jpg.png": {
-      "asset": "image-mw4y4ot1-tv48a462fzf",
+    "project:clients-sectors/assets/images/services/translation-localization-globe-dialogue.webp": {
+      "asset": "image-mw56c395-zldse7rhya",
       "kind": "original",
       "cropToken": null
     },
-    "project:1e598760-05e1-4283-b70a-efb1a9449135-copied-media~2.jpg.png": {
-      "asset": "image-mw4y598c-jlaeb8l8f6",
+    "project:assets/images/clients-sectors/sector-icon-automotive.png": {
+      "asset": "image-mw56wcwl-uvtoo5xc8y",
       "kind": "original",
       "cropToken": null
     },
-    "project:4e666d8f-5ef1-49ad-a9d8-0c5fc07799e3-copied-media~2.jpg.png": {
-      "asset": "image-mw4y5jnn-wz84m715ntp",
+    "url:https://pinegrow.com/placeholders/img18.jpg": {
+      "asset": "image-mw572aju-7mpign4l90r",
       "kind": "original",
       "cropToken": null
     },
-    "project:715c4b71-6a2b-41ab-a02c-457a3a08d3b0-copied-media~2.jpg.png": {
-      "asset": "image-mw4y9pd5-4c10rd7kc9r",
+    "url:https://pinegrow.com/placeholders/img13.jpg": {
+      "asset": "image-mw574lod-g1ob41k0y9g",
       "kind": "original",
       "cropToken": null
     },
-    "project:da2d9dab-2e9b-477c-9100-30a5cc8e3c45-copied-media~2.jpg.png": {
-      "asset": "image-mw4ya3c6-cgrvhwik909",
+    "project:assets/images/clients-sectors/sector-icon-finance.png": {
+      "asset": "image-mw574vlp-jw157wd5oo",
       "kind": "original",
       "cropToken": null
     },
-    "project:file_00000000b2c081f58ac4cbb469bf5f7e.png": {
-      "asset": "image-mw4yaijn-64jssqg34u",
-      "kind": "original"
-    },
-    "project:file_00000000b2c081f58ac4cbb469bf5f7e.w1151-h1024-c961_512.png": {
-      "asset": "image-mw4yaijn-64jssqg34u",
-      "kind": "crop",
-      "cropToken": "961_512"
-    },
-    "project:file_00000000d6ec822fa7210d5e751d473b.png": {
-      "asset": "image-mw4ybfs8-hh5h786oslr",
+    "url:https://pinegrow.com/placeholders/img15.jpg": {
+      "asset": "image-mw5758wz-8lzrxuh3rxm",
       "kind": "original",
       "cropToken": null
     },
-    "project:file_00000000d71881f593cb54a9977980aa.png": {
-      "asset": "image-mw4ybpkk-sg45njcla5c",
-      "kind": "original"
-    },
-    "project:file_00000000d71881f593cb54a9977980aa.w1159-h1024-c957_512.jpg": {
-      "asset": "image-mw4ybpkk-sg45njcla5c",
-      "kind": "crop",
-      "cropToken": "957_512"
-    },
-    "project:file_000000002434822fa0e3413194d30401.png": {
-      "asset": "image-mw4ycix4-ra45bm2u9c9",
+    "project:assets/images/clients-sectors/sector-icon-technology.png": {
+      "asset": "image-mw575f0f-rdtardf4ls",
       "kind": "original",
       "cropToken": null
     },
-    "project:hero-language-illustration-transparent(1).webp": {
-      "asset": "image-mw4ydi2l-da7tea1witr",
+    "project:assets/images/clients-sectors/sector-icon-government.png": {
+      "asset": "image-mw575rrh-nr2t61n053l",
       "kind": "original",
       "cropToken": null
     },
-    "project:hero-language-illustration-transparent.webp": {
-      "asset": "image-mw4yds4m-2orzj6xdktd",
-      "kind": "original"
-    },
-    "project:hero-language-illustration-transparent.w1198-h1024-c787_512.png": {
-      "asset": "image-mw4yds4m-2orzj6xdktd",
-      "kind": "crop",
-      "cropToken": "787_512"
-    },
-    "project:assets/images/general/hero-language-illustration-transparent.png": {
-      "asset": "image-mw4ygkaj-83tuhwrdojy",
+    "project:assets/images/clients-sectors/sector-icon-professional-services.png": {
+      "asset": "image-mw5765zp-nq4z31glkir",
       "kind": "original",
       "cropToken": null
     },
-    "project:assets/images/home/file_00000000b2c081f58ac4cbb469bf5f7e.png": {
-      "asset": "image-mw4yiplq-jfdqkn0fjq",
-      "kind": "original"
-    },
-    "project:assets/images/home/file_00000000b2c081f58ac4cbb469bf5f7e.w1151-h1024-c961_512.png": {
-      "asset": "image-mw4yiplq-jfdqkn0fjq",
-      "kind": "crop",
-      "cropToken": "961_512"
-    },
-    "project:assets/images/home/file_00000000d6ec822fa7210d5e751d473b.png": {
-      "asset": "image-mw4yjhlq-tkxy3zpz6bj",
+    "url:https://pinegrow.com/placeholders/img20.jpg": {
+      "asset": "image-mw576f8f-cbaok1ccslq",
       "kind": "original",
       "cropToken": null
     },
-    "project:assets/images/home/hero-language-illustration-transparent.webp": {
-      "asset": "image-mw4yjpx7-3mlo208kuop",
-      "kind": "original"
-    },
-    "project:assets/images/home/hero-language-illustration-transparent.w1195-h1024-c789_512.png": {
-      "asset": "image-mw4yjpx7-3mlo208kuop",
-      "kind": "crop",
-      "cropToken": "789_512"
-    },
-    "project:assets/images/home/hero-language-illustration-transparent.w1201-h1024-c786_512.png": {
-      "asset": "image-mw4yjpx7-3mlo208kuop",
-      "kind": "crop",
-      "cropToken": "786_512"
-    },
-    "project:assets/images/home/hero-globe-bridge-illustration.png": {
-      "asset": "image-mw4yidob-tomf2khulqf",
+    "project:assets/images/clients-sectors/sector-icon-manufacturing.png": {
+      "asset": "image-mw576rpb-o3u6yovowg",
       "kind": "original",
       "cropToken": null
     },
-    "url:file:///H:/Goopie/Development/Pinegrow%20Projects/assets/images/portrait/profile-hero-portrait.webp": {
-      "asset": "image-mw51ud73-drxkf8ewr8",
+    "url:https://pinegrow.com/placeholders/img12.jpg": {
+      "asset": "image-mw5770oc-fkjz6fpreza",
       "kind": "original",
       "cropToken": null
     },
-    "project:file_000000005130822fb89149b2683d8650.png": {
-      "asset": "image-mw51xofz-9k8ffj50ll",
+    "url:https://pinegrow.com/placeholders/img14.jpg": {
+      "asset": "image-mw577b3w-ghylzarmate",
       "kind": "original",
       "cropToken": null
     },
-    "project:assets/images/error/hero-error-illustration.png": {
-      "asset": "image-mw51w9pi-1pwotcrja3p",
+    "project:assets/images/clients-sectors/sector-icon-retail.png": {
+      "asset": "image-mw577hlc-1i97iy515z5",
       "kind": "original",
       "cropToken": null
     },
-    "project:assets/images/profile/profile-hero-portrait.webp": {
-      "asset": "image-mw51dumk-1ahqx2bdcc3",
+    "url:https://pinegrow.com/placeholders/img19.jpg": {
+      "asset": "image-mw577r6t-hgmvgl25m0f",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/clients-sectors/sector-icon-hospitality.png": {
+      "asset": "image-mw577yfe-721cbeuj13g",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/clients-sectors/sector-icon-healthcare.png": {
+      "asset": "image-mw578fwt-k13psb66vrf",
+      "kind": "original",
+      "cropToken": null
+    },
+    "url:https://pinegrow.com/placeholders/img11.jpg": {
+      "asset": "image-mw5ckgrp-f9msq0q76g9",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/clients-sectors/transperfect-global-connections.webp": {
+      "asset": "image-mw5czuiv-ggpvis5t51m",
       "kind": "original",
       "cropToken": null
     }
