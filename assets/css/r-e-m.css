@@ -1,0 +1,37 @@
+/* Styles propres à l’étude de cas R.E.M. */
+.organic-border-pale {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  border: 2px solid #EAF4F8;
+}
+
+.rem-product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.rem-workflow-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.rem-comparative-total {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+/* Largeurs des segments de la barre de répartition. */
+.rem-breakdown__fill--darkpink { width: 7.395%; }
+.rem-breakdown__fill--bluegreen { width: 77.02%; }
+.rem-breakdown__fill--sky { width: 15.585%; }
+
+@media (min-width: 900px) {
+  .rem-product-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .rem-workflow-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, .9fr);
+  }
+}

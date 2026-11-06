@@ -5,7 +5,7 @@
 .tech-hero p { color: #D6E7EF; }
 .tech-areas { padding-top: 3rem; }
 .tech-area-card { min-width: 0; }
-.tech-area-icon { width:2.5rem;height:2.5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#EAF4F8;color:#087E8B;font-size:1.1rem;margin-bottom:.8rem; }
+.tech-area-icon { width:2.5rem;height:2.5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#EAF4F8;color:var(--text-bluegreen);font-size:1.1rem;margin-bottom:.8rem; }
 .tech-area-card h3 { font-size:1rem; }
 .tech-area-card p { color:#526575;font-size:.78rem;line-height:1.6; }
 .tech-project-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem;align-items:stretch; }
@@ -13,13 +13,13 @@
 .tech-project-card__visual { margin:0;width:100%;aspect-ratio:4/3;overflow:hidden;background:#EAF4F8; }
 .tech-project-card__visual img { display:block;width:100%;height:100%;object-fit:cover; }
 .tech-project-card__body { padding:1.25rem 1.35rem 1.4rem;display:flex;flex-direction:column;align-items:flex-start;flex:1; }
-.tech-project-card__meta { display:flex;justify-content:space-between;align-items:center;gap:.75rem;width:100%;margin-bottom:.65rem;color:#087E8B;font-size:.64rem;font-weight:700;letter-spacing:.045em;text-transform:uppercase; }
-.tech-project-card__meta span:last-child { color:#D14D72;font-family:Caveat,cursive;font-size:1.2rem;letter-spacing:0; }
+.tech-project-card__meta { display:flex;justify-content:space-between;align-items:center;gap:.75rem;width:100%;margin-bottom:.65rem;color:var(--text-bluegreen);font-size:.64rem;font-weight:700;letter-spacing:.045em;text-transform:uppercase; }
+.tech-project-card__meta span:last-child { color:var(--text-darkpink);font-family:Caveat,cursive;font-size:1.2rem;letter-spacing:0; }
 .tech-project-card h3 { color:#13293D;font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;line-height:1.25;margin:0 0 .65rem; }
 .tech-project-card p { color:#526575;font-size:.82rem;line-height:1.65;margin:0 0 1rem; }
-.tech-project-card a { color:#13293D;font-size:.75rem;font-weight:700;text-decoration:none;margin-top:auto; }
-.tech-project-card a:hover { color:#D14D72; }
-.tech-project-card a:focus-visible { outline:3px solid #D14D72;outline-offset:3px;border-radius:2px; }
+.tech-project-card a {
+  margin-top: auto;
+}
 @media(max-width:767px){.tech-project-grid{grid-template-columns:minmax(0,1fr);gap:1.25rem}.tech-project-card__body{padding:1.1rem}.tech-project-card h3{font-size:1.25rem}}
 @media(prefers-reduced-motion:reduce){.tech-project-card *{scroll-behavior:auto}}
 
@@ -28,19 +28,16 @@
 .tech-tools { color:#304657;font-size:.94rem;line-height:1.8; }
 .tech-intro p,
 .tech-tools p { margin:0 0 1rem; }
-.tech-method { background:#EAF4F8;border-radius:1.25rem; }
+.tech-method { background:#EAF4F8;border-radius:var(--radius-organic); }
 .tech-method-grid { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem; }
-.tech-method-grid article { background:#fff;border:1px solid rgba(19,41,61,.10);border-radius:1rem;padding:1.25rem; }
-.tech-method-grid article > span { display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:#D14D72;color:#fff;font-weight:700;font-size:.78rem;margin-bottom:.75rem; }
+.tech-method-grid article { background:#fff;border:1px solid rgba(19,41,61,.10);border-radius:var(--radius-organic);padding:1.25rem; }
+.tech-method-grid article > span { display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:#A62F52;color:#fff;font-weight:700;font-size:.78rem;margin-bottom:.75rem; }
 .tech-method-grid h3 { color:#13293D;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;line-height:1.35;margin:0 0 .5rem; }
 .tech-method-grid p { color:#526575;font-size:.78rem;line-height:1.65;margin:0; }
-.tech-project-card__status { border-top:1px solid #EAF4F8;padding-top:.7rem;color:#687986!important;font-size:.72rem!important;line-height:1.55!important; }
-.tech-project-card__subtitle { color:#087E8B!important;font-style:italic;font-size:.78rem!important;font-weight:600;line-height:1.5!important;margin-top:-.35rem!important; }
+.tech-project-card__status { border-top:1px solid #EAF4F8;padding-top:.7rem;color:#526575!important;font-size:.72rem!important;line-height:1.55!important; }
+.tech-project-card__subtitle { color:var(--text-bluegreen)!important;font-style:italic;font-size:.78rem!important;font-weight:600;line-height:1.5!important;margin-top:-.35rem!important; }
 .tech-contact { border-top:1px solid rgba(19,41,61,.12); }
 .tech-contact p { color:#526575;font-size:.9rem;line-height:1.75;margin:0 auto 1.25rem; }
-.tech-contact__link { display:inline-block;background:#D14D72;color:#fff;padding:.75rem 1.35rem;border-radius:999px;font-size:.82rem;font-weight:700;text-decoration:none; }
-.tech-contact__link:hover { background:#13293D; }
-.tech-contact__link:focus-visible { outline:3px solid #087E8B;outline-offset:3px; }
 @media(max-width:900px){.tech-method-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:767px){.tech-method-grid{grid-template-columns:minmax(0,1fr)}.tech-method{padding-left:1rem;padding-right:1rem}}
 
@@ -143,3 +140,9 @@
 @media (max-width: 520px) {
   section.tech-areas .tech-areas__grid { grid-template-columns: minmax(0, 1fr) !important; }
 }
+
+
+/* Issues #18–#20 — page-local vertical rhythm adjustments. */
+.tech-intro > p:first-child { margin-top: 1.25rem; }
+.tech-method { margin-block: 2rem; }
+.tech-tools { margin-top: 2rem; margin-bottom: 2rem; }
