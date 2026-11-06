@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "assets": {
+    "image-mw4x7dgl-tjxbu666rwb": {
+      "id": "image-mw4x7dgl-tjxbu666rwb",
+      "source": "project:assets/images/services/data-annotation-magnifier-labels.webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:3ddd8cc5251abb03913c56018aa01db6560ca8e4b293912f64cc96599787e08a",
+      "available": true
+    },
+    "image-mw4xsqwx-fdik0122x4s": {
+      "id": "image-mw4xsqwx-fdik0122x4s",
+      "source": "project:assets/images/general/hero-language-illustration-transparent.webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:fa3decf40a09e11cef8f0193f2820c972c09d22af34068d516d783833f413243",
+      "available": false
+    },
+    "image-mw4y4ot1-tv48a462fzf": {
+      "id": "image-mw4y4ot1-tv48a462fzf",
+      "source": "project:1e1173ed-1904-484e-b8ad-faf29f49630d-copied-media~2.jpg.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:53af0a941a826eebaaf0d73b9cbae3b84f748aef3c87f5d77174ce92c0a4fbe3",
+      "available": false
+    },
+    "image-mw4y598c-jlaeb8l8f6": {
+      "id": "image-mw4y598c-jlaeb8l8f6",
+      "source": "project:1e598760-05e1-4283-b70a-efb1a9449135-copied-media~2.jpg.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:faeb6895379e329c4ff14d1d54c08c9280cabe82bed89f36f368ff07f49198e7",
+      "available": false
+    },
+    "image-mw4y5jnn-wz84m715ntp": {
+      "id": "image-mw4y5jnn-wz84m715ntp",
+      "source": "project:4e666d8f-5ef1-49ad-a9d8-0c5fc07799e3-copied-media~2.jpg.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": null,
+      "available": false
+    },
+    "image-mw4y9pd5-4c10rd7kc9r": {
+      "id": "image-mw4y9pd5-4c10rd7kc9r",
+      "source": "project:715c4b71-6a2b-41ab-a02c-457a3a08d3b0-copied-media~2.jpg.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:3138129b24168f59fcab4a3119b1f891d6f7210bbf02e7b573f65c8817125291",
+      "available": true
+    },
+    "image-mw4ya3c6-cgrvhwik909": {
+      "id": "image-mw4ya3c6-cgrvhwik909",
+      "source": "project:da2d9dab-2e9b-477c-9100-30a5cc8e3c45-copied-media~2.jpg.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": null,
+      "available": false
+    },
+    "image-mw4yaijn-64jssqg34u": {
+      "id": "image-mw4yaijn-64jssqg34u",
+      "source": "project:file_00000000b2c081f58ac4cbb469bf5f7e.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:c42b5a8784c9df97f2c3c2e53ac35236eafd41a46de6a0487fce0764144a071c",
+      "available": true
+    },
+    "image-mw4ybfs8-hh5h786oslr": {
+      "id": "image-mw4ybfs8-hh5h786oslr",
+      "source": "project:file_00000000d6ec822fa7210d5e751d473b.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:4e2d898d04253de894177f4e69c250bd2f084d12b58bc7d39e53851a9ef3fe44",
+      "available": true
+    },
+    "image-mw4ybpkk-sg45njcla5c": {
+      "id": "image-mw4ybpkk-sg45njcla5c",
+      "source": "project:file_00000000d71881f593cb54a9977980aa.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:455247a6c1c0c91574596c3ec4699c15815aefd7216001560d8e9e7588cc8c3e",
+      "available": true
+    },
+    "image-mw4ycix4-ra45bm2u9c9": {
+      "id": "image-mw4ycix4-ra45bm2u9c9",
+      "source": "project:file_000000002434822fa0e3413194d30401.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": null,
+      "available": false
+    },
+    "image-mw4ydi2l-da7tea1witr": {
+      "id": "image-mw4ydi2l-da7tea1witr",
+      "source": "project:hero-language-illustration-transparent(1).webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:fa3decf40a09e11cef8f0193f2820c972c09d22af34068d516d783833f413243",
+      "available": true
+    },
+    "image-mw4yds4m-2orzj6xdktd": {
+      "id": "image-mw4yds4m-2orzj6xdktd",
+      "source": "project:hero-language-illustration-transparent.webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:4d1d90c7e0a610a6e97942c70f2bf210b8f6aca31898514445ed153b77b84a11",
+      "available": true
+    },
+    "image-mw4ygkaj-83tuhwrdojy": {
+      "id": "image-mw4ygkaj-83tuhwrdojy",
+      "source": "project:assets/images/general/hero-language-illustration-transparent.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:31dde4a8aaaaf8a81e23e46197b734e96581d551ded4a21c5a52711949ce0568",
+      "available": false
+    },
+    "image-mw4yidob-tomf2khulqf": {
+      "id": "image-mw4yidob-tomf2khulqf",
+      "source": "project:assets/images/home/hero-globe-bridge-illustration.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:3138129b24168f59fcab4a3119b1f891d6f7210bbf02e7b573f65c8817125291",
+      "available": true
+    },
+    "image-mw4yiplq-jfdqkn0fjq": {
+      "id": "image-mw4yiplq-jfdqkn0fjq",
+      "source": "project:assets/images/home/file_00000000b2c081f58ac4cbb469bf5f7e.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": null,
+      "available": false
+    },
+    "image-mw4yjhlq-tkxy3zpz6bj": {
+      "id": "image-mw4yjhlq-tkxy3zpz6bj",
+      "source": "project:assets/images/home/file_00000000d6ec822fa7210d5e751d473b.png",
+      "remembered": {},
+      "suggestions": {},
+      "available": false
+    },
+    "image-mw4yjpx7-3mlo208kuop": {
+      "id": "image-mw4yjpx7-3mlo208kuop",
+      "source": "project:assets/images/home/hero-language-illustration-transparent.webp",
+      "remembered": {},
+      "suggestions": {},
+      "available": false,
+      "revision": null
+    },
+    "image-mw51dumk-1ahqx2bdcc3": {
+      "id": "image-mw51dumk-1ahqx2bdcc3",
+      "source": "project:assets/images/profile/profile-hero-portrait.webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:0a278a1ba9afdcc53de1eee033b7b586564789c594eafdc204bfb0b602e20344",
+      "available": true
+    },
+    "image-mw51ud73-drxkf8ewr8": {
+      "id": "image-mw51ud73-drxkf8ewr8",
+      "source": "url:file:///H:/Goopie/Development/Pinegrow%20Projects/assets/images/portrait/profile-hero-portrait.webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": null,
+      "available": false
+    },
+    "image-mw51w9pi-1pwotcrja3p": {
+      "id": "image-mw51w9pi-1pwotcrja3p",
+      "source": "project:assets/images/error/hero-error-illustration.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:fceb59f3cd6c67b64460c6cc805f10d808b4a9d16acd3e82730ef91c5535f23e",
+      "available": true
+    },
+    "image-mw51xofz-9k8ffj50ll": {
+      "id": "image-mw51xofz-9k8ffj50ll",
+      "source": "project:file_000000005130822fb89149b2683d8650.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": null,
+      "available": false
+    }
+  },
+  "sources": {
+    "project:assets/images/services/data-annotation-magnifier-labels.webp": {
+      "asset": "image-mw4x7dgl-tjxbu666rwb",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/general/hero-language-illustration-transparent.webp": {
+      "asset": "image-mw4xsqwx-fdik0122x4s",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:1e1173ed-1904-484e-b8ad-faf29f49630d-copied-media~2.jpg.png": {
+      "asset": "image-mw4y4ot1-tv48a462fzf",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:1e598760-05e1-4283-b70a-efb1a9449135-copied-media~2.jpg.png": {
+      "asset": "image-mw4y598c-jlaeb8l8f6",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:4e666d8f-5ef1-49ad-a9d8-0c5fc07799e3-copied-media~2.jpg.png": {
+      "asset": "image-mw4y5jnn-wz84m715ntp",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:715c4b71-6a2b-41ab-a02c-457a3a08d3b0-copied-media~2.jpg.png": {
+      "asset": "image-mw4y9pd5-4c10rd7kc9r",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:da2d9dab-2e9b-477c-9100-30a5cc8e3c45-copied-media~2.jpg.png": {
+      "asset": "image-mw4ya3c6-cgrvhwik909",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:file_00000000b2c081f58ac4cbb469bf5f7e.png": {
+      "asset": "image-mw4yaijn-64jssqg34u",
+      "kind": "original"
+    },
+    "project:file_00000000b2c081f58ac4cbb469bf5f7e.w1151-h1024-c961_512.png": {
+      "asset": "image-mw4yaijn-64jssqg34u",
+      "kind": "crop",
+      "cropToken": "961_512"
+    },
+    "project:file_00000000d6ec822fa7210d5e751d473b.png": {
+      "asset": "image-mw4ybfs8-hh5h786oslr",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:file_00000000d71881f593cb54a9977980aa.png": {
+      "asset": "image-mw4ybpkk-sg45njcla5c",
+      "kind": "original"
+    },
+    "project:file_00000000d71881f593cb54a9977980aa.w1159-h1024-c957_512.jpg": {
+      "asset": "image-mw4ybpkk-sg45njcla5c",
+      "kind": "crop",
+      "cropToken": "957_512"
+    },
+    "project:file_000000002434822fa0e3413194d30401.png": {
+      "asset": "image-mw4ycix4-ra45bm2u9c9",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:hero-language-illustration-transparent(1).webp": {
+      "asset": "image-mw4ydi2l-da7tea1witr",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:hero-language-illustration-transparent.webp": {
+      "asset": "image-mw4yds4m-2orzj6xdktd",
+      "kind": "original"
+    },
+    "project:hero-language-illustration-transparent.w1198-h1024-c787_512.png": {
+      "asset": "image-mw4yds4m-2orzj6xdktd",
+      "kind": "crop",
+      "cropToken": "787_512"
+    },
+    "project:assets/images/general/hero-language-illustration-transparent.png": {
+      "asset": "image-mw4ygkaj-83tuhwrdojy",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/home/file_00000000b2c081f58ac4cbb469bf5f7e.png": {
+      "asset": "image-mw4yiplq-jfdqkn0fjq",
+      "kind": "original"
+    },
+    "project:assets/images/home/file_00000000b2c081f58ac4cbb469bf5f7e.w1151-h1024-c961_512.png": {
+      "asset": "image-mw4yiplq-jfdqkn0fjq",
+      "kind": "crop",
+      "cropToken": "961_512"
+    },
+    "project:assets/images/home/file_00000000d6ec822fa7210d5e751d473b.png": {
+      "asset": "image-mw4yjhlq-tkxy3zpz6bj",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/home/hero-language-illustration-transparent.webp": {
+      "asset": "image-mw4yjpx7-3mlo208kuop",
+      "kind": "original"
+    },
+    "project:assets/images/home/hero-language-illustration-transparent.w1195-h1024-c789_512.png": {
+      "asset": "image-mw4yjpx7-3mlo208kuop",
+      "kind": "crop",
+      "cropToken": "789_512"
+    },
+    "project:assets/images/home/hero-language-illustration-transparent.w1201-h1024-c786_512.png": {
+      "asset": "image-mw4yjpx7-3mlo208kuop",
+      "kind": "crop",
+      "cropToken": "786_512"
+    },
+    "project:assets/images/home/hero-globe-bridge-illustration.png": {
+      "asset": "image-mw4yidob-tomf2khulqf",
+      "kind": "original",
+      "cropToken": null
+    },
+    "url:file:///H:/Goopie/Development/Pinegrow%20Projects/assets/images/portrait/profile-hero-portrait.webp": {
+      "asset": "image-mw51ud73-drxkf8ewr8",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:file_000000005130822fb89149b2683d8650.png": {
+      "asset": "image-mw51xofz-9k8ffj50ll",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/error/hero-error-illustration.png": {
+      "asset": "image-mw51w9pi-1pwotcrja3p",
+      "kind": "original",
+      "cropToken": null
+    },
+    "project:assets/images/profile/profile-hero-portrait.webp": {
+      "asset": "image-mw51dumk-1ahqx2bdcc3",
+      "kind": "original",
+      "cropToken": null
+    }
+  }
+}
