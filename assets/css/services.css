@@ -199,3 +199,43 @@
 
 /* Page layout only; CTA appearance is defined by the shared role variants. */
 .svc-final-cta .cta { margin-top: .6rem; }
+
+
+/* Issue #17 — four full-width, color-coded linguistic service rows. */
+.svc-core-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  width: 100vw;
+  max-width: none;
+  margin-inline: calc(50% - 50vw);
+}
+.svc-core-grid > .svc-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(6.2rem, 8rem) minmax(0, 54rem);
+  justify-content: center;
+  align-items: start;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  width: 100%;
+  margin: 0;
+  padding: clamp(1.5rem, 3vw, 2.25rem) max(1.125rem, calc((100vw - 78rem) / 2));
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.svc-core-grid > .svc-card:not(:last-child) { border-bottom: 1px solid rgba(19, 41, 61, .12); }
+.svc-core-grid > .svc-card--translation { background: #EAF4F8; }
+.svc-core-grid > .svc-card--editing { background: #FFF0F4; }
+.svc-core-grid > .svc-card--mtpe { background: #E8F5F2; }
+.svc-core-grid > .svc-card--terminology { background: #F1F6F8; }
+.svc-core-grid .svc-card__art { align-items: flex-start; justify-content: center; }
+.svc-core-grid .svc-card__art img { width: min(100%, 8rem); }
+@media (max-width: 767px) {
+  .svc-core-grid > .svc-card { grid-template-columns: minmax(6.2rem, 8rem) minmax(0, 1fr); }
+}
+@media (max-width: 420px) {
+  .svc-core-grid > .svc-card { grid-template-columns: minmax(0, 1fr); gap: .75rem; }
+  .svc-core-grid .svc-card__art { justify-content: flex-start; }
+  .svc-core-grid .svc-card__art img { width: 6.5rem; }
+}

@@ -140,3 +140,9 @@
 @media (max-width: 520px) {
   section.tech-areas .tech-areas__grid { grid-template-columns: minmax(0, 1fr) !important; }
 }
+
+
+/* Issues #18–#20 — page-local vertical rhythm adjustments. */
+.tech-intro > p:first-child { margin-top: 1.25rem; }
+.tech-method { margin-block: 2rem; }
+.tech-tools { margin-top: 2rem; margin-bottom: 2rem; }
