@@ -9,7 +9,7 @@
 | Clients et secteurs | `clients-sectors/index.html` |
 | Profil et CV | `profile/index.html` |
 | Contact | `contact/index.html` |
-| CSS partagé et styles propres aux pages | `assets/css/site.css`, `assets/css/clients-sectors.css`, `assets/css/profile.css`, `assets/css/services.css`, `assets/css/404.css`, `assets/css/polaris-industries.css`, `assets/css/r-e-m.css` |
+| CSS partagé et styles propres aux pages | `assets/css/site.css`, `assets/css/clients-sectors.css`, `assets/css/profile.css`, `assets/css/services.css`, `assets/css/404.css` |
 | Utilitaires CSS compilés | `assets/css/utilities.css` |
 | Interactions globales | `assets/js/site.js` |\n| Configuration GitHub Pages / Jekyll | `_config.yml` |\n| Page d’erreur personnalisée | `404.html` (avec front matter Jekyll et chemins `relative_url`) |
 | Images et futurs médias | `assets/images/` |
@@ -42,7 +42,7 @@ La valeur `baseurl` est définie dans `_config.yml` :
 - `""` pour un User Site ou un domaine personnalisé publié à la racine ;
 - `"/nom-du-depot"` pour un Project Site.
 
-La configuration actuelle est `baseurl: "/portfolio"`; si le dépôt ou le chemin de publication change, mettre cette valeur à jour. Aucun autre fichier de page n’est modifié par ce réglage.
+Le nom du dépôt n’étant pas connu au moment de la livraison, la configuration contient une valeur vide par défaut et documente explicitement le réglage requis pour un Project Site. Aucun autre fichier de page n’est modifié.
 
 
 ## Configuration GitHub Pages — adresse de publication

@@ -1,5 +1,3 @@
-document.documentElement.classList.add('js');
-
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.current-year').forEach((node) => {
     node.textContent = String(new Date().getFullYear());
