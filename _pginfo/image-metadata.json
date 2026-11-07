@@ -166,13 +166,28 @@
       "suggestions": {},
       "revision": "sha256:391dd979912d2047e0f58e53bc500c52092ac8eb784ec3debcf7904a43a515a1",
       "available": true
+    },
+    "image-mw6nnonz-kvsc8t33yop": {
+      "id": "image-mw6nnonz-kvsc8t33yop",
+      "source": "project:assets/images/clients-sectors/cta-industry-language-globe.webp",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:327c8e65b6cec4e842e7b78c5ff0f0ef8b56a7bf35ba72935d67e0190d672a56",
+      "available": true
+    },
+    "image-mw6ohu98-3xtjoyfwsp2": {
+      "id": "image-mw6ohu98-3xtjoyfwsp2",
+      "source": "project:assets/images/profile/profile-cta-illustration.png",
+      "remembered": {},
+      "suggestions": {},
+      "revision": "sha256:e9afbd1c85f47f922d9820d8f7d27d660f973e52cf11a70a0c0ca64c83c85652",
+      "available": true
     }
   },
   "sources": {
     "project:assets/images/clients-sectors/hero-language-connections.webp": {
       "asset": "image-mw54uzeu-34v4meb6ppv",
-      "kind": "original",
-      "cropToken": null
+      "kind": "original"
     },
     "project:assets/images/services/translation-localization-globe-dialogue.webp": {
       "asset": "image-mw564n0w-amri82velar",
@@ -271,8 +286,56 @@
     },
     "project:assets/images/clients-sectors/transperfect-global-connections.webp": {
       "asset": "image-mw5czuiv-ggpvis5t51m",
+      "kind": "original"
+    },
+    "project:assets/images/clients-sectors/hero-language-connections.w1220-h857-c926_429.jpg": {
+      "asset": "image-mw54uzeu-34v4meb6ppv",
+      "kind": "crop",
+      "cropToken": "926_429"
+    },
+    "project:assets/images/clients-sectors/transperfect-global-connections.w1376-h864-c848_432.jpg": {
+      "asset": "image-mw5czuiv-ggpvis5t51m",
+      "kind": "crop",
+      "cropToken": "848_432"
+    },
+    "project:assets/images/clients-sectors/transperfect-global-connections.w1148-h863-c962_433.jpg": {
+      "asset": "image-mw5czuiv-ggpvis5t51m",
+      "kind": "crop",
+      "cropToken": "962_433"
+    },
+    "project:assets/images/clients-sectors/transperfect-global-connections.w1151-h864-c961_432.jpg": {
+      "asset": "image-mw5czuiv-ggpvis5t51m",
+      "kind": "crop",
+      "cropToken": "961_432"
+    },
+    "project:assets/images/clients-sectors/transperfect-global-connections.w1298-h864-c887_432.jpg": {
+      "asset": "image-mw5czuiv-ggpvis5t51m",
+      "kind": "crop",
+      "cropToken": "887_432"
+    },
+    "project:assets/images/clients-sectors/cta-industry-language-globe.webp": {
+      "asset": "image-mw6nnonz-kvsc8t33yop",
       "kind": "original",
       "cropToken": null
+    },
+    "project:assets/images/profile/profile-cta-illustration.png": {
+      "asset": "image-mw6ohu98-3xtjoyfwsp2",
+      "kind": "original"
+    },
+    "project:assets/images/profile/profile-cta-illustration.w1072-h1086-c536_543.jpg": {
+      "asset": "image-mw6ohu98-3xtjoyfwsp2",
+      "kind": "crop",
+      "cropToken": "536_543"
+    },
+    "project:assets/images/profile/profile-cta-illustration.w1448-h1086-c724_543.jpg": {
+      "asset": "image-mw6ohu98-3xtjoyfwsp2",
+      "kind": "crop",
+      "cropToken": "724_543"
+    },
+    "project:assets/images/profile/profile-cta-illustration.w1200-c0.jpg": {
+      "asset": "image-mw6ohu98-3xtjoyfwsp2",
+      "kind": "resize",
+      "cropToken": "0"
     }
   }
 }
