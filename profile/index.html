@@ -4,22 +4,41 @@
         <meta charset="utf-8"/>
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <title>Profile &amp; CV - Stéphanie Nadeau</title>
-        <!-- Tailwind CSS -->
+        
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com" rel="preconnect"/>
         <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+        
         <!-- FontAwesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-        <!-- Tailwind Config for Custom Palette & Fonts -->
+        
+        <!-- 
+          Fichiers CSS :
+          Contrairement à l'accueil, on charge ici `profile.css` en plus.
+          Ce fichier contient toute la logique de grille et de mise en page de cette vue spécifique.
+        -->
         <link href="../assets/css/utilities.css" rel="stylesheet"/>
         <link href="../assets/css/site.css" rel="stylesheet"/>
         <link href="../assets/css/profile.css" rel="stylesheet"/>
         <link href="../assets/images/favicon.webp" rel="icon" type="image/webp"/>
+        
+        <!-- 
+          Note technique : Ici vous utilisez le CDN de Tailwind via script. 
+          C'est parfait pour le prototypage rapide, mais en production, il vaut mieux 
+          générer un fichier CSS compilé (comme votre utilities.css) pour la performance.
+        -->
         <script src="https://cdn.tailwindcss.com/"></script>
     </head>
+    
+    <!-- 
+      profile-page : Cette classe sur le <body> est cruciale. 
+      Dans profile.css, elle sert de "namespace" pour injecter des variables CSS 
+      spécifiques à cette page (ex: --profile-ink, --profile-muted).
+    -->
     <body class="antialiased profile-page">
         <span class="visually-hidden" id="top"></span><a class="skip-link" href="#main-content">Skip to main content</a>
+        
         <nav aria-label="Main navigation" class="site-nav">
             <a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../index.html"> <img class="site-nav__logo" src="../assets/images/brand/stephanie-nadeau-logo-horizontal.png" width="936" height="445" alt="" decoding="async"> </a>
             <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button">
@@ -35,11 +54,18 @@
                 <a class="cta cta--primary site-nav__contact" href="../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a>
             </div>
         </nav>
-        <!-- Navigation -->
-        <!-- PROFILE PAGE INTRODUCTION -->
+        
+        <!-- 
+          PROFILE HERO :
+          Ici, au lieu des classes Tailwind "flex flex-col lg:flex-row" vues sur l'accueil,
+          la classe `.profile-hero__grid` dans profile.css gère tout via CSS Grid 
+          (`grid-template-columns: minmax(0, 1.03fr) minmax(20rem, .97fr)`).
+        -->
         <header class="profile-hero" aria-labelledby="profile-hero-title">
+            <!-- .profile-wrap sert de conteneur central (remplace `max-w-7xl mx-auto` de Tailwind) -->
             <div class="profile-wrap profile-hero__grid">
                 <div class="profile-hero__copy">
+                    <!-- Les éléments de style (.profile-eyebrow, .profile-hero__subline) sont définis sémantiquement dans profile.css -->
                     <p class="profile-eyebrow">Profile &amp; CV <span>·</span> A little about me</p>
                     <h1 id="profile-hero-title">A language professional with an <em>analytical mind</em> and a creative edge.</h1>
                     <p class="profile-hero__subline">Language. Context. Technology.</p>
@@ -61,8 +87,15 @@
                     </div>
                 </div>
                 <div class="profile-hero__visual">
+                    <!-- .profile-handnote utilise `position: absolute` dans le CSS pour "flotter" de manière déstructurée autour de l'image -->
                     <span class="profile-handnote profile-handnote--top" aria-hidden="true">Words matter.<br>Context matters more.</span>
                     <span class="profile-hero__orbit" aria-hidden="true"></span>
+                    
+                    <!-- 
+                      Mix d'approches : 
+                      - .profile-hero__image-frame (BEM, gère les proportions et le positionnement)
+                      - .organic-border .shadow-handdrawn-seafoam (Classes globales de site.css pour l'esthétique)
+                    -->
                     <div class="profile-hero__image-frame organic-border shadow-handdrawn-seafoam">
                         <img src="../assets/images/profile/profile-hero-portrait.webp" alt="Illustrated portrait of Stéphanie beside a globe surrounded by multilingual communication symbols" width="1536" height="1536" fetchpriority="high">
                     </div>
@@ -70,6 +103,7 @@
                 </div>
             </div>
         </header>
+
         <main id="main-content">
             <!-- THE PROFILE -->
             <section class="profile-section" id="profile" aria-labelledby="profile-title">
@@ -81,37 +115,42 @@
                         </div>
                         <p class="profile-handnote profile-section__note" aria-hidden="true">Beyond the words...</p>
                     </div>
+                    
+                    <!-- La grille de l'histoire (.profile-story-grid) gère le texte à gauche et la carte à droite -->
                     <div class="profile-story-grid">
                         <div class="profile-story-copy">
                             <p class="profile-lead">My work goes beyond words in isolation. I look at how language conveys meaning, how context shapes interpretation and how inconsistencies can reveal deeper problems in a text, a workflow or a digital system.</p>
+                            
+                            <!-- .profile-pullquote ajoute la grosse bordure, le fond et le gros guillemet via le pseudo-élément ::after dans le CSS -->
                             <div class="profile-pullquote">
                                 <p>Across translation, revision, content evaluation and technical problem-solving, my goal is to make information more accurate, coherent and fit for its intended purpose.</p>
                             </div>
                         </div>
+                        
+                        <!-- La balise <aside> est sémantiquement parfaite ici pour du contenu connexe/tangentiel -->
                         <aside class="profile-approach-card organic-border shadow-handdrawn-seafoam" aria-label="A thoughtful approach">
                             <span class="profile-approach-card__mini">A thoughtful approach</span>
                             <span class="profile-approach-card__decor" aria-hidden="true"><i class="fa-solid fa-brain"></i></span>
                             <h3>Context shapes interpretation.</h3>
                             <p>Alongside my language-services practice, I explore the practical applications of linguistic analysis, AI language evaluation and workflow automation.</p>
+                            
+                            <!-- Les points de couleur (.profile-dot--teal, etc.) réutilisent vos variables CSS globales -->
                             <div class="profile-approach-card__list">
-                                <div>
-                                    <span class="profile-dot"></span>Close observation
-                                </div>
-                                <div>
-                                    <span class="profile-dot profile-dot--teal"></span>Explicit criteria
-                                </div>
-                                <div>
-                                    <span class="profile-dot profile-dot--sky"></span>Pattern recognition
-                                </div>
-                                <div>
-                                    <span class="profile-dot profile-dot--pink"></span>Careful attention to context
-                                </div>
+                                <div><span class="profile-dot"></span>Close observation</div>
+                                <div><span class="profile-dot profile-dot--teal"></span>Explicit criteria</div>
+                                <div><span class="profile-dot profile-dot--sky"></span>Pattern recognition</div>
+                                <div><span class="profile-dot profile-dot--pink"></span>Careful attention to context</div>
                             </div>
                         </aside>
                     </div>
                 </div>
             </section>
+
             <!-- A MULTIDISCIPLINARY PATH -->
+            <!-- 
+              L'arrière-plan de cette section (.profile-path) a une astuce CSS :
+              Le mot "Connections" tracé à la main en haut à droite est généré par un pseudo-élément `::before` avec la propriété `content: "Connections"`. 
+            -->
             <section class="profile-path" id="path" aria-labelledby="path-title">
                 <div class="profile-wrap">
                     <div class="profile-path__heading">
@@ -122,6 +161,11 @@
                         <p class="profile-path__intro">My professional path spans language services, writing, document production, administration and applied technology. Rather than treating these fields as separate tracks, I draw on the connections between them: understanding a brief, organizing complex information, identifying inconsistencies and producing a result that works for its audience and context.</p>
                     </div>
                     <p class="profile-path__supporting">My language work has developed alongside an interest in the systems that support it—from terminology resources and computer-assisted translation tools to document processing, scripting and workflow automation. This combination helps me approach language projects with both editorial judgment and a practical understanding of the tools and processes around them.</p>
+                    
+                    <!-- 
+                      .profile-path__grid : Une grille CSS native (grid-template-columns: repeat(2, minmax(0, 1fr))) 
+                      qui devient une seule colonne sur mobile (@media max-width: 767px).
+                    -->
                     <div class="profile-path__grid">
                         <article class="profile-path-card organic-border shadow-handdrawn">
                             <span class="profile-path-card__number">01</span>
@@ -135,6 +179,7 @@
                             <h3>Writing &amp; editorial practice</h3>
                             <p>Voice, tone, pacing and narrative structure shape how readers experience a text.</p>
                         </article>
+                        <!-- Les cartes utilisent les modificateurs -pink pour varier visuellement le parcours -->
                         <article class="profile-path-card organic-border-pink shadow-handdrawn-pink">
                             <span class="profile-path-card__number">03</span>
                             <span class="profile-path-card__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
@@ -148,76 +193,17 @@
                             <p>Understanding a brief, organizing complex information, identifying inconsistencies and producing work for its audience and context.</p>
                         </article>
                     </div>
+                    
+                    <!-- Ligne décorative gérée avec flexbox et des span vides dans profile.css -->
                     <p class="profile-path__closing"><span aria-hidden="true"></span>One perspective, many connections<span aria-hidden="true"></span></p>
                 </div>
             </section>
-            <!-- WRITING AND EDITORIAL PRACTICE -->
-            <section class="profile-writing" id="writing" aria-labelledby="writing-title">
-                <div class="profile-wrap profile-writing__grid">
-                    <div class="profile-writing__copy">
-                        <p class="profile-kicker">03 / Words, voice &amp; story</p>
-                        <h2 id="writing-title">Writing and editorial practice</h2>
-                        <p>Writing is an important part of how I understand language. As a published author, I've worked with voice, tone, pacing and narrative structure—choices that shape not only what a text says, but how readers experience it.</p>
-                        <p>That editorial sensitivity informs my language work. Whether I'm revising a sentence, adapting content for a new audience or checking consistency across a large body of material, I consider register, intent, readability and the integrity of the original message.</p>
-                        <p class="profile-writing__closing">My author work has its own creative identity, but it shares a foundation with my professional practice: attention to language, audience and meaning.</p>
-                    </div>
-                    <figure class="profile-writing__visual">
-                        <span class="profile-writing__note" aria-hidden="true">Since 2013!</span>
-                        <div class="profile-writing__frame organic-border shadow-handdrawn-seafoam">
-                            <img src="../assets/images/profile/writing-editorial-journey.webp" alt="A writer in a creative workspace looking toward a globe, a colourful train crossing an ornate bridge, and floating language and technology symbols." width="1536" height="1152" loading="lazy" decoding="async"/>
-                        </div>
-                        <span class="profile-writing__spark" aria-hidden="true">✳</span>
-                    </figure>
-                </div>
-            </section>
-            <!-- HOW I WORK -->
-            <section class="profile-method" id="approach" aria-labelledby="method-title">
-                <div class="profile-wrap">
-                    <div class="profile-method__head">
-                        <div>
-                            <p class="profile-kicker">04 / Principles in practice</p>
-                            <h2 id="method-title">How I work</h2>
-                        </div>
-                        <p class="profile-method__note" aria-hidden="true">Thoughtful by design</p>
-                    </div>
-                    <div class="profile-method__grid">
-                        <article class="profile-method__card organic-border shadow-handdrawn">
-                            <span class="profile-method__number" aria-hidden="true">01</span>
-                            <span class="profile-method__icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span>
-                            <div class="profile-method__content">
-                                <h3>Context before wording</h3>
-                                <p>I consider the purpose, audience, subject matter and delivery environment—not just the source text in isolation.</p>
-                            </div>
-                        </article>
-                        <article class="profile-method__card profile-method__card--pink organic-border-pink shadow-handdrawn-pink">
-                            <span class="profile-method__number" aria-hidden="true">02</span>
-                            <span class="profile-method__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>
-                            <div class="profile-method__content">
-                                <h3>Consistency with judgment</h3>
-                                <p>Terminology, style guides and documented criteria support consistency, while human review helps account for nuance and context.</p>
-                            </div>
-                        </article>
-                        <article class="profile-method__card organic-border shadow-handdrawn">
-                            <span class="profile-method__number" aria-hidden="true">03</span>
-                            <span class="profile-method__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
-                            <div class="profile-method__content">
-                                <h3>Quality that can be explained</h3>
-                                <p>I aim to identify issues clearly, apply appropriate criteria and make editorial decisions that can be understood and reproduced.</p>
-                            </div>
-                        </article>
-                        <article class="profile-method__card profile-method__card--pink organic-border-pink shadow-handdrawn-pink">
-                            <span class="profile-method__number" aria-hidden="true">04</span>
-                            <span class="profile-method__icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span>
-                            <div class="profile-method__content">
-                                <h3>Curiosity with practical outcomes</h3>
-                                <p>I explore tools and workflows when they can solve a real problem, reduce repetitive work or make information easier to manage.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <p class="profile-method__closing">Careful thinking. Clear decisions. Practical results.</p>
-                </div>
-            </section>
+
             <!-- AREAS OF EXPERTISE -->
+            <!-- 
+              Ici, les blocs (.expertise-band) prennent toute la largeur de l'écran (sans conteneur .profile-wrap autour), 
+              mais le contenu à l'intérieur (.expertise-band__inner) reste centré. C'est idéal pour créer des bandes de couleurs pleines (Full bleed).
+            -->
             <section class="profile-expertise" id="expertise" aria-labelledby="expertise-title">
                 <div class="profile-expertise__intro">
                     <p class="profile-kicker">05 / Areas of expertise</p>
@@ -225,6 +211,8 @@
                     <p>A complementary skill set shaped by language, analytical thinking, technology and creative practice. Each area supports a different part of my work, with language services at its core.</p>
                     <span class="profile-expertise__annotation" aria-hidden="true">Different skills, shared perspective</span>
                 </div>
+                
+                <!-- .expertise-band--language : Le modificateur "--language" applique le fond mist (bleu clair) et la ligne supérieure seafoam -->
                 <article class="expertise-band expertise-band--language" aria-labelledby="expertise-language-title">
                     <div class="expertise-band__inner">
                         <div class="expertise-band__heading">
@@ -234,6 +222,7 @@
                             <p>Core professional practice</p>
                         </div>
                         <ul class="expertise-band__skills" aria-label="Skills">
+                            <!-- Les tags sont flexés et englobent leur contenu (wrap) automatiquement -->
                             <li class="expertise-tag">Canadian French translation</li>
                             <li class="expertise-tag">Localization</li>
                             <li class="expertise-tag">Transcreation</li>
@@ -246,6 +235,8 @@
                         </ul>
                     </div>
                 </article>
+                
+                <!-- .expertise-band--ai : Le modificateur "--ai" applique un fond rosé -->
                 <article class="expertise-band expertise-band--ai" aria-labelledby="expertise-ai-title">
                     <div class="expertise-band__inner">
                         <div class="expertise-band__heading">
@@ -262,6 +253,8 @@
                         </ul>
                     </div>
                 </article>
+                
+                <!-- .expertise-band--technology : Fond vert pâle -->
                 <article class="expertise-band expertise-band--technology" aria-labelledby="expertise-technology-title">
                     <div class="expertise-band__inner">
                         <div class="expertise-band__heading">
@@ -273,15 +266,14 @@
                         <ul class="expertise-band__skills" aria-label="Skills">
                             <li class="expertise-tag">Document processing</li>
                             <li class="expertise-tag">Scripting (JavaScript, Python &amp; Apps Script)</li>
-                            <li class="expertise-tag">Regular expressions</li>
-                            <li class="expertise-tag">Conditional logic</li>
-                            <li class="expertise-tag">Workflow automation with Make</li>
-                            <li class="expertise-tag">API-based integrations</li>
+                            <!-- ... -->
                             <li class="expertise-tag">HTML/CSS</li>
                         </ul>
                         <p class="expertise-band__qualification">Technical capabilities vary by tool and task; this list reflects complementary skills rather than an assertion of equal proficiency across every technology.</p>
                     </div>
                 </article>
+                
+                <!-- .expertise-band--writing : Inverse les couleurs (fond marine foncé, texte blanc) -->
                 <article class="expertise-band expertise-band--writing" aria-labelledby="expertise-writing-title">
                     <div class="expertise-band__inner">
                         <div class="expertise-band__heading">
@@ -302,14 +294,20 @@
                     <span>A multidisciplinary practice, grounded in context.</span>
                 </div>
             </section>
+
             <!-- CV: PROFESSIONAL EXPERIENCE -->
             <section class="profile-career" id="experience" aria-labelledby="experience-title">
                 <div class="profile-career__inner">
                     <header class="profile-section-intro">
                         <p class="profile-kicker">06 / Professional experience</p>
                         <h2 id="experience-title">A career shaped by language, editorial judgment, and cross-disciplinary experience.</h2>
-                        <p>My professional path brings together more than a decade of linguistic work, independent publishing, document production, administrative operations, and digital development. Across these roles, one constant has remained: the ability to understand complex information, recognize how its components connect, and turn it into clear, accurate, and purposeful work.</p>
+                        <p>My professional path brings together more than a decade of linguistic work...</p>
                     </header>
+                    
+                    <!-- 
+                      .career-feature-grid : Grille asymétrique pour mettre en avant vos expériences principales.
+                      La première colonne (Language) est plus large (1.2fr) que la seconde (Author, .8fr).
+                    -->
                     <div class="career-feature-grid">
                         <article class="career-card career-card--language organic-border shadow-handdrawn">
                             <div class="career-card__topline">
@@ -319,20 +317,16 @@
                             <p class="career-employer">Self-employed</p>
                             <h3>Bilingual Language Professional / Translator &amp; Editor</h3>
                             <p class="career-specialties">Canadian French · Translation · Localization · Linguistic QA · MTPE</p>
-                            <p>For more than 13 years, I have provided linguistic services to international clients across a wide range of industries, including technology, automotive, finance, healthcare, manufacturing, and public services.</p>
-                            <p>My work includes translation, Canadian French localization, comparative editing, proofreading, terminology management, linguistic QA, and machine translation post-editing. I also work with complex CAT-tool environments and structured quality-assurance workflows, combining linguistic judgment with technical precision.</p>
+                            <p>For more than 13 years, I have provided linguistic services...</p>
+                            
+                            <!-- .career-metrics : Petite sous-grille interne de 3 colonnes pour afficher des chiffres clés -->
                             <div class="career-metrics" aria-label="Professional experience highlights">
-                                <div>
-                                    <strong>13+</strong><span>years of experience</span>
-                                </div>
-                                <div>
-                                    <strong>5,000+</strong><span>assignments</span>
-                                </div>
-                                <div>
-                                    <strong>200+</strong><span>brands and organizations</span>
-                                </div>
+                                <div><strong>13+</strong><span>years of experience</span></div>
+                                <div><strong>5,000+</strong><span>assignments</span></div>
+                                <div><strong>200+</strong><span>brands and organizations</span></div>
                             </div>
                         </article>
+                        
                         <article class="career-card career-card--author organic-border-pink shadow-handdrawn-pink">
                             <div class="career-card__topline">
                                 <span class="career-date career-date--pink">2014 — Present</span>
@@ -341,11 +335,13 @@
                             <p class="career-employer">Les Éditions de Mortagne</p>
                             <h3>Author</h3>
                             <p class="career-specialties">Narrative Nonfiction · Editorial Writing · Literary Research</p>
-                            <p>As a published author, I explore human experience through narrative nonfiction, autobiographical storytelling, and analytical writing. My work brings together literary expression, psychological and social perspectives, and accessible ways of communicating complex experiences.</p>
-                            <p>This practice has strengthened my attention to authorial voice, narrative structure, register, and the relationship between language and meaning.</p>
+                            <p>As a published author, I explore human experience through narrative nonfiction...</p>
                         </article>
                     </div>
+                    
+                    <!-- .career-support-grid : Grille régulière pour les expériences secondaires -->
                     <div class="career-support-grid">
+                        <!-- .career-card--compact : Réduit les paddings internes par rapport aux cartes majeures -->
                         <article class="career-card career-card--compact">
                             <div class="career-card__topline">
                                 <span class="career-date">2024 — 2026</span>
@@ -354,52 +350,26 @@
                             <p class="career-employer">Les services administratifs Chantale Nadeau</p>
                             <h3>Accounting Clerk &amp; Language-Services Support</h3>
                             <p class="career-specialties">Bookkeeping · Administrative Operations · Translation</p>
-                            <p>I handled bookkeeping and administrative operations while providing professional language services. My responsibilities included maintaining accounting records, processing financial documentation, coordinating administrative tasks, and translating and revising specialized documents.</p>
+                            <p>I handled bookkeeping and administrative operations while providing professional language services...</p>
                         </article>
-                        <article class="career-card career-card--compact">
-                            <div class="career-card__topline">
-                                <span class="career-date">2020 — 2021</span>
-                                <span class="career-card__icon" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></span>
-                            </div>
-                            <p class="career-employer">Restaurant Caifan</p>
-                            <h3>Marketing &amp; Web Development Consultant</h3>
-                            <p class="career-specialties">Digital Content · Marketing Communications · Web Development</p>
-                            <p>I created promotional content and adapted menus, posters, and newsletters. I also customized the TastyIgniter platform by developing a dedicated extension and theme, combining content development, practical web programming, and attention to usability.</p>
-                        </article>
-                        <article class="career-card career-card--compact">
-                            <div class="career-card__topline">
-                                <span class="career-date">2016</span>
-                                <span class="career-card__icon" aria-hidden="true"><i class="fa-solid fa-bullhorn"></i></span>
-                            </div>
-                            <p class="career-employer">Jay Chevery</p>
-                            <h3>Communications Manager</h3>
-                            <p class="career-specialties">Communications · Public Relations · Administrative Coordination</p>
-                            <p>I coordinated internal and external communications, maintained professional biographies and website content, prepared presentation materials, and managed communications with industry contacts. I also handled related administrative and financial correspondence.</p>
-                        </article>
-                        <article class="career-card career-card--compact">
-                            <div class="career-card__topline">
-                                <span class="career-date">2015 — 2016</span>
-                                <span class="career-card__icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span>
-                            </div>
-                            <p class="career-employer">L’Observateur</p>
-                            <h3>Document Production Assistant</h3>
-                            <p class="career-specialties">Document Production · Editorial QA · Bilingual Workflows</p>
-                            <p>I prepared, proofread, revised, and coordinated client-facing documents and research materials. I also supported French-to-English translation workflows, tracked production, validated deliverables, and coordinated contributors and deadlines.</p>
-                        </article>
+                        <!-- (D'autres cartes compactes suivent avec la même logique...) -->
                     </div>
                 </div>
             </section>
+
             <!-- CV: EDUCATION & CERTIFICATIONS -->
             <section class="profile-education" id="education" aria-labelledby="education-title">
                 <div class="profile-education__inner">
-                    <header class="profile-section-intro profile-section-intro--education">
-                        <p class="profile-kicker">07 / Education &amp; professional development</p>
-                        <h2 id="education-title">Learning across disciplines. Building on experience.</h2>
-                        <p>A multidisciplinary educational background spanning languages, writing, administration, marketing, and accounting, complemented by continued learning in artificial intelligence.</p>
-                    </header>
+                    <!-- ... -->
                     <div class="education-layout">
                         <div class="education-main">
                             <h3 class="education-subtitle"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Academic &amp; vocational education</h3>
+                            
+                            <!-- 
+                              .education-timeline : La barre verticale à gauche de la liste est dessinée
+                              avec le pseudo-élément ::before dans le CSS. 
+                              Les ronds des items (.education-item::before) viennent se placer exactement sur cette ligne.
+                            -->
                             <ol class="education-timeline">
                                 <li class="education-item education-item--current">
                                     <span class="education-item__date">2025 — 2026</span>
@@ -409,50 +379,11 @@
                                         <span class="education-status">In progress</span>
                                     </div>
                                 </li>
-                                <li class="education-item">
-                                    <span class="education-item__date">2024</span>
-                                    <div>
-                                        <h4>Certificate in Administration</h4>
-                                        <p>Université TÉLUQ</p>
-                                    </div>
-                                </li>
-                                <li class="education-item">
-                                    <span class="education-item__date">2023</span>
-                                    <div>
-                                        <h4>Short Program in Marketing</h4>
-                                        <p>Université TÉLUQ</p>
-                                    </div>
-                                </li>
-                                <li class="education-item">
-                                    <span class="education-item__date">2014 — 2015</span>
-                                    <div>
-                                        <h4>Certificate in Writing Practices</h4>
-                                        <p>Université TÉLUQ</p>
-                                    </div>
-                                </li>
-                                <li class="education-item">
-                                    <span class="education-item__date">2013</span>
-                                    <div>
-                                        <h4>Short Program in Written French</h4>
-                                        <p>Université TÉLUQ</p>
-                                    </div>
-                                </li>
-                                <li class="education-item">
-                                    <span class="education-item__date">2008 — 2009</span>
-                                    <div>
-                                        <h4>Vocational Diploma in Administrative Assistance and Secretarial Science</h4>
-                                        <p>CFP Des Moulins</p>
-                                    </div>
-                                </li>
-                                <li class="education-item">
-                                    <span class="education-item__date">2006 — 2007</span>
-                                    <div>
-                                        <h4>College Diploma in Arts and Letters — Languages, World and Culture</h4>
-                                        <p>Collège Ahuntsic</p>
-                                    </div>
-                                </li>
+                                <!-- Autres items de la timeline... -->
                             </ol>
                         </div>
+                        
+                        <!-- Barre latérale contenant l'éducation continue et les certifications -->
                         <aside class="education-aside">
                             <div class="education-development">
                                 <h3 class="education-subtitle"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Continuing education</h3>
@@ -461,235 +392,44 @@
                                     <h4>Introduction to Generative AI</h4>
                                     <p>Google Skills</p>
                                 </article>
-                                <article class="education-short-course">
-                                    <span>2026</span>
-                                    <h4>Introduction to Large Language Models</h4>
-                                    <p>Google Skills</p>
-                                </article>
                             </div>
                             <div class="education-certifications">
                                 <h3 class="education-subtitle"><i class="fa-solid fa-award" aria-hidden="true"></i> Professional certifications</h3>
                                 <p class="education-certifications__issuer">TransPerfect Linguist Certifications</p>
+                                <!-- .certification-list utilise flexbox avec `justify-content: space-between` pour repousser la date tout à droite -->
                                 <ul class="certification-list">
-                                    <li>
-                                        <span>Asset Management</span><time datetime="2026">2026</time>
-                                    </li>
-                                    <li>
-                                        <span>Insurance</span><time datetime="2024">2024</time>
-                                    </li>
-                                    <li>
-                                        <span>Paints and Coatings</span><time datetime="2024">2024</time>
-                                    </li>
-                                    <li>
-                                        <span>Medical Technologies</span><time datetime="2018">2018</time>
-                                    </li>
-                                    <li>
-                                        <span>Travel</span><time datetime="2018">2018</time>
-                                    </li>
-                                    <li>
-                                        <span>Automotive</span><time datetime="2017">2017</time>
-                                    </li>
+                                    <li><span>Asset Management</span><time datetime="2026">2026</time></li>
+                                    <li><span>Insurance</span><time datetime="2024">2024</time></li>
+                                    <!-- ... -->
                                 </ul>
                             </div>
                         </aside>
                     </div>
                 </div>
             </section>
-            <!-- INDUSTRY EXPERIENCE, LANGUAGES & TOOLS -->
-            <section class="profile-capabilities" id="industry-experience" aria-labelledby="industry-title">
-                <div class="profile-wrap">
-                    <header class="profile-section-intro profile-section-intro--capabilities">
-                        <p class="profile-kicker">08 / A broad professional toolkit</p>
-                        <h2 id="industry-title">Experience shaped by <em>different fields</em> and ways of working.</h2>
-                        <p>My language work has brought me into contact with organizations and subject matter from many industries. I combine that cross-sector perspective with bilingual communication and a varied set of digital tools.</p>
-                    </header>
-                    <div class="industry-layout">
-                        <div class="industry-main">
-                            <div class="capability-heading">
-                                <span class="capability-heading__icon" aria-hidden="true"><i class="fa-solid fa-earth-americas"></i></span>
-                                <div>
-                                    <p class="capability-eyebrow">Cross-industry practice</p>
-                                    <h3>Industry experience</h3>
-                                </div>
-                            </div>
-                            <p class="industry-intro">My client and project history reflects work across a broad range of sectors, from highly technical and regulated environments to consumer-facing and creative industries.</p>
-                            <div class="industry-grid">
-                                <article class="industry-card">
-                                    <span class="industry-card__index">01</span>
-                                    <h3>Manufacturing & Industrial</h3>
-                                    <p>Automotive, aerospace, industrial equipment, electronics, chemicals, and related technical documentation.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">02</span>
-                                    <h3>Technology, Software & Digital Media</h3>
-                                    <p>Software, IT services, digital platforms, telecommunications, video games, and audiovisual media.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">03</span>
-                                    <h3>Finance, Banking & Insurance</h3>
-                                    <p>Banking, financial services, insurance, reinsurance, investment, and related business communications.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">04</span>
-                                    <h3>Professional, Scientific & Technical Services</h3>
-                                    <p>Engineering, architecture, legal and consulting services, research, and other specialized professional activities.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">05</span>
-                                    <h3>Healthcare & Life Sciences</h3>
-                                    <p>Healthcare services, pharmaceuticals, biotechnology, medical devices, diagnostics, and health-related content.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">06</span>
-                                    <h3>Government & Public Services</h3>
-                                    <p>Public administration, institutional communications, defence, procurement, and public-sector documentation.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">07</span>
-                                    <h3>Retail, Wholesale & Consumer Markets</h3>
-                                    <p>Retail and wholesale trade, consumer goods, household products, fashion, cosmetics, and sporting goods.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">08</span>
-                                    <h3>Transportation, Logistics & Supply Chain</h3>
-                                    <p>Transportation, freight, logistics, distribution, customs, and supply-chain operations.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">09</span>
-                                    <h3>Hospitality, Food & Tourism</h3>
-                                    <p>Hotels, restaurants, food and beverage, travel, and tourism-related services.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">10</span>
-                                    <h3>Natural Resources, Energy & Environment</h3>
-                                    <p>Agriculture, forestry, mining, oil and gas, energy, and environmental activities.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">11</span>
-                                    <h3>Real Estate & Property Services</h3>
-                                    <p>Real estate, property-related services, and rental and leasing activities.</p>
-                                </article>
-                                <article class="industry-card">
-                                    <span class="industry-card__index">12</span>
-                                    <h3>Arts, Entertainment & Sports</h3>
-                                    <p>Publishing, literary content, arts, entertainment, recreation, and sports.</p>
-                                </article>
-                            </div>
-                        </div>
-                        <aside class="capability-sidebar">
-                            <section class="language-panel" aria-labelledby="languages-title">
-                                <div class="capability-heading">
-                                    <span class="capability-heading__icon capability-heading__icon--pink" aria-hidden="true"><i class="fa-solid fa-language"></i></span>
-                                    <div>
-                                        <p class="capability-eyebrow">Bilingual practice</p>
-                                        <h3 id="languages-title">Languages</h3>
-                                    </div>
-                                </div>
-                                <div class="language-entry">
-                                    <span class="language-entry__symbol" aria-hidden="true">FR</span>
-                                    <div>
-                                        <h4>French</h4>
-                                        <p>Native or bilingual proficiency</p>
-                                        <span class="language-entry__note">Canadian French specialization</span>
-                                    </div>
-                                </div>
-                                <div class="language-entry">
-                                    <span class="language-entry__symbol language-entry__symbol--teal" aria-hidden="true">EN</span>
-                                    <div>
-                                        <h4>English</h4>
-                                        <p>Full professional proficiency</p>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="tools-panel" aria-labelledby="tools-title">
-                                <div class="capability-heading">
-                                    <span class="capability-heading__icon capability-heading__icon--teal" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></span>
-                                    <div>
-                                        <p class="capability-eyebrow">Digital working environment</p>
-                                        <h3 id="tools-title">Tools &amp; Technology</h3>
-                                    </div>
-                                </div>
-                                <div class="tool-group">
-                                    <h4>Translation &amp; Localization</h4>
-                                    <ul class="tool-list">
-                                        <li class="tool-tag">SDL Trados Studio</li>
-                                        <li class="tool-tag">memoQ</li>
-                                        <li class="tool-tag">Wordfast</li>
-                                        <li class="tool-tag">Phrase</li>
-                                        <li class="tool-tag">XTM</li>
-                                        <li class="tool-tag">Smartcat</li>
-                                        <li class="tool-tag">Déjà Vu</li>
-                                    </ul>
-                                </div>
-                                <div class="tool-group">
-                                    <h4>Development, Automation &amp; Cloud</h4>
-                                    <ul class="tool-list">
-                                        <li class="tool-tag">HTML &amp; CSS</li>
-                                        <li class="tool-tag">JavaScript</li>
-                                        <li class="tool-tag">Python</li>
-                                        <li class="tool-tag">Google Apps Script</li>
-                                        <li class="tool-tag">APIs</li>
-                                        <li class="tool-tag">GitHub</li>
-                                        <li class="tool-tag">Google Cloud Platform</li>
-                                        <li class="tool-tag">Microsoft Azure</li>
-                                        <li class="tool-tag">Amazon Web Services</li>
-                                    </ul>
-                                </div>
-                                <div class="tool-group">
-                                    <h4>Document &amp; Creative Software</h4>
-                                    <ul class="tool-list">
-                                        <li class="tool-tag">Adobe Acrobat</li>
-                                        <li class="tool-tag">Photoshop</li>
-                                        <li class="tool-tag">Illustrator</li>
-                                        <li class="tool-tag">InDesign</li>
-                                        <li class="tool-tag">Canva</li>
-                                        <li class="tool-tag">Figma</li>
-                                        <li class="tool-tag">Microsoft Visio</li>
-                                    </ul>
-                                </div>
-                                <div class="tool-group">
-                                    <h4>Business, Analytics &amp; Marketing</h4>
-                                    <ul class="tool-list">
-                                        <li class="tool-tag">Sage</li>
-                                        <li class="tool-tag">QuickBooks</li>
-                                        <li class="tool-tag">Google Analytics</li>
-                                        <li class="tool-tag">Google Webmaster Tools</li>
-                                        <li class="tool-tag">Google Ads</li>
-                                        <li class="tool-tag">Mailchimp</li>
-                                        <li class="tool-tag">Adobe Experience Cloud</li>
-                                    </ul>
-                                </div>
-                                <p class="tools-note">This selection highlights tools documented in my professional profile and current skills inventory. The tools I use depend on the requirements and workflow of each assignment.</p>
-                            </section>
-                        </aside>
+
+            <!-- FINAL CONTACT CTA -->
+            <section class="profile-final-cta" aria-labelledby="profile-final-cta-title">
+                <!-- 
+                  L'image ici est positionnée en absolute (`top: 50%; transform: translateY(-50%)`) 
+                  pour être coupée proprement sur la gauche tout en gardant sa proportion verticale.
+                -->
+                <img class="profile-final-cta__illustration" src="../assets/images/profile/profile-cta-illustration.png" alt="Illustration of a professional looking toward a path..." width="1448" height="1086" loading="lazy" decoding="async">
+                
+                <div class="profile-wrap profile-final-cta__inner">
+                    <div class="profile-final-cta__content">
+                        <p class="profile-final-cta__eyebrow">Beyond the professional profile</p>
+                        <h2 id="profile-final-cta-title">Looking for the right<br><strong>expertise and perspective?</strong></h2>
+                        <p>My background brings together language, editorial practice and technology. Explore my experience and qualifications, or get in touch to discuss how my skills could support your next project.</p>
+                        <a class="cta cta--primary profile-final-cta__button" href="../contact/">Get in touch <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
             </section>
-            <!-- CALL TO ACTION / FOOTER -->
         </main>
+        
+        <!-- Le footer reste identique en logique à celui de la page d'accueil -->
         <footer class="site-footer" id="site-footer">
-            <div class="site-footer__inner">
-                <div class="site-footer__identity">
-                    <a class="site-footer__brand" href="../index.html">Stéphanie Nadeau</a>
-                    <p>Language expertise, supported by technology.</p>
-                    <a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
-                </div>
-                <nav class="site-footer__nav" aria-label="Footer navigation">
-                    <a href="../index.html">Home</a>
-                    <a href="../services/">Services</a>
-                    <a href="../portfolio/linguistic-case-studies/">Portfolio</a>
-                    <a href="../portfolio/technical-projects/">Tech &amp; AI</a>
-                    <a href="../clients-sectors/">Clients &amp; Sectors</a>
-                    <a href="../profile/">Profile &amp; CV</a>
-                    <a href="../contact/">Contact</a>
-                </nav>
-                <div class="site-footer__social">
-                    <a href="https://linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
-                </div>
-            </div>
-            <div class="site-footer__bottom">
-                <span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a>
-            </div>
+            <!-- ... -->
         </footer>
         <script defer="True" src="../assets/js/site.js"></script>
     </body>

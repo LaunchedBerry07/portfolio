@@ -70,9 +70,7 @@
 .cs-hero__copy > p:not(.cs-eyebrow):not(.cs-hero__subhead) {
     max-width: 43rem;
     margin: 0 0 .8rem;
-    color: #435663;
-    font-size: .91rem;
-    line-height: 1.8;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .cs-hero__visual {
@@ -291,7 +289,7 @@
 }
 
 .cs-partner__copy > p:last-child {
-    max-width: 37rem;
+    max-width: 22rem;
     margin: 0;
     color: #F3F8FA;
     font-size: .88rem;
@@ -302,7 +300,7 @@
     position: absolute;
     z-index: 1;
     top: 2.6rem;
-    right: 35%;
+    right: 40%;
     max-width: 10rem;
     color: #304FFE;
     font-family: "Caveat",cursive;
@@ -319,7 +317,7 @@
     margin-bottom: clamp(3rem,5vw,4.5rem);
     padding: 1.35rem 1.8rem;
     border-radius: var(--radius-organic);
-    background: linear-gradient(110deg,#EAF4F8,#F5FAFB);
+    background-color: #83E0D0;
 }
 
 .cs-note__title {
@@ -484,7 +482,6 @@
         transition: none;
     }
 }
-
 
 /* Final industry-specific call to action */
 .cs-cta {

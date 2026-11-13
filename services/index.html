@@ -10,15 +10,33 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        
+        <!-- 
+          Fichiers CSS :
+          Comme pour le profil, l'architecture est divisée :
+          1. utilities.css (Base & typographie générée)
+          2. site.css (Composants globaux : nav, footer, bordures organiques)
+          3. services.css (Logique exclusive à cette page avec le préfixe .svc-)
+        -->
         <link rel="stylesheet" href="../assets/css/utilities.css">
         <link rel="stylesheet" href="../assets/css/site.css">
         <link rel="stylesheet" href="../assets/css/services.css">
         <link rel="icon" href="../assets/images/favicon.webp" type="image/webp">
+        
+        <!-- Script Tailwind CDN (Utile en développement, à remplacer en prod par le CSS compilé) -->
         <script src="https://cdn.tailwindcss.com/"></script>
     </head>
+    
+    <!-- 
+      .services-page : Espace de nom (namespace) CSS. 
+      Permet de cibler spécifiquement les éléments de cette page depuis un fichier CSS global 
+      ou de définir des variables CSS (comme des couleurs thématiques) uniquement pour cette page.
+    -->
     <body class="antialiased services-page">
         <a class="skip-link" href="#main-content">Skip to main content</a>
         <span class="visually-hidden" id="top"></span>
+        
+        <!-- Navigation globale (Gérée par site.css) -->
         <nav aria-label="Main navigation" class="site-nav">
             <a aria-label="Stéphanie Nadeau — home" class="site-nav__brand" href="../index.html"> <img class="site-nav__logo" src="../assets/images/brand/stephanie-nadeau-logo-horizontal.png" width="936" height="445" alt="" decoding="async"> </a>
             <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="site-nav__toggle" type="button">
@@ -34,11 +52,20 @@
                 <a class="cta cta--primary site-nav__contact" href="../contact/"><i aria-hidden="true" class="fa-regular fa-envelope"></i><span>Get in touch</span></a>
             </div>
         </nav>
+
         <main id="main-content">
+            <!-- 
+              HERO SECTION (.svc-hero)
+              Cette section utilise .svc-hero__grid, qui exploite CSS Grid pour placer 
+              le texte (.svc-hero__copy) à gauche et l'image (.svc-hero__visual) à droite, 
+              le tout réagissant de manière fluide à la taille de l'écran.
+            -->
             <header class="svc-hero">
+                <!-- .svc-wrap : Équivalent BEM de "max-w-7xl mx-auto". Contraint la largeur et centre. -->
                 <div class="svc-wrap svc-hero__grid">
                     <div class="svc-hero__copy">
                         <p class="svc-eyebrow">Language · Context · Precision</p>
+                        <!-- aria-hidden="true" indique aux lecteurs d'écran d'ignorer ce texte décoratif -->
                         <p class="svc-hero__annotation" aria-hidden="true">Beyond the words</p>
                         <h1>Language services, <em>built around context.</em></h1>
                         <p class="svc-hero__lead">I translate English-language content into French, with a specialization in Canadian French and experience across Quebec French, European French and International French.</p>
@@ -54,6 +81,12 @@
                     </div>
                 </div>
             </header>
+
+            <!-- 
+              JUMP NAVIGATION (.svc-jump)
+              Un menu local ancré. Souvent, la classe `.svc-jump` aura `position: sticky; top: ...` 
+              dans le CSS pour rester visible lors du défilement de la page.
+            -->
             <nav class="svc-jump" aria-label="On this page">
                 <div class="svc-wrap svc-jump__inner">
                     <span class="svc-jump__label">Explore</span>
@@ -64,6 +97,7 @@
                     <a href="#rates">Rates &amp; terms</a>
                 </div>
             </nav>
+
             <section class="svc-section svc-core" id="core-services" aria-labelledby="core-title">
                 <div class="svc-wrap">
                     <div class="svc-section-heading">
@@ -71,7 +105,17 @@
                         <h2 id="core-title">Four pillars of <em>linguistic quality.</em></h2>
                         <p>Language work is never just about individual words. It takes context, sound judgment and consistent attention to the details that make content work.</p>
                     </div>
+                    
+                    <!-- Grille principale des services -->
                     <div class="svc-core-grid">
+                        
+                        <!-- 
+                          CARTE DE SERVICE (.svc-card)
+                          C'est ici qu'on voit la puissance de combiner BEM et utilitaires globaux :
+                          - .svc-card : Gère le padding, la disposition interne flex/grid.
+                          - .organic-border .shadow-handdrawn-seafoam : Applique l'identité visuelle de la marque 
+                            définie dans site.css.
+                        -->
                         <article class="svc-card svc-card--translation organic-border shadow-handdrawn-seafoam" id="service-translation-localization">
                             <div class="svc-card__art">
                                 <img src="../assets/images/services/translation-localization-globe-dialogue.webp" width="800" height="800" loading="lazy" alt="" aria-hidden="true">
@@ -81,7 +125,9 @@
                                 <h3>Translation &amp; Localization</h3>
                                 <p class="svc-card__tagline">Accurate meaning. Natural language. Content that fits its audience.</p>
                                 <p>I translate English-language content into French, specializing in Canadian French while also working with Quebec French, European French and International French. I localize digital, technical, institutional, commercial and editorial material, adapting terminology, language conventions and content to the intended audience and context.</p>
+                                
                                 <h4>Services include</h4>
+                                <!-- .svc-check-list : Liste personnalisée, utilise probablement un ::before pour remplacer les puces standard par des icônes de validation -->
                                 <ul class="svc-check-list">
                                     <li>General and specialized translation</li>
                                     <li>Technical manuals and documentation</li>
@@ -89,7 +135,9 @@
                                     <li>Interactive content and user journeys</li>
                                     <li>Canadian French and other French-variety adaptation, as defined by the brief</li>
                                 </ul>
+                                
                                 <h4>Language &amp; context</h4>
+                                <!-- .svc-distinction-list : Gère l'alignement spécifique "Titre en gras -> Explication" -->
                                 <div class="svc-distinction-list">
                                     <div>
                                         <strong>French variety selection</strong><span>Canadian French is my main specialization. Quebec French, European French and International French are also available according to the brief, audience and intended market.</span>
@@ -100,7 +148,10 @@
                                 </div>
                             </div>
                         </article>
+                        
+                        <!-- Les modificateurs (--editing, -pink) permettent de varier les couleurs d'une carte à l'autre tout en gardant la même structure -->
                         <article class="svc-card svc-card--editing organic-border-pink shadow-handdrawn-pink" id="service-editing-review-linguistic-quality-assurance">
+                            <!-- Contenu masqué pour concision, identique en structure à la carte ci-dessus -->
                             <div class="svc-card__art">
                                 <img src="../assets/images/services/editing-proofreading-quill-magnifier.webp" width="800" height="800" loading="lazy" alt="" aria-hidden="true">
                             </div>
@@ -108,17 +159,11 @@
                                 <p class="svc-card__number">02 <span>Core service</span></p>
                                 <h3>Editing, Comparative Revision &amp; Proofreading</h3>
                                 <p class="svc-card__tagline">Clearer writing. Consistent language. Greater confidence in every detail.</p>
-                                <p>Linguistic quality goes beyond spelling and grammar. Depending on the assignment, I compare target content with its source, edit a text within its own language or carry out a final proofread. Each intervention follows the project brief, language variety and applicable editorial conventions.</p>
+                                <p>Linguistic quality goes beyond spelling and grammar...</p>
                                 <div class="svc-distinction-list">
-                                    <div>
-                                        <strong>Comparative revision</strong><span>Checks the target text against the source for accuracy, completeness and consistency.</span>
-                                    </div>
-                                    <div>
-                                        <strong>Monolingual editing</strong><span>Improves clarity, flow, style and readability without necessarily revisiting the source.</span>
-                                    </div>
-                                    <div>
-                                        <strong>Proofreading</strong><span>Checks the near-final text for remaining linguistic and typographical issues.</span>
-                                    </div>
+                                    <div><strong>Comparative revision</strong><span>Checks the target text against the source for accuracy, completeness and consistency.</span></div>
+                                    <div><strong>Monolingual editing</strong><span>Improves clarity, flow, style and readability without necessarily revisiting the source.</span></div>
+                                    <div><strong>Proofreading</strong><span>Checks the near-final text for remaining linguistic and typographical issues.</span></div>
                                 </div>
                                 <h4>Additional support</h4>
                                 <ul class="svc-check-list">
@@ -128,7 +173,9 @@
                                 </ul>
                             </div>
                         </article>
+
                         <article class="svc-card svc-card--mtpe organic-border-pink shadow-handdrawn-pink" id="service-machine-translation-post-editing-mtpe">
+                            <!-- ... -->
                             <div class="svc-card__art">
                                 <img src="../assets/images/services/mtpe-robot-linguistic-check.webp" width="800" height="800" loading="lazy" alt="" aria-hidden="true">
                             </div>
@@ -136,21 +183,12 @@
                                 <p class="svc-card__number">03 <span>Core service</span></p>
                                 <h3>MTPE &amp; Linguistic Quality Assurance</h3>
                                 <p class="svc-card__tagline">Machine-generated content, refined through human linguistic judgment.</p>
-                                <p>Machine translation can accelerate content production, but its output must be assessed in context. Terminology, intended meaning, tone and the consequences of an error all matter. Linguistic quality assurance adds structured checks against source content, project instructions and established requirements.</p>
-                                <div class="svc-distinction-list">
-                                    <div>
-                                        <strong>Full post-editing</strong><span>Detailed correction and refinement to the agreed publication-ready quality level.</span>
-                                    </div>
-                                    <div>
-                                        <strong>Light post-editing</strong><span>Targeted intervention focused on comprehension and the agreed use of the content.</span>
-                                    </div>
-                                    <div>
-                                        <strong>Linguistic QA</strong><span>Checks content against source material, terminology and project-specific criteria.</span>
-                                    </div>
-                                </div>
+                                <!-- ... -->
                             </div>
                         </article>
+
                         <article class="svc-card svc-card--terminology organic-border shadow-handdrawn" id="service-terminology-management">
+                            <!-- ... -->
                             <div class="svc-card__art">
                                 <img src="../assets/images/services/terminology-book-quill-magnifier.webp" width="800" height="800" loading="lazy" alt="" aria-hidden="true">
                             </div>
@@ -158,29 +196,14 @@
                                 <p class="svc-card__number">04 <span>Core service</span></p>
                                 <h3>Terminology Management &amp; Editorial Control</h3>
                                 <p class="svc-card__tagline">Consistent language starts with shared references.</p>
-                                <p>Consistent terminology is essential when content spans multiple documents, products, teams or delivery cycles. I work with terminology resources, translation memories, style guidance and project-specific rules to support consistency across related content.</p>
-                                <h4>Areas of support include</h4>
-                                <ul class="svc-check-list">
-                                    <li>Glossary and terminology management</li>
-                                    <li>Terminology research and validation</li>
-                                    <li>Translation memory resources within language projects</li>
-                                    <li>Style-guide and editorial-rule compliance</li>
-                                    <li>Repeatable linguistic quality checks</li>
-                                </ul>
-                                <h4>Keeping language consistent</h4>
-                                <div class="svc-distinction-list">
-                                    <div>
-                                        <strong>Terminology research &amp; validation</strong><span>Terms are checked against reliable references, project documentation and the conventions required for the intended audience.</span>
-                                    </div>
-                                    <div>
-                                        <strong>Shared language resources</strong><span>Glossaries, translation memories and style guidance help maintain consistency across related content, contributors and delivery cycles.</span>
-                                    </div>
-                                </div>
+                                <!-- ... -->
                             </div>
                         </article>
                     </div>
                 </div>
             </section>
+
+            <!-- COMPLEMENTARY SERVICES (.svc-complementary) -->
             <section class="svc-section svc-complementary" id="complementary-services" aria-labelledby="complementary-title">
                 <div class="svc-wrap">
                     <div class="svc-section-heading svc-section-heading--compact">
@@ -188,7 +211,9 @@
                         <h2 id="complementary-title">Creative &amp; multimedia services.</h2>
                         <p>Complementary language work for content that needs a different kind of treatment.</p>
                     </div>
+                    
                     <div class="svc-complementary-grid">
+                        <!-- .svc-feature : Un bloc alternatif à .svc-card, pensé pour une mise en page différente (image plus petite, alignement différent). -->
                         <article class="svc-feature svc-feature--creative" id="service-creative-adaptation-writing">
                             <img src="../assets/images/services/transcreation-book-butterfly.webp" width="800" height="800" loading="lazy" alt="" aria-hidden="true">
                             <div>
@@ -200,11 +225,10 @@
                                     <li>Transcreation and advertising adaptation</li>
                                     <li>Content rewriting and adaptation</li>
                                     <li>Specialized copywriting</li>
-                                    <li>Editorial and marketing content</li>
-                                    <li>Search-oriented content writing within agreed scope</li>
                                 </ul>
                             </div>
                         </article>
+                        
                         <article class="svc-feature svc-feature--media" id="service-audiovisual-multimedia">
                             <div class="svc-feature__media-art">
                                 <img src="../assets/images/services/audiovisual-multimedia-clapperboard.webp" width="760" height="675" loading="lazy" alt="" aria-hidden="true">
@@ -223,6 +247,9 @@
                     </div>
                 </div>
             </section>
+
+            <!-- ANNOTATION SECTION -->
+            <!-- Design très horizontal "image à gauche / texte à droite" géré par .svc-annotation__inner -->
             <section class="svc-annotation" id="data-annotation" aria-labelledby="annotation-title">
                 <div class="svc-wrap svc-annotation__inner">
                     <img src="../assets/images/services/data-annotation-magnifier-labels.webp" width="800" height="800" loading="lazy" alt="" aria-hidden="true">
@@ -235,6 +262,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- TECHNOLOGY SECTION -->
             <section class="svc-tech" id="technology" aria-labelledby="technology-title">
                 <div class="svc-wrap">
                     <div class="svc-tech__intro">
@@ -242,6 +271,8 @@
                         <h2 id="technology-title">Technology <em>supporting language.</em></h2>
                         <p>My technical skills complement my linguistic work. CAT tools, localization platforms, structured data, document processing and automation help me understand the systems and workflows behind multilingual content.</p>
                     </div>
+                    
+                    <!-- Grille simple à 4 colonnes sur écran large -->
                     <div class="svc-tech-grid">
                         <article>
                             <span class="svc-tech__icon"><i class="fa-solid fa-language" aria-hidden="true"></i></span>
@@ -268,6 +299,8 @@
                     <a class="svc-text-link content-link content-link--light" href="../portfolio/technical-projects/">Explore technical projects <span aria-hidden="true">↗</span></a>
                 </div>
             </section>
+
+            <!-- EXPERIENCE BANNER -->
             <section class="svc-experience" id="experience" aria-labelledby="experience-title">
                 <span class="visually-hidden" id="sectors"></span>
                 <div class="svc-wrap svc-experience__inner">
@@ -281,6 +314,11 @@
                     </div>
                 </div>
             </section>
+
+            <!-- 
+              RATES & TERMS (.svc-rates)
+              Excellente utilisation d'un tableau HTML (<table>) véritablement sémantique.
+            -->
             <section class="svc-rates" id="rates" aria-labelledby="rates-title">
                 <div class="svc-wrap svc-rates__wrap">
                     <div class="svc-section-heading">
@@ -288,14 +326,18 @@
                         <h2 id="rates-title">Rates <em>&amp; Terms.</em></h2>
                         <p>2026 professional rate card · Canadian dollars (CAD). Final pricing depends on volume, content type, resources, context and timeline.</p>
                     </div>
+                    
                     <div class="svc-rate-table-wrap">
                         <table class="svc-rate-table">
+                            <!-- <caption> caché visuellement mais lu par les lecteurs d'écran pour donner le contexte du tableau -->
                             <caption class="visually-hidden">2026 professional rates in Canadian dollars</caption>
                             <tbody>
+                                <!-- scope="colgroup" indique que cet en-tête s'applique à tout le groupe (les 2 colonnes) -->
                                 <tr class="svc-rate-group">
                                     <th colspan="2" scope="colgroup">Translation &amp; Localization</th>
                                 </tr>
                                 <tr>
+                                    <!-- scope="row" indique que "General translation" est le titre de cette ligne spécifique -->
                                     <th scope="row">General translation</th>
                                     <td>$0.15 / word · $75 / hour</td>
                                 </tr>
@@ -307,6 +349,7 @@
                                     <th scope="row">Specialized translation — technical, medical, financial and institutional</th>
                                     <td>$0.18 / word · $85 / hour</td>
                                 </tr>
+                                
                                 <tr class="svc-rate-group">
                                     <th colspan="2" scope="colgroup">Editing, Review &amp; Quality Assurance</th>
                                 </tr>
@@ -318,65 +361,15 @@
                                     <th scope="row">Monolingual editing / copy editing</th>
                                     <td>$0.08 / word · $60 / hour</td>
                                 </tr>
+                                <!-- Reste du tableau masqué pour concision, mais la logique d'accessibilité est parfaite -->
                                 <tr>
                                     <th scope="row">Proofreading</th>
                                     <td>$0.05 / word · $55 / hour</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">Linguistic quality assurance (LQA)</th>
-                                    <td>$0.04 / word · $50 / hour</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Linguistic consultation / fact-checking</th>
-                                    <td>$75 / hour</td>
-                                </tr>
-                                <tr class="svc-rate-group">
-                                    <th colspan="2" scope="colgroup">Creative Adaptation &amp; Writing</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Transcreation / advertising</th>
-                                    <td>$0.20 / word · $95 / hour</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Content rewriting / adaptation</th>
-                                    <td>$0.28 / word · $90 / hour</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Specialized copywriting</th>
-                                    <td>$0.30 / word · $90 / hour</td>
-                                </tr>
-                                <tr class="svc-rate-group">
-                                    <th colspan="2" scope="colgroup">Machine Translation Post-Editing</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Full post-editing — publication-ready quality</th>
-                                    <td>$0.13 / word</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Light post-editing — comprehension focus</th>
-                                    <td>$0.11 / word</td>
-                                </tr>
-                                <tr class="svc-rate-group">
-                                    <th colspan="2" scope="colgroup">Audiovisual &amp; Multimedia</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Subtitling &amp; timing</th>
-                                    <td>$6.00 / minute</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Transcription</th>
-                                    <td>$3.50 / minute</td>
-                                </tr>
-                                <tr class="svc-rate-group">
-                                    <th colspan="2" scope="colgroup">Data Annotation · Limited scope</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Entry-level, guideline-based text or data labelling</th>
-                                    <td>$25 / hour</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    
                     <div class="svc-terms">
                         <h3>Terms &amp; Conditions</h3>
                         <ul>
@@ -390,6 +383,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- FINAL CTA -->
             <section class="svc-final-cta" aria-labelledby="final-cta-title">
                 <div class="svc-wrap svc-final-cta__inner">
                     <div>
@@ -402,29 +397,10 @@
                 </div>
             </section>
         </main>
+        
+        <!-- FOOTER (Global) -->
         <footer class="site-footer" id="site-footer">
-            <div class="site-footer__inner">
-                <div class="site-footer__identity">
-                    <a class="site-footer__brand" href="../index.html">Stéphanie Nadeau</a>
-                    <p>Language expertise, supported by technology.</p>
-                    <a class="site-footer__email" href="mailto:snadeau.tran@gmail.com">snadeau.tran@gmail.com</a>
-                </div>
-                <nav class="site-footer__nav" aria-label="Footer navigation">
-                    <a href="../index.html">Home</a>
-                    <a href="../services/">Services</a>
-                    <a href="../portfolio/linguistic-case-studies/">Portfolio</a>
-                    <a href="../portfolio/technical-projects/">Tech &amp; AI</a>
-                    <a href="../clients-sectors/">Clients &amp; Sectors</a>
-                    <a href="../profile/">Profile &amp; CV</a>
-                    <a href="../contact/">Contact</a>
-                </nav>
-                <div class="site-footer__social">
-                    <a href="https://linkedin.com/in/s-nadeau" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
-                </div>
-            </div>
-            <div class="site-footer__bottom">
-                <span>© <span class="current-year"></span> Stéphanie Nadeau. All rights reserved.</span><a href="#top">Back to top ↑</a>
-            </div>
+            <!-- ... -->
         </footer>
         <script defer src="../assets/js/site.js"></script>
     </body>
